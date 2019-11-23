@@ -1,0 +1,41 @@
+----------------------------------------
+srun job start: Sat Nov 23 02:47:14 CST 2019
+Job ID: 90
+Username: sas4990
+Queue: short
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /software/mpi/mvapich2-2.3b-gcc-4.8.3/bin:/hpc/software/gcc/4.8.3/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+# OSU MPI_Get Bandwidth Test v5.6.2
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Size      Bandwidth (MB/s)
+1                       3.26
+2                       6.46
+4                      12.89
+8                      25.97
+16                     52.97
+32                    106.19
+64                    209.74
+128                   420.77
+256                   891.77
+512                  1717.56
+1024                 3383.11
+2048                 4773.01
+4096                 5504.99
+8192                 5993.69
+16384                6183.55
+32768                6210.61
+65536                6344.67
+131072               6355.67
+262144               5984.88
+524288               5948.64
+1048576              5895.08
+2097152              5869.11
+4194304              5855.07
