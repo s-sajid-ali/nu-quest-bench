@@ -1,0 +1,13 @@
+==> 1 installed package
+-- linux-rhel7-ivybridge / gcc@8.3.0 ----------------------------
+7x34z32 osu-micro-benchmarks@5.6.1~cuda
+zxmhzdp     mvapich2@2.3.2~alloca ch3_rank_bits=32 ~cuda~debug fabrics=mrail file_systems=gpfs process_managers=slurm +regcache threads=multiple +wrapperrpath
+eb74crw         libpciaccess@0.13.5
+t6h6tgg         libxml2@2.9.9~python
+46i2h6v             libiconv@1.16
+dnbfmo2             xz@5.2.4
+xaq5v23             zlib@1.2.11+optimize+pic+shared
+n4nc6ca         rdma-core@20 build_type=RelWithDebInfo
+mo7nt5v             libnl@3.3.0
+77kx7yy         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
+

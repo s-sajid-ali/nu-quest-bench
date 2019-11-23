@@ -1,0 +1,11 @@
+==> 1 installed package
+-- linux-rhel7-ivybridge / gcc@8.3.0 ----------------------------
+ek3oorz osu-micro-benchmarks@5.6.1~cuda
+btlyk64     mpich@3.3.2 device=ch4 +hydra netmod=ucx +pci pmi=pmi2 +romio+slurm~verbs+wrapperrpath
+eb74crw         libpciaccess@0.13.5
+t6h6tgg         libxml2@2.9.9~python
+46i2h6v             libiconv@1.16
+dnbfmo2             xz@5.2.4
+xaq5v23             zlib@1.2.11+optimize+pic+shared
+77kx7yy         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
+

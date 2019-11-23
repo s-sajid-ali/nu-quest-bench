@@ -1,0 +1,13 @@
+==> 1 installed package
+-- linux-rhel7-ivybridge / gcc@6.4.0 ----------------------------
+x5jirha osu-micro-benchmarks@5.6.1~cuda
+ig65ntt     openmpi@1.10.5~cuda+cxx_exceptions fabrics=verbs ~java~legacylaunchers~memchecker+pmi schedulers=slurm ~sqlite3~thread_multiple+vt
+sq7gszu         hwloc@1.11.11~cairo~cuda~gl+libxml2~nvml+pci+shared
+falxk7k             libpciaccess@0.13.5
+ihwbyd2             libxml2@2.9.9~python
+islxuao                 libiconv@1.16
+md6kvhs                 xz@5.2.4
+vnehb7k                 zlib@1.2.11+optimize+pic+shared
+u7csup4             numactl@2.0.12
+sv72ytu         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
+
