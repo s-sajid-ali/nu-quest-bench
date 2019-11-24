@@ -14,6 +14,8 @@ module purge all
 BASE_DIR=$(pwd)
 OSU_VERSION=5.6.2
 
+OMP_NUM_THREADS=1
+
 for i in mpi/mpich-3.3-gcc-6.4.0 \
 	mpi/openmpi-1.10.5-gcc-6.4.0 mpi/openmpi-1.10.5-intel2013.2 mpi/openmpi-3.1.3-gcc-6.4.0 \
 	mpi/mvapich2-gcc-4.8.3
@@ -30,7 +32,7 @@ do
 	cd mpi/one-sided/
 	make && make install
 
-	for j in {1..10}
+	for j in {1..20}
 	do
 		mpirun -np 2 ./osu_get_bw &> bw_$j
 		mpirun -np 2 ./osu_get_latency &> lat_$j

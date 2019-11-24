@@ -1,0 +1,13 @@
+==> 1 installed package
+-- linux-rhel7-x86_64 / intel@13.1 ------------------------------
+jozbe3t osu-micro-benchmarks@5.6.1~cuda
+232hhig     openmpi@1.10.5~cuda+cxx_exceptions fabrics=verbs ~java~legacylaunchers~memchecker+pmi schedulers=slurm ~sqlite3~thread_multiple+vt
+2ckkrcq         hwloc@1.11.11~cairo~cuda~gl+libxml2~nvml+pci+shared
+goikvev             libpciaccess@0.13.5
+3tas4yx             libxml2@2.9.9~python
+7p4i23k                 libiconv@1.16
+ohbn4pw                 xz@5.2.4
+wsnnmqz                 zlib@1.2.11+optimize+pic+shared
+rg77ini             numactl@2.0.12
+5trrrvx         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
+

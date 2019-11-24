@@ -18,7 +18,7 @@ do
 	spack find -ldv /$i &> mpi_config
 	spack load --dependencies /$i 
 
-	for j in {1..10}
+	for j in {1..20}
 	do
 		srun --mpi=pmi2 osu_get_bw &> bw_$j
 		srun --mpi=pmi2 osu_get_latency &> lat_$j

@@ -513,7 +513,7 @@ configure:16484: mpicc -o conftest -g -O2   conftest.c  >&5
 conftest.c:30:6: warning: conflicting types for built-in function 'sqrt'
  char sqrt ();
       ^~~~
-/usr/bin/ld: /tmp/ccjiLt8p.o: undefined reference to symbol 'sqrt@@GLIBC_2.2.5'
+/usr/bin/ld: /tmp/ccHoPyDR.o: undefined reference to symbol 'sqrt@@GLIBC_2.2.5'
 /usr/lib64/libm.so.6: error adding symbols: DSO missing from command line
 collect2: error: ld returned 1 exit status
 configure:16484: $? = 1
@@ -563,7 +563,7 @@ configure:16484: $? = 0
 configure:16501: result: -lm
 configure:16509: checking for library containing pthread_join
 configure:16540: mpicc -o conftest -g -O2   conftest.c -lm  >&5
-/usr/bin/ld: /tmp/cc6QkMwG.o: undefined reference to symbol 'pthread_join@@GLIBC_2.2.5'
+/usr/bin/ld: /tmp/ccn0nvVV.o: undefined reference to symbol 'pthread_join@@GLIBC_2.2.5'
 /usr/lib64/libpthread.so.0: error adding symbols: DSO missing from command line
 collect2: error: ld returned 1 exit status
 configure:16540: $? = 1
@@ -668,7 +668,7 @@ configure:16731: $? = 0
 configure:16731: result: yes
 configure:16736: checking for shmem_barrier_all
 configure:16736: mpicc -o conftest -g -O2   conftest.c -lpthread -lm  >&5
-/tmp/cchORlSS.o: In function `main':
+/tmp/ccdB9avg.o: In function `main':
 /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.mpich-3.3-gcc-6.4.0/conftest.c:65: undefined reference to `shmem_barrier_all'
 collect2: error: ld returned 1 exit status
 configure:16736: $? = 1
@@ -744,7 +744,7 @@ configure: failed program was:
 configure:16736: result: no
 configure:16741: checking for upc_memput
 configure:16741: mpicc -o conftest -g -O2   conftest.c -lpthread -lm  >&5
-/tmp/ccbibXt0.o: In function `main':
+/tmp/cc5rEjCo.o: In function `main':
 /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.mpich-3.3-gcc-6.4.0/conftest.c:65: undefined reference to `upc_memput'
 collect2: error: ld returned 1 exit status
 configure:16741: $? = 1
@@ -875,7 +875,7 @@ configure: failed program was:
 configure:16746: result: no
 configure:16752: checking for shmem_finalize
 configure:16752: mpicc -o conftest -g -O2   conftest.c -lpthread -lm  >&5
-/tmp/ccmk2cZa.o: In function `main':
+/tmp/ccIM8aMx.o: In function `main':
 /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.mpich-3.3-gcc-6.4.0/conftest.c:65: undefined reference to `shmem_finalize'
 collect2: error: ld returned 1 exit status
 configure:16752: $? = 1
