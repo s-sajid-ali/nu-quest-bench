@@ -14,7 +14,8 @@ module purge all
 BASE_DIR=$(pwd)
 OSU_VERSION=5.6.2
 
-OMP_NUM_THREADS=1
+rm -rf osu-micro-benchmarks-5.6.2/
+tar -xf osu-micro-benchmarks-5.6.2.tar.gz
 
 for i in mpi/mpich-3.3-gcc-6.4.0 \
 	mpi/openmpi-1.10.5-gcc-6.4.0 mpi/openmpi-1.10.5-intel2013.2 mpi/openmpi-3.1.3-gcc-6.4.0 \
@@ -31,6 +32,9 @@ do
 
 	cd mpi/one-sided/
 	make && make install
+
+	export OMP_NUM_THREADS=1
+	export MV2_ENABLE_AFFINITY=0
 
 	for j in {1..20}
 	do

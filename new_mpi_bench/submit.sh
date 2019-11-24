@@ -3,7 +3,9 @@
 #SBATCH --partition=short  
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
 #SBATCH --time=00:45:00
+#SBATCH --exclusive
 #SBATCH --job-name=test_mpi
 #SBATCH --output=outlog
 #SBATCH --error=errlog

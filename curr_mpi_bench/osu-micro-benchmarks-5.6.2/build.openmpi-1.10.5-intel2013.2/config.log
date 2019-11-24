@@ -555,7 +555,7 @@ configure:16731: $? = 0
 configure:16731: result: yes
 configure:16736: checking for shmem_barrier_all
 configure:16736: mpicc -o conftest -g -O2   conftest.c  >&5
-/tmp/iccLtMGdB.o: In function `main':
+/tmp/iccvdkDS4.o: In function `main':
 /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-1.10.5-intel2013.2/conftest.c:65: undefined reference to `shmem_barrier_all'
 configure:16736: $? = 1
 configure: failed program was:
@@ -630,7 +630,7 @@ configure: failed program was:
 configure:16736: result: no
 configure:16741: checking for upc_memput
 configure:16741: mpicc -o conftest -g -O2   conftest.c  >&5
-/tmp/iccHiPF61.o: In function `main':
+/tmp/icc6xO4Pq.o: In function `main':
 /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-1.10.5-intel2013.2/conftest.c:65: undefined reference to `upc_memput'
 configure:16741: $? = 1
 configure: failed program was:
@@ -761,7 +761,7 @@ configure: failed program was:
 configure:16746: result: no
 configure:16752: checking for shmem_finalize
 configure:16752: mpicc -o conftest -g -O2   conftest.c  >&5
-/tmp/iccQLcRrE.o: In function `main':
+/tmp/iccT9v251.o: In function `main':
 /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-1.10.5-intel2013.2/conftest.c:65: undefined reference to `shmem_finalize'
 configure:16752: $? = 1
 configure: failed program was:
