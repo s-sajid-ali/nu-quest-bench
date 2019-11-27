@@ -1,12 +1,23 @@
 
 The following have been reloaded with a version change:
+  1) libiconv/1.16-gcc-8.3.0-46i2h6v => libiconv/1.16-gcc-6.4.0-islxuao
+  2) libpciaccess/0.13.5-gcc-8.3.0-eb74crw => libpciaccess/0.13.5-gcc-6.4.0-falxk7k
+  3) libxml2/2.9.9-gcc-8.3.0-t6h6tgg => libxml2/2.9.9-gcc-6.4.0-ihwbyd2
+  4) osu-micro-benchmarks/5.6.1-gcc-8.3.0-mdb6i63 => osu-micro-benchmarks/5.6.1-gcc-6.4.0-x5jirha
+  5) slurm/19-05-3-2-gcc-8.3.0-77kx7yy => slurm/19-05-3-2-gcc-6.4.0-sv72ytu
+  6) xz/5.2.4-gcc-8.3.0-dnbfmo2 => xz/5.2.4-gcc-6.4.0-md6kvhs
+  7) zlib/1.2.11-gcc-8.3.0-xaq5v23 => zlib/1.2.11-gcc-6.4.0-vnehb7k
+
+
+The following have been reloaded with a version change:
   1) libiconv/1.16-gcc-6.4.0-islxuao => libiconv/1.16-gcc-8.3.0-46i2h6v
   2) libpciaccess/0.13.5-gcc-6.4.0-falxk7k => libpciaccess/0.13.5-gcc-8.3.0-eb74crw
   3) libxml2/2.9.9-gcc-6.4.0-ihwbyd2 => libxml2/2.9.9-gcc-8.3.0-t6h6tgg
-  4) osu-micro-benchmarks/5.6.1-gcc-6.4.0-x5jirha => osu-micro-benchmarks/5.6.1-gcc-8.3.0-ek3oorz
-  5) slurm/19-05-3-2-gcc-6.4.0-sv72ytu => slurm/19-05-3-2-gcc-8.3.0-77kx7yy
-  6) xz/5.2.4-gcc-6.4.0-md6kvhs => xz/5.2.4-gcc-8.3.0-dnbfmo2
-  7) zlib/1.2.11-gcc-6.4.0-vnehb7k => zlib/1.2.11-gcc-8.3.0-xaq5v23
+  4) mpich/develop-gcc-8.3.0-oydbpbi => mpich/3.3.2-gcc-8.3.0-btlyk64
+  5) osu-micro-benchmarks/5.6.1-gcc-6.4.0-x5jirha => osu-micro-benchmarks/5.6.1-gcc-8.3.0-ek3oorz
+  6) slurm/19-05-3-2-gcc-6.4.0-sv72ytu => slurm/19-05-3-2-gcc-8.3.0-77kx7yy
+  7) xz/5.2.4-gcc-6.4.0-md6kvhs => xz/5.2.4-gcc-8.3.0-dnbfmo2
+  8) zlib/1.2.11-gcc-6.4.0-vnehb7k => zlib/1.2.11-gcc-8.3.0-xaq5v23
 
 
 The following have been reloaded with a version change:

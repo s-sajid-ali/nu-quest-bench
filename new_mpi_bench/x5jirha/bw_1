@@ -1,6 +1,6 @@
 ----------------------------------------
-srun job start: Sun Nov 24 10:27:23 CST 2019
-Job ID: 108
+srun job start: Wed Nov 27 14:20:36 CST 2019
+Job ID: 127
 Username: sas4990
 Queue: short
 Account: p30157
@@ -9,33 +9,33 @@ The following variables are not
 guaranteed to be the same in
 prologue and the job run script
 ----------------------------------------
-PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/hwloc-1.11.11-sq7gszufzusfgdeipuk4keoqptxhw3zw/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libxml2-2.9.9-ihwbyd2af5vfc4kkeh2wiuishhz3m2sm/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/xz-5.2.4-md6kvhsq7xjo463po7qsl2j6z4wxg6to/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libiconv-1.16-islxuaobfogpcxl7kglyq47x2sggxx3t/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/hwloc-1.11.11-sq7gszufzusfgdeipuk4keoqptxhw3zw/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libxml2-2.9.9-ihwbyd2af5vfc4kkeh2wiuishhz3m2sm/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/xz-5.2.4-md6kvhsq7xjo463po7qsl2j6z4wxg6to/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libiconv-1.16-islxuaobfogpcxl7kglyq47x2sggxx3t/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-develop-oydbpbi7cwpxnvvkfhtb3o6myombxetr/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
 WORKDIR is: /home/sas4990
 ----------------------------------------
 # OSU MPI_Get Bandwidth Test v5.6.1
 # Window creation: MPI_Win_allocate
 # Synchronization: MPI_Win_flush
 # Size      Bandwidth (MB/s)
-1                       0.63
-2                       1.29
-4                       2.68
-8                       5.43
-16                     11.05
-32                     21.92
-64                     44.80
-128                    87.63
-256                   173.43
-512                   331.26
-1024                  624.93
-2048                 1083.24
-4096                 1762.91
-8192                 2386.82
-16384                2643.91
-32768                2861.44
-65536                2948.34
-131072               2837.68
-262144               2881.94
-524288               2903.98
-1048576              2909.75
-2097152              2836.93
-4194304              2909.44
+1                       0.61
+2                       1.26
+4                       2.61
+8                       5.29
+16                     10.98
+32                     21.78
+64                     44.92
+128                    86.59
+256                   176.08
+512                   332.87
+1024                  628.04
+2048                 1116.27
+4096                 1836.51
+8192                 2474.34
+16384                2778.42
+32768                2959.78
+65536                3027.94
+131072               3104.02
+262144               2989.31
+524288               2936.12
+1048576              3015.44
+2097152              2903.62
+4194304              2897.78

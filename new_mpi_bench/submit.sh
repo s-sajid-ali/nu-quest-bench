@@ -13,12 +13,13 @@
 source /home/sas4990/packages/spack/share/spack/setup-env.sh
 module purge all 
 
-for i in x5jirha ek3oorz 7x34z32 u5qxmse jozbe3t
+for i in mdb6i63 x5jirha ek3oorz 7x34z32 u5qxmse jozbe3t
 do
 	mkdir $i
 	cd $i/
 	spack find -ldv /$i &> mpi_config
 	spack load --dependencies /$i 
+	which mpirun &> mpirun_location
 
 	for j in {1..20}
 	do

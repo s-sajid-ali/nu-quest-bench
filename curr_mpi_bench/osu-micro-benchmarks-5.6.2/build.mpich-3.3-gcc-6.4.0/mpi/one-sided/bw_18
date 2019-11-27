@@ -1,6 +1,6 @@
 ----------------------------------------
-srun job start: Sun Nov 24 10:16:30 CST 2019
-Job ID: 106
+srun job start: Tue Nov 26 14:07:49 CST 2019
+Job ID: 3703464
 Username: sas4990
 Queue: short
 Account: p30157
@@ -9,33 +9,33 @@ The following variables are not
 guaranteed to be the same in
 prologue and the job run script
 ----------------------------------------
-PATH (in prologue) : /software/mpi/mpich-3.3-gcc-6.4.0-RH7/bin:/hpc/software/gcc/6.4.0/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+PATH (in prologue) : /software/mpi/mpich-3.3-gcc-6.4.0-RH7/bin:/hpc/software/gcc/6.4.0/bin:/home/sas4990/packages/spack/bin:/hpc/slurm/northwestern/usertools:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
 WORKDIR is: /home/sas4990
 ----------------------------------------
 # OSU MPI_Get Bandwidth Test v5.6.2
 # Window creation: MPI_Win_allocate
 # Synchronization: MPI_Win_flush
 # Size      Bandwidth (MB/s)
-1                      47.09
-2                      91.93
-4                     167.51
-8                     337.65
-16                    563.64
-32                   1186.46
-64                   2324.75
-128                  4399.45
-256                  7485.78
-512                 12761.28
-1024                18215.90
-2048                15898.09
-4096                13202.59
-8192                13300.01
-16384               13339.54
-32768               13471.31
-65536               13536.10
-131072               6481.24
-262144               4006.77
-524288               3017.30
-1048576              3091.06
-2097152              3638.88
-4194304              3841.55
+1                      39.53
+2                      77.81
+4                     151.23
+8                     279.98
+16                    477.22
+32                   1005.85
+64                   1965.66
+128                  3632.11
+256                  6281.49
+512                 10821.96
+1024                15228.69
+2048                12799.90
+4096                11526.49
+8192                11777.75
+16384               11829.07
+32768               11847.39
+65536                3366.96
+131072               2278.49
+262144               2547.05
+524288               2319.45
+1048576              2826.93
+2097152              3078.97
+4194304              3111.18

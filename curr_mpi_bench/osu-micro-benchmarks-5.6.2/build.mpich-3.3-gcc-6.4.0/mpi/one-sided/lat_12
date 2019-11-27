@@ -1,6 +1,6 @@
 ----------------------------------------
-srun job start: Sun Nov 24 10:15:07 CST 2019
-Job ID: 106
+srun job start: Tue Nov 26 14:06:17 CST 2019
+Job ID: 3703464
 Username: sas4990
 Queue: short
 Account: p30157
@@ -9,33 +9,33 @@ The following variables are not
 guaranteed to be the same in
 prologue and the job run script
 ----------------------------------------
-PATH (in prologue) : /software/mpi/mpich-3.3-gcc-6.4.0-RH7/bin:/hpc/software/gcc/6.4.0/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+PATH (in prologue) : /software/mpi/mpich-3.3-gcc-6.4.0-RH7/bin:/hpc/software/gcc/6.4.0/bin:/home/sas4990/packages/spack/bin:/hpc/slurm/northwestern/usertools:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
 WORKDIR is: /home/sas4990
 ----------------------------------------
 # OSU MPI_Get latency Test v5.6.2
 # Window creation: MPI_Win_allocate
 # Synchronization: MPI_Win_flush
 # Size          Latency (us)
-1                       0.05
-2                       0.05
-4                       0.05
-8                       0.05
-16                      0.05
-32                      0.05
-64                      0.05
-128                     0.05
-256                     0.06
-512                     0.06
-1024                    0.07
-2048                    0.09
-4096                    0.14
-8192                    0.22
-16384                   0.68
-32768                   1.45
-65536                   2.68
-131072                  5.48
-262144                 28.34
-524288                 61.43
-1048576               141.88
-2097152               310.02
-4194304               587.44
+1                       0.06
+2                       0.06
+4                       0.06
+8                       0.06
+16                      0.06
+32                      0.06
+64                      0.06
+128                     0.06
+256                     0.07
+512                     0.08
+1024                    0.09
+2048                    0.11
+4096                    0.16
+8192                    0.26
+16384                   0.79
+32768                   1.62
+65536                   3.21
+131072                  6.64
+262144                 29.72
+524288                 79.99
+1048576               181.12
+2097152               351.55
+4194304               825.91

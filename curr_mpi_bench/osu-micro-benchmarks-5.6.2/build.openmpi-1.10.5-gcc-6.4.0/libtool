@@ -1,6 +1,6 @@
 #! /bin/sh
 # Generated automatically by config.status (osu-micro-benchmarks) 5.6.2
-# Libtool was configured on host qnode5038:
+# Libtool was configured on host qnode5043:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 
 # Provide generalized library-building support services.
