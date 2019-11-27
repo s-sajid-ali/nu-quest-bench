@@ -1,6 +1,6 @@
 ----------------------------------------
-srun job start: Wed Nov 27 14:19:38 CST 2019
-Job ID: 127
+srun job start: Wed Nov 27 14:48:02 CST 2019
+Job ID: 131
 Username: sas4990
 Queue: short
 Account: p30157
@@ -15,10 +15,10 @@ WORKDIR is: /home/sas4990
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-[1574885978.735699] [qnode5038:26320:0]    ucp_context.c:1131 UCX  WARN  UCP version is incompatible, required: 1.5, actual: 1.4 (release 0)
+[1574887682.279570] [qnode5038:10567:0]    ucp_context.c:1131 UCX  WARN  UCP version is incompatible, required: 1.5, actual: 1.4 (release 0)
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-[1574885978.742118] [qnode5039:18133:0]    ucp_context.c:1131 UCX  WARN  UCP version is incompatible, required: 1.5, actual: 1.4 (release 0)
+[1574887682.296686] [qnode5039:26054:0]    ucp_context.c:1131 UCX  WARN  UCP version is incompatible, required: 1.5, actual: 1.4 (release 0)
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
@@ -28,26 +28,26 @@ slurmstepd: error: mpi/pmi2: no value for key  in req
 # Window creation: MPI_Win_allocate
 # Synchronization: MPI_Win_flush
 # Size      Bandwidth (MB/s)
-1                       2.44
-2                       4.93
-4                       9.73
-8                      19.70
-16                     39.13
-32                     78.30
-64                    153.95
-128                   295.24
-256                   567.93
-512                  1050.99
-1024                 1817.33
-2048                 2951.96
-4096                 5178.93
-8192                 5922.18
-16384                6258.76
-32768                6322.46
-65536                6336.61
-131072               6350.44
-262144               6005.38
-524288               5944.89
-1048576              6340.73
-2097152              5857.89
-4194304              5832.58
+1                       2.38
+2                       4.73
+4                       9.69
+8                      19.55
+16                     38.92
+32                     77.94
+64                    153.65
+128                   299.22
+256                   563.04
+512                  1024.25
+1024                 1789.44
+2048                 2926.72
+4096                 4837.48
+8192                 5909.21
+16384                6254.46
+32768                6302.60
+65536                6344.41
+131072               6368.69
+262144               6001.08
+524288               5952.71
+1048576              5898.25
+2097152              5863.82
+4194304              5832.47

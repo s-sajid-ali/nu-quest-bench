@@ -1,3 +1,4 @@
+MPI benchmark and library info :
 ==> 1 installed package
 -- linux-rhel7-ivybridge / gcc@8.3.0 ----------------------------
 ek3oorz osu-micro-benchmarks@5.6.1~cuda
@@ -9,3 +10,47 @@ dnbfmo2             xz@5.2.4
 xaq5v23             zlib@1.2.11+optimize+pic+shared
 77kx7yy         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
 
+
+
+
+mpirun location :
+/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/bin/mpirun
+
+
+
+Linking info for benchmark executable :
+	linux-vdso.so.1 =>  (0x00007ffe951f8000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002af0e1171000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002af0e1379000)
+	libmpicxx.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/lib/libmpicxx.so.12 (0x00002af0e1595000)
+	libmpi.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/lib/libmpi.so.12 (0x00002af0e17b6000)
+	libstdc++.so.6 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libstdc++.so.6 (0x00002af0e1d06000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002af0e208a000)
+	libgcc_s.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libgcc_s.so.1 (0x00002af0e238c000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002af0e25a4000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002af0e0f4f000)
+	libudev.so.1 => /lib64/libudev.so.1 (0x00002af0e0f87000)
+	libpciaccess.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libpciaccess-0.13.5-eb74crwpcvnxuxfjhjlul4jrrxiosavs/lib/libpciaccess.so.0 (0x00002af0e2965000)
+	libOpenCL.so.1 => /lib64/libOpenCL.so.1 (0x00002af0e2b6e000)
+	libxml2.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/lib/libxml2.so.2 (0x00002af0e2d8c000)
+	libz.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/zlib-1.2.11-xaq5v236gaofzukfoe2oaklti7fpzzfk/lib/libz.so.1 (0x00002af0e30ef000)
+	liblzma.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/lib/liblzma.so.5 (0x00002af0e3306000)
+	libiconv.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/lib/libiconv.so.2 (0x00002af0e352c000)
+	libucp.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/lib/libucp.so.0 (0x00002af0e3828000)
+	libuct.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/lib/libuct.so.0 (0x00002af0e3a85000)
+	libibverbs.so.1 => /lib64/libibverbs.so.1 (0x00002af0e3d34000)
+	libibcm.so.1 => /lib64/libibcm.so.1 (0x00002af0e3f4d000)
+	librdmacm.so.1 => /lib64/librdmacm.so.1 (0x00002af0e4152000)
+	libucs.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/lib/libucs.so.0 (0x00002af0e436e000)
+	libnuma.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/lib/libnuma.so.1 (0x00002af0e46c3000)
+	libucm.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/lib/libucm.so.0 (0x00002af0e48ce000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002af0e4ae1000)
+	libgfortran.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libgfortran.so.5 (0x00002af0e4ce5000)
+	libquadmath.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libquadmath.so.0 (0x00002af0e5154000)
+	libcap.so.2 => /lib64/libcap.so.2 (0x00002af0e5394000)
+	libdw.so.1 => /lib64/libdw.so.1 (0x00002af0e5599000)
+	libnl-route-3.so.200 => /lib64/libnl-route-3.so.200 (0x00002af0e57e1000)
+	libnl-3.so.200 => /lib64/libnl-3.so.200 (0x00002af0e5a4e000)
+	libattr.so.1 => /lib64/libattr.so.1 (0x00002af0e5c6f000)
+	libelf.so.1 => /lib64/libelf.so.1 (0x00002af0e5e74000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00002af0e608c000)

@@ -1,3 +1,4 @@
+MPI benchmark and library info :
 ==> 1 installed package
 -- linux-rhel7-ivybridge / gcc@6.4.0 ----------------------------
 x5jirha osu-micro-benchmarks@5.6.1~cuda
@@ -11,3 +12,39 @@ vnehb7k                 zlib@1.2.11+optimize+pic+shared
 u7csup4             numactl@2.0.12
 sv72ytu         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
 
+
+
+
+mpirun location :
+/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/bin/mpirun
+
+
+
+Linking info for benchmark executable :
+	linux-vdso.so.1 =>  (0x00007ffef45e2000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002ad6b6e86000)
+	libmpi_cxx.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/lib/libmpi_cxx.so.1 (0x00002ad6b708e000)
+	libmpi.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/lib/libmpi.so.12 (0x00002ad6b72a9000)
+	libstdc++.so.6 => /hpc/software/gcc/6.4.0/lib64/libstdc++.so.6 (0x00002ad6b75a0000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002ad6b7920000)
+	libgcc_s.so.1 => /hpc/software/gcc/6.4.0/lib64/libgcc_s.so.1 (0x00002ad6b7c22000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002ad6b7e39000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002ad6b8055000)
+	libopen-rte.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/lib/libopen-rte.so.12 (0x00002ad6b8416000)
+	libopen-pal.so.13 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/lib/libopen-pal.so.13 (0x00002ad6b8692000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00002ad6b8935000)
+	libhwloc.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/hwloc-1.11.11-sq7gszufzusfgdeipuk4keoqptxhw3zw/lib/libhwloc.so.5 (0x00002ad6b8b38000)
+	libnuma.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/lib/libnuma.so.1 (0x00002ad6b8d77000)
+	libudev.so.1 => /lib64/libudev.so.1 (0x00002ad6b6c9d000)
+	libpciaccess.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libpciaccess-0.13.5-falxk7k7lv7zxbwzdayknlwat4ta3uv3/lib/libpciaccess.so.0 (0x00002ad6b8f82000)
+	libxml2.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libxml2-2.9.9-ihwbyd2af5vfc4kkeh2wiuishhz3m2sm/lib/libxml2.so.2 (0x00002ad6b918b000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002ad6b94ed000)
+	libz.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/zlib-1.2.11-vnehb7k2j6cjzskx3badw6utovrtztl2/lib/libz.so.1 (0x00002ad6b96f1000)
+	liblzma.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/xz-5.2.4-md6kvhsq7xjo463po7qsl2j6z4wxg6to/lib/liblzma.so.5 (0x00002ad6b9908000)
+	libiconv.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libiconv-1.16-islxuaobfogpcxl7kglyq47x2sggxx3t/lib/libiconv.so.2 (0x00002ad6b9b2e000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002ad6b6c64000)
+	libcap.so.2 => /lib64/libcap.so.2 (0x00002ad6b9e2a000)
+	libdw.so.1 => /lib64/libdw.so.1 (0x00002ad6ba02f000)
+	libattr.so.1 => /lib64/libattr.so.1 (0x00002ad6ba277000)
+	libelf.so.1 => /lib64/libelf.so.1 (0x00002ad6ba47c000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00002ad6ba694000)

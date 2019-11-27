@@ -17,9 +17,16 @@ for i in mdb6i63 x5jirha ek3oorz 7x34z32 u5qxmse jozbe3t
 do
 	mkdir $i
 	cd $i/
-	spack find -ldv /$i &> mpi_config
 	spack load --dependencies /$i 
-	which mpirun &> mpirun_location
+	
+	echo "MPI benchmark and library info :" >> mpi_config
+	spack find -ldv /$i >> mpi_config
+	echo -e "\n\n" >> mpi_config
+	echo "mpirun location :" >> mpi_config
+	which mpirun >> mpi_config
+	echo -e "\n\n" >> mpi_config
+	echo "Linking info for benchmark executable :" >> mpi_config
+	ldd $(spack location -i /$i)/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_bw >> mpi_config
 
 	for j in {1..20}
 	do

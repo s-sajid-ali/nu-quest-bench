@@ -1,3 +1,4 @@
+MPI benchmark and library info :
 ==> 1 installed package
 -- linux-rhel7-x86_64 / intel@13.1 ------------------------------
 jozbe3t osu-micro-benchmarks@5.6.1~cuda
@@ -11,3 +12,44 @@ wsnnmqz                 zlib@1.2.11+optimize+pic+shared
 rg77ini             numactl@2.0.12
 5trrrvx         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
 
+
+
+
+mpirun location :
+/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/bin/mpirun
+
+
+
+Linking info for benchmark executable :
+	linux-vdso.so.1 =>  (0x00007ffd77af5000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002b4d47463000)
+	libmpi_cxx.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi_cxx.so.1 (0x00002b4d4766b000)
+	libmpi.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12 (0x00002b4d47886000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b4d47b86000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00002b4d47e88000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002b4d4818f000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002b4d483a5000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b4d485c1000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b4d48982000)
+	libopen-rte.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-rte.so.12 (0x00002b4d48b86000)
+	libopen-pal.so.13 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-pal.so.13 (0x00002b4d48e1c000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00002b4d490e3000)
+	libhwloc.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5 (0x00002b4d492e6000)
+	libnuma.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/numactl-2.0.12-rg77iniocxeysrewdftorvgpbxfrduj4/lib/libnuma.so.1 (0x00002b4d49541000)
+	libudev.so.1 => /lib64/libudev.so.1 (0x00002b4d4727a000)
+	libpciaccess.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libpciaccess-0.13.5-goikvevvwxzw4hzzme3nugqu4v2i33rt/lib/libpciaccess.so.0 (0x00002b4d4974f000)
+	libxml2.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libxml2-2.9.9-3tas4yxu2ua2n2norai7okueg2znxi2g/lib/libxml2.so.2 (0x00002b4d4995b000)
+	libz.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/zlib-1.2.11-wsnnmqzo2shgequkzlg4eobupb6dyo3c/lib/libz.so.1 (0x00002b4d49e64000)
+	liblzma.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/xz-5.2.4-ohbn4pw45r3cejbct2sdrt7ahrk4lb26/lib/liblzma.so.5 (0x00002b4d4a082000)
+	libiconv.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libiconv-1.16-7p4i23kcv5e4lik2zflvlcdsbpuvss5s/lib/libiconv.so.2 (0x00002b4d4a2bc000)
+	libimf.so => /hpc/opt/intel/composer_xe_2013.2.146/compiler/lib/intel64/libimf.so (0x00002b4d4a5c9000)
+	libirng.so => /hpc/opt/intel/composer_xe_2013.2.146/compiler/lib/intel64/libirng.so (0x00002b4d4aa85000)
+	libcilkrts.so.5 => /hpc/opt/intel/composer_xe_2013.2.146/compiler/lib/intel64/libcilkrts.so.5 (0x00002b4d4ac8c000)
+	libintlc.so.5 => /hpc/opt/intel/composer_xe_2013.2.146/compiler/lib/intel64/libintlc.so.5 (0x00002b4d4aec1000)
+	libsvml.so => /hpc/opt/intel/composer_xe_2013.2.146/compiler/lib/intel64/libsvml.so (0x00002b4d4b10f000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b4d47241000)
+	libcap.so.2 => /lib64/libcap.so.2 (0x00002b4d4bada000)
+	libdw.so.1 => /lib64/libdw.so.1 (0x00002b4d4bcdf000)
+	libattr.so.1 => /lib64/libattr.so.1 (0x00002b4d4bf27000)
+	libelf.so.1 => /lib64/libelf.so.1 (0x00002b4d4c12c000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00002b4d4c344000)

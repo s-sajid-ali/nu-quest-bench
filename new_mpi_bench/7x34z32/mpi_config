@@ -1,3 +1,4 @@
+MPI benchmark and library info :
 ==> 1 installed package
 -- linux-rhel7-ivybridge / gcc@8.3.0 ----------------------------
 7x34z32 osu-micro-benchmarks@5.6.1~cuda
@@ -11,3 +12,44 @@ n4nc6ca         rdma-core@20 build_type=RelWithDebInfo
 mo7nt5v             libnl@3.3.0
 77kx7yy         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
 
+
+
+
+mpirun location :
+/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/bin/mpirun
+
+
+
+Linking info for benchmark executable :
+	linux-vdso.so.1 =>  (0x00007ffde2ff3000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002b38e4602000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002b38e480a000)
+	libmpicxx.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mvapich2-2.3.2-zxmhzdpidahuoqxvxesrpma5r2a4yjfv/lib/libmpicxx.so.12 (0x00002b38e4a26000)
+	libmpi.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mvapich2-2.3.2-zxmhzdpidahuoqxvxesrpma5r2a4yjfv/lib/libmpi.so.12 (0x00002b38e4c47000)
+	libstdc++.so.6 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libstdc++.so.6 (0x00002b38e54ab000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b38e582f000)
+	libgcc_s.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libgcc_s.so.1 (0x00002b38e5b31000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b38e5d49000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b38e43e0000)
+	libgpfs.so => /lib64/libgpfs.so (0x00002b38e610a000)
+	libnuma.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/lib/libnuma.so.1 (0x00002b38e631f000)
+	libudev.so.1 => /lib64/libudev.so.1 (0x00002b38e4418000)
+	libpciaccess.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libpciaccess-0.13.5-eb74crwpcvnxuxfjhjlul4jrrxiosavs/lib/libpciaccess.so.0 (0x00002b38e652a000)
+	libxml2.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/lib/libxml2.so.2 (0x00002b38e6733000)
+	librdmacm.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/lib64/librdmacm.so.1 (0x00002b38e6a96000)
+	libibumad.so.3 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/lib64/libibumad.so.3 (0x00002b38e6cad000)
+	libibverbs.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/lib64/libibverbs.so.1 (0x00002b38e6eb6000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b38e70ce000)
+	libpmi2.so.0 => /lib64/libpmi2.so.0 (0x00002b38e72d2000)
+	libgfortran.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libgfortran.so.5 (0x00002b38e74eb000)
+	libquadmath.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libquadmath.so.0 (0x00002b38e795a000)
+	libcap.so.2 => /lib64/libcap.so.2 (0x00002b38e7b9a000)
+	libdw.so.1 => /lib64/libdw.so.1 (0x00002b38e7d9f000)
+	libz.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/zlib-1.2.11-xaq5v236gaofzukfoe2oaklti7fpzzfk/lib/libz.so.1 (0x00002b38e7fe7000)
+	liblzma.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/lib/liblzma.so.5 (0x00002b38e81fe000)
+	libiconv.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/lib/libiconv.so.2 (0x00002b38e8424000)
+	libnl-route-3.so.200 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/lib/libnl-route-3.so.200 (0x00002b38e8720000)
+	libnl-3.so.200 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/lib/libnl-3.so.200 (0x00002b38e8992000)
+	libattr.so.1 => /lib64/libattr.so.1 (0x00002b38e8bb3000)
+	libelf.so.1 => /lib64/libelf.so.1 (0x00002b38e8db8000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00002b38e8fd0000)
