@@ -1,6 +1,6 @@
 ----------------------------------------
-srun job start: Wed Nov 27 14:50:51 CST 2019
-Job ID: 131
+srun job start: Wed Nov 27 15:53:22 CST 2019
+Job ID: 134
 Username: sas4990
 Queue: short
 Account: p30157
@@ -9,135 +9,35 @@ The following variables are not
 guaranteed to be the same in
 prologue and the job run script
 ----------------------------------------
-PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-ek3oorzcwcavidkv7zpfnmrtsiz75dd7/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-ek3oorzcwcavidkv7zpfnmrtsiz75dd7/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-ek3oorzcwcavidkv7zpfnmrtsiz75dd7/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-ek3oorzcwcavidkv7zpfnmrtsiz75dd7/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/hwloc-1.11.11-sq7gszufzusfgdeipuk4keoqptxhw3zw/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-ek3oorzcwcavidkv7zpfnmrtsiz75dd7/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-ek3oorzcwcavidkv7zpfnmrtsiz75dd7/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-ek3oorzcwcavidkv7zpfnmrtsiz75dd7/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-ek3oorzcwcavidkv7zpfnmrtsiz75dd7/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/hwloc-1.11.11-sq7gszufzusfgdeipuk4keoqptxhw3zw/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
 WORKDIR is: /home/sas4990
 ----------------------------------------
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: qnode5038: task 0: Exited with exit code 255
+srun: error: qnode5039: task 1: Exited with exit code 255
+slurmstepd: error: mpi/pmi2: no value for key  in req
+[1574891602.594838] [qnode5039:9293 :0]      ib_device.c:234  UCX  ERROR ibv_query_device() returned 38: Success
+Abort(1093775) on node 1 (rank 1 in comm 0): Fatal error in PMPI_Init: Other MPI error, error stack:
+MPIR_Init_thread(586).....: 
+MPID_Init(447)............: 
+MPIDI_NM_mpi_init_hook(59):  ucx function returned with failed status(ucx_init.h 59 MPIDI_NM_mpi_init_hook Input/output error)
+[unset]: aborting job:
+Fatal error in PMPI_Init: Other MPI error, error stack:
+MPIR_Init_thread(586).....: 
+MPID_Init(447)............: 
+MPIDI_NM_mpi_init_hook(59):  ucx function returned with failed status(ucx_init.h 59 MPIDI_NM_mpi_init_hook Input/output error)
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
+[1574891602.598955] [qnode5038:7323 :0]      ib_device.c:234  UCX  ERROR ibv_query_device() returned 38: Success
+Abort(1093775) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Other MPI error, error stack:
+MPIR_Init_thread(586).....: 
+MPID_Init(447)............: 
+MPIDI_NM_mpi_init_hook(59):  ucx function returned with failed status(ucx_init.h 59 MPIDI_NM_mpi_init_hook Input/output error)
+[unset]: aborting job:
+Fatal error in PMPI_Init: Other MPI error, error stack:
+MPIR_Init_thread(586).....: 
+MPID_Init(447)............: 
+MPIDI_NM_mpi_init_hook(59):  ucx function returned with failed status(ucx_init.h 59 MPIDI_NM_mpi_init_hook Input/output error)
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key  in req
-# OSU MPI_Get latency Test v5.6.1
-# Window creation: MPI_Win_allocate
-# Synchronization: MPI_Win_flush
-# Size          Latency (us)
-1                       2.10
-2                       2.05
-4                       1.98
-8                       1.96
-16                      1.85
-32                      1.84
-64                      1.88
-128                     1.92
-256                     1.97
-512                     2.12
-1024                    2.40
-2048                    2.87
-4096                    3.31
-8192                    4.15
-16384                   5.33
-32768                   7.84
-65536                  12.93
-131072                 23.18
-262144                 43.66
-524288                 84.83
-1048576               167.11
-2097152               330.96
-4194304               660.38
-[1574887853.002522] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0780 was not returned to mpool ucp_rkeys
-[1574887853.002539] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0800 was not returned to mpool ucp_rkeys
-[1574887853.002542] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0880 was not returned to mpool ucp_rkeys
-[1574887853.002555] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0900 was not returned to mpool ucp_rkeys
-[1574887853.002556] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0980 was not returned to mpool ucp_rkeys
-[1574887853.002558] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0a00 was not returned to mpool ucp_rkeys
-[1574887853.002560] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0a80 was not returned to mpool ucp_rkeys
-[1574887853.002562] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0b00 was not returned to mpool ucp_rkeys
-[1574887853.002564] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0b80 was not returned to mpool ucp_rkeys
-[1574887853.002566] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0c00 was not returned to mpool ucp_rkeys
-[1574887853.002568] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0c80 was not returned to mpool ucp_rkeys
-[1574887853.002570] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0d00 was not returned to mpool ucp_rkeys
-[1574887853.002572] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0d80 was not returned to mpool ucp_rkeys
-[1574887853.002573] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0e00 was not returned to mpool ucp_rkeys
-[1574887853.002575] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0e80 was not returned to mpool ucp_rkeys
-[1574887853.002577] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0f00 was not returned to mpool ucp_rkeys
-[1574887852.993716] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0600 was not returned to mpool ucp_rkeys
-[1574887852.993726] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0680 was not returned to mpool ucp_rkeys
-[1574887852.993729] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0700 was not returned to mpool ucp_rkeys
-[1574887852.993742] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0780 was not returned to mpool ucp_rkeys
-[1574887852.993744] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0800 was not returned to mpool ucp_rkeys
-[1574887852.993747] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0880 was not returned to mpool ucp_rkeys
-[1574887852.993749] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0900 was not returned to mpool ucp_rkeys
-[1574887852.993761] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0980 was not returned to mpool ucp_rkeys
-[1574887853.002579] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d0f80 was not returned to mpool ucp_rkeys
-[1574887853.002580] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1000 was not returned to mpool ucp_rkeys
-[1574887853.002582] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1080 was not returned to mpool ucp_rkeys
-[1574887852.993763] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0a00 was not returned to mpool ucp_rkeys
-[1574887852.993765] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0a80 was not returned to mpool ucp_rkeys
-[1574887852.993767] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0b00 was not returned to mpool ucp_rkeys
-[1574887853.002584] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1100 was not returned to mpool ucp_rkeys
-[1574887853.002596] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1180 was not returned to mpool ucp_rkeys
-[1574887853.002597] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1200 was not returned to mpool ucp_rkeys
-[1574887853.002599] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1280 was not returned to mpool ucp_rkeys
-[1574887853.002601] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1300 was not returned to mpool ucp_rkeys
-[1574887853.002602] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1380 was not returned to mpool ucp_rkeys
-[1574887853.002604] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1400 was not returned to mpool ucp_rkeys
-[1574887853.002606] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1480 was not returned to mpool ucp_rkeys
-[1574887852.993768] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0b80 was not returned to mpool ucp_rkeys
-[1574887852.993772] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0c00 was not returned to mpool ucp_rkeys
-[1574887852.993774] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0c80 was not returned to mpool ucp_rkeys
-[1574887852.993776] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0d00 was not returned to mpool ucp_rkeys
-[1574887852.993778] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0d80 was not returned to mpool ucp_rkeys
-[1574887852.993780] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0e00 was not returned to mpool ucp_rkeys
-[1574887852.993782] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0e80 was not returned to mpool ucp_rkeys
-[1574887852.993783] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0f00 was not returned to mpool ucp_rkeys
-[1574887853.002607] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1500 was not returned to mpool ucp_rkeys
-[1574887853.002609] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1580 was not returned to mpool ucp_rkeys
-[1574887853.002611] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1600 was not returned to mpool ucp_rkeys
-[1574887853.002612] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1680 was not returned to mpool ucp_rkeys
-[1574887853.002614] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1700 was not returned to mpool ucp_rkeys
-[1574887853.002616] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1780 was not returned to mpool ucp_rkeys
-[1574887853.002617] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1800 was not returned to mpool ucp_rkeys
-[1574887853.002619] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1880 was not returned to mpool ucp_rkeys
-[1574887852.993785] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa0f80 was not returned to mpool ucp_rkeys
-[1574887852.993787] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1000 was not returned to mpool ucp_rkeys
-[1574887852.993789] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1080 was not returned to mpool ucp_rkeys
-[1574887852.993791] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1100 was not returned to mpool ucp_rkeys
-[1574887852.993793] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1180 was not returned to mpool ucp_rkeys
-[1574887852.993795] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1200 was not returned to mpool ucp_rkeys
-[1574887852.993797] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1280 was not returned to mpool ucp_rkeys
-[1574887852.993799] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1300 was not returned to mpool ucp_rkeys
-[1574887853.002621] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1900 was not returned to mpool ucp_rkeys
-[1574887853.002622] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1980 was not returned to mpool ucp_rkeys
-[1574887853.002624] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1a00 was not returned to mpool ucp_rkeys
-[1574887853.002626] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1a80 was not returned to mpool ucp_rkeys
-[1574887853.002627] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1b00 was not returned to mpool ucp_rkeys
-[1574887853.002629] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1b80 was not returned to mpool ucp_rkeys
-[1574887853.002631] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1c00 was not returned to mpool ucp_rkeys
-[1574887853.002632] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1c80 was not returned to mpool ucp_rkeys
-[1574887852.993800] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1380 was not returned to mpool ucp_rkeys
-[1574887852.993802] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1400 was not returned to mpool ucp_rkeys
-[1574887852.993804] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1480 was not returned to mpool ucp_rkeys
-[1574887852.993806] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1500 was not returned to mpool ucp_rkeys
-[1574887852.993808] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1580 was not returned to mpool ucp_rkeys
-[1574887852.993810] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1600 was not returned to mpool ucp_rkeys
-[1574887852.993811] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1680 was not returned to mpool ucp_rkeys
-[1574887852.993813] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1700 was not returned to mpool ucp_rkeys
-[1574887853.002634] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1d00 was not returned to mpool ucp_rkeys
-[1574887853.002636] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1d80 was not returned to mpool ucp_rkeys
-[1574887853.002637] [qnode5039:27536:0]          mpool.c:38   UCX  WARN  object 0x19d1e00 was not returned to mpool ucp_rkeys
-[1574887852.993815] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1780 was not returned to mpool ucp_rkeys
-[1574887852.993817] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1800 was not returned to mpool ucp_rkeys
-[1574887852.993819] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1880 was not returned to mpool ucp_rkeys
-[1574887852.993821] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1900 was not returned to mpool ucp_rkeys
-[1574887852.993822] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1980 was not returned to mpool ucp_rkeys
-[1574887852.993824] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1a00 was not returned to mpool ucp_rkeys
-[1574887852.993827] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1a80 was not returned to mpool ucp_rkeys
-[1574887852.993829] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1b00 was not returned to mpool ucp_rkeys
-[1574887852.993831] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1b80 was not returned to mpool ucp_rkeys
-[1574887852.993833] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1c00 was not returned to mpool ucp_rkeys
-[1574887852.993834] [qnode5038:14027:0]          mpool.c:38   UCX  WARN  object 0xaa1c80 was not returned to mpool ucp_rkeys
