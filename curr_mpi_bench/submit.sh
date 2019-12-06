@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --account=p30157
-#SBATCH --partition=short
+#SBATCH --partition=normal
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=01:30:00
+#SBATCH --time=12:00:00
 #SBATCH --job-name=test_mpi
 #SBATCH --output=outlog
 #SBATCH --error=errlog
@@ -17,30 +17,48 @@ OSU_VERSION=5.6.2
 rm -rf osu-micro-benchmarks-5.6.2/
 tar -xf osu-micro-benchmarks-5.6.2.tar.gz
 
-for i in mpi/mpich-3.3-gcc-6.4.0 \
-	mpi/openmpi-1.10.5-gcc-6.4.0 mpi/openmpi-1.10.5-intel2013.2 mpi/openmpi-3.1.3-gcc-6.4.0 \
-	mpi/mvapich2-gcc-4.8.3
-	
+while read -r mpimodule;
 do
-	k=$(echo $i | cut -c5-)
-	cd ${BASE_DIR}/osu-micro-benchmarks-${OSU_VERSION}/
-	mkdir build.$k && cd build.$k
-	module load $i
+    echo "$mpiver" </dev/null
 
-	echo $pwd
-	./../configure CC=mpicc --prefix=$(pwd)
+    mpiver=$(echo "$mpimodule" </dev/null | cut -c5-)
+    cd ${BASE_DIR}/osu-micro-benchmarks-${OSU_VERSION}/
+    mkdir build.$mpiver && cd build.$mpiver
+    module load "$mpimodule" </dev/null
 
-	cd mpi/one-sided/
-	make && make install
+    mpiintelcheck=$(echo "$mpiver" </dev/null | cut -c1-5)
 
-	export OMP_NUM_THREADS=1
-	export MV2_ENABLE_AFFINITY=0
+    if [ "$mpiintelcheck" = "intel" ]; then
+	./../configure CC=mpiicc --prefix=$(pwd) &> "$mpiver.configlog"
+    else
+	./../configure CC=mpicc  --prefix=$(pwd) &> "$mpiver.configlog"
+    fi
 
-	for j in {1..20}
-	do
-		mpirun -np 2 ./osu_get_bw &> bw_$j
-		mpirun -np 2 ./osu_get_latency &> lat_$j
-	done
+    cd mpi/one-sided/
 
-done
+
+    module list     &> "$mpiver.env"
+
+    if [ "$mpiintelcheck" = "intel" ]; then
+	mpiicc --version >> "$mpiver.env"
+    else
+	mpicc  --version >> "$mpiver.env"
+    fi
+
+    ld --version    >> "$mpiver.env" 
+
+    mv ../../"$mpiver.configlog" .
+    make          &> "$mpiver.makelog" 
+    make install  &> "$mpiver.installlog" 
+
+    export OMP_NUM_THREADS=1
+    export MV2_ENABLE_AFFINITY=0
+
+    for run in {1..20}
+    do
+        mpirun -np 2 ./osu_get_bw </dev/null &> bw_$run
+        mpirun -np 2 ./osu_get_latency </dev/null &> lat_$run
+    done
+
+done < curr_mpi_list_sorted
 

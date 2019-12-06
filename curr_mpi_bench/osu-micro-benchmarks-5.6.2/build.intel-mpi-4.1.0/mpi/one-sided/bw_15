@@ -1,0 +1,41 @@
+----------------------------------------
+srun job start: Thu Dec  5 14:18:09 CST 2019
+Job ID: 155
+Username: sas4990
+Queue: normal
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /opt/intel/impi/4.1.0/intel64/bin:/opt/intel/composer_xe_2013.2.146/bin/intel64:/opt/intel/composer_xe_2013.2.146/debugger/gui/intel64:/software/java/jdk1.8.0_25/bin:/software/java/jdk1.8.0_25/jre/bin:/software/anaconda2/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+# OSU MPI_Get Bandwidth Test v5.6.2
+# Window creation: MPI_Win_create
+# Synchronization: MPI_Win_lock/unlock
+# Size      Bandwidth (MB/s)
+1                       1.28
+2                       2.58
+4                       5.04
+8                      10.33
+16                     20.44
+32                     41.19
+64                     82.12
+128                   161.35
+256                   309.37
+512                   612.04
+1024                 1149.54
+2048                 2137.13
+4096                 3569.96
+8192                 5370.28
+16384                5799.49
+32768                2845.90
+65536                3904.39
+131072               4835.21
+262144               5300.27
+524288               5571.79
+1048576              5762.94
+2097152              5854.35
+4194304              5914.94

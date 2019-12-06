@@ -1,0 +1,41 @@
+----------------------------------------
+srun job start: Thu Dec  5 17:29:21 CST 2019
+Job ID: 155
+Username: sas4990
+Queue: normal
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /software/mpi/mpich/3.0.4-gcc-6.4.0/bin:/hpc/software/gcc/6.4.0/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+# OSU MPI_Get latency Test v5.6.2
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Size          Latency (us)
+1                      85.37
+2                      84.66
+4                      85.78
+8                      85.89
+16                     86.02
+32                     87.55
+64                     87.72
+128                    89.19
+256                    92.13
+512                    97.63
+1024                  111.35
+2048                  128.48
+4096                  150.11
+8192                  175.56
+16384                 248.14
+32768                 390.24
+65536                 667.52
+131072               1224.64
+262144               2345.46
+524288               4576.22
+1048576              9038.96
+2097152             17941.54
+4194304             35799.95

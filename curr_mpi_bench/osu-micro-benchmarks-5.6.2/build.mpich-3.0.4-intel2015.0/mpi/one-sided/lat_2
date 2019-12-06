@@ -1,0 +1,41 @@
+----------------------------------------
+srun job start: Thu Dec  5 18:42:01 CST 2019
+Job ID: 155
+Username: sas4990
+Queue: normal
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /software/mpi/mpich-3.0.4-intel2015.0-RH7/bin:/opt/intel/composer_xe_2015.0.090/bin/intel64:/opt/intel/composer_xe_2015.0.090/debugger/gdb/intel64_mic/bin:/software/java/jdk1.8.0_25/bin:/software/java/jdk1.8.0_25/jre/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+# OSU MPI_Get latency Test v5.6.2
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Size          Latency (us)
+1                      85.03
+2                      84.97
+4                      84.91
+8                      84.95
+16                     85.12
+32                     86.56
+64                     86.78
+128                    88.04
+256                    91.13
+512                    96.56
+1024                  111.21
+2048                  128.44
+4096                  148.55
+8192                  174.75
+16384                 247.89
+32768                 388.79
+65536                 666.55
+131072               1222.73
+262144               2343.20
+524288               4574.47
+1048576              9035.12
+2097152             17940.23
+4194304             35798.45

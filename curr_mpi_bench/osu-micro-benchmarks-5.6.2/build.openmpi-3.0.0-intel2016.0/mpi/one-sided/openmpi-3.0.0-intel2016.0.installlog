@@ -1,0 +1,14 @@
+make[1]: Entering directory `/home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/mpi/one-sided'
+make[1]: Nothing to be done for `install-exec-am'.
+ /usr/bin/mkdir -p '/home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c osu_acc_latency osu_get_bw osu_get_latency osu_put_bibw osu_put_bw osu_put_latency osu_get_acc_latency osu_fop_latency osu_cas_latency '/home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided'
+libtool: install: /usr/bin/install -c osu_acc_latency /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_acc_latency
+libtool: install: /usr/bin/install -c osu_get_bw /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_bw
+libtool: install: /usr/bin/install -c osu_get_latency /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency
+libtool: install: /usr/bin/install -c osu_put_bibw /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_put_bibw
+libtool: install: /usr/bin/install -c osu_put_bw /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_put_bw
+libtool: install: /usr/bin/install -c osu_put_latency /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_put_latency
+libtool: install: /usr/bin/install -c osu_get_acc_latency /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_acc_latency
+libtool: install: /usr/bin/install -c osu_fop_latency /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_fop_latency
+libtool: install: /usr/bin/install -c osu_cas_latency /home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/libexec/osu-micro-benchmarks/mpi/one-sided/osu_cas_latency
+make[1]: Leaving directory `/home/sas4990/projects/curr_mpi_bench/osu-micro-benchmarks-5.6.2/build.openmpi-3.0.0-intel2016.0/mpi/one-sided'

@@ -1,0 +1,1 @@
+/opt/intel/impi/4.0.3/intel64/bin/mpirun: line 410:  3930 Floating point exception(core dumped) mpiexec.hydra $rem_shell_opt $rest_args 0<&0

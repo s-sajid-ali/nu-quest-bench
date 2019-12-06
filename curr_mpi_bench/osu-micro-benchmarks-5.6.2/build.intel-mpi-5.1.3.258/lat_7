@@ -1,0 +1,22 @@
+srun: Job 155 step creation temporarily disabled, retrying
+srun: Step created for job 155
+----------------------------------------
+srun job start: Thu Dec  5 14:18:51 CST 2019
+Job ID: 155
+Username: sas4990
+Queue: normal
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /opt/intel/composer_xe_2016/compilers_and_libraries_2016.3.223/linux/mpi/intel64/bin:/opt/intel/composer_xe_2016/compilers_and_libraries_2016.4.258/linux/bin/intel64:/opt/intel/composer_xe_2016/debugger_2016/gdb/intel64_mic/bin:/software/java/jdk1.8.0_25/bin:/software/java/jdk1.8.0_25/jre/bin:/software/anaconda2/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+[proxy:0:0@qnode5038] HYDU_create_process (../../utils/launch/launch.c:622): execvp error on file ./osu_get_latency (No such file or directory)
+[proxy:0:1@qnode5039] HYDU_create_process (../../utils/launch/launch.c:622): execvp error on file ./osu_get_latency (No such file or directory)
+[mpiexec@qnode5038] control_cb (../../pm/pmiserv/pmiserv_cb.c:840): assert (!closed) failed
+[mpiexec@qnode5038] HYDT_dmxu_poll_wait_for_event (../../tools/demux/demux_poll.c:76): callback returned error status
+[mpiexec@qnode5038] HYD_pmci_wait_for_completion (../../pm/pmiserv/pmiserv_pmci.c:500): error waiting for event
+[mpiexec@qnode5038] main (../../ui/mpich/mpiexec.c:1130): process manager error waiting for completion
