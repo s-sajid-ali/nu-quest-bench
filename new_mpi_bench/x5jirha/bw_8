@@ -1,6 +1,6 @@
 ----------------------------------------
-srun job start: Wed Nov 27 15:52:10 CST 2019
-Job ID: 134
+srun job start: Thu Dec 12 09:41:01 CST 2019
+Job ID: 168
 Username: sas4990
 Queue: short
 Account: p30157
@@ -9,33 +9,33 @@ The following variables are not
 guaranteed to be the same in
 prologue and the job run script
 ----------------------------------------
-PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/hwloc-1.11.11-sq7gszufzusfgdeipuk4keoqptxhw3zw/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libxml2-2.9.9-ihwbyd2af5vfc4kkeh2wiuishhz3m2sm/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/xz-5.2.4-md6kvhsq7xjo463po7qsl2j6z4wxg6to/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libiconv-1.16-islxuaobfogpcxl7kglyq47x2sggxx3t/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-develop-t3rxhhiml6tey5j54aa3h3ftg3veh75h/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/osu-micro-benchmarks-5.6.1-x5jirhafnwmkossdva7fsy27tb6f2k34/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/hwloc-1.11.11-sq7gszufzusfgdeipuk4keoqptxhw3zw/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/numactl-2.0.12-u7csup4unjc7hozragv6nf6t2pytiull/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libxml2-2.9.9-ihwbyd2af5vfc4kkeh2wiuishhz3m2sm/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/xz-5.2.4-md6kvhsq7xjo463po7qsl2j6z4wxg6to/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/libiconv-1.16-islxuaobfogpcxl7kglyq47x2sggxx3t/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
 WORKDIR is: /home/sas4990
 ----------------------------------------
 # OSU MPI_Get Bandwidth Test v5.6.1
 # Window creation: MPI_Win_allocate
 # Synchronization: MPI_Win_flush
 # Size      Bandwidth (MB/s)
-1                       0.66
-2                       1.37
-4                       2.77
-8                       5.72
-16                     11.56
-32                     23.33
-64                     46.95
-128                    90.24
-256                   176.12
-512                   340.34
-1024                  634.24
-2048                 1118.55
-4096                 1792.56
-8192                 2368.16
-16384                2725.70
-32768                2890.23
-65536                2973.10
-131072               2870.60
-262144               2884.15
-524288               2878.39
-1048576              2928.35
-2097152              2877.77
-4194304              2814.58
+1                       0.69
+2                       1.46
+4                       2.99
+8                       6.02
+16                     12.38
+32                     24.58
+64                     50.17
+128                   100.37
+256                   195.33
+512                   377.25
+1024                  721.52
+2048                 1233.97
+4096                 1990.16
+8192                 2666.78
+16384                2893.42
+32768                3173.66
+65536                3292.49
+131072               3180.33
+262144               3219.86
+524288               3135.25
+1048576              3210.01
+2097152              3169.78
+4194304              3119.92

@@ -1,36 +1,53 @@
+==> Warning: Modules have been omitted for one or more specs, either because they were blacklisted or because the spec is associated with a package that is installed upstream and that installation has not generated a module file. Rerun this command with debug output enabled for more details.
+==> Warning: Modules have been omitted for one or more specs, either because they were blacklisted or because the spec is associated with a package that is installed upstream and that installation has not generated a module file. Rerun this command with debug output enabled for more details.
 
 The following have been reloaded with a version change:
-  1) libiconv/1.16-gcc-8.3.0-46i2h6v => libiconv/1.16-gcc-6.4.0-islxuao
-  2) libpciaccess/0.13.5-gcc-8.3.0-eb74crw => libpciaccess/0.13.5-gcc-6.4.0-falxk7k
-  3) libxml2/2.9.9-gcc-8.3.0-t6h6tgg => libxml2/2.9.9-gcc-6.4.0-ihwbyd2
-  4) numactl/2.0.12-gcc-8.3.0-nj4eng5 => numactl/2.0.12-gcc-6.4.0-u7csup4
-  5) osu-micro-benchmarks/5.6.1-gcc-8.3.0-ydnn6yi => osu-micro-benchmarks/5.6.1-gcc-6.4.0-x5jirha
-  6) slurm/19-05-3-2-gcc-8.3.0-77kx7yy => slurm/19-05-3-2-gcc-6.4.0-sv72ytu
-  7) xz/5.2.4-gcc-8.3.0-dnbfmo2 => xz/5.2.4-gcc-6.4.0-md6kvhs
-  8) zlib/1.2.11-gcc-8.3.0-xaq5v23 => zlib/1.2.11-gcc-6.4.0-vnehb7k
+  1) hwloc/1.11.11-gcc-8.3.0-ou6zb47 => hwloc/1.11.11-gcc-6.4.0-sq7gszu
+  2) libiconv/1.16-gcc-8.3.0-46i2h6v => libiconv/1.16-gcc-6.4.0-islxuao
+  3) libpciaccess/0.13.5-gcc-8.3.0-eb74crw => libpciaccess/0.13.5-gcc-6.4.0-falxk7k
+  4) libxml2/2.9.9-gcc-8.3.0-t6h6tgg => libxml2/2.9.9-gcc-6.4.0-ihwbyd2
+  5) numactl/2.0.12-gcc-8.3.0-nj4eng5 => numactl/2.0.12-gcc-6.4.0-u7csup4
+  6) openmpi/4.0.2-gcc-8.3.0-tuoajk2 => openmpi/1.10.5-gcc-6.4.0-ig65ntt
+  7) osu-micro-benchmarks/5.6.1-gcc-8.3.0-openmpi-dh5i74e => osu-micro-benchmarks/5.6.1-gcc-6.4.0-openmpi-x5jirha
+  8) xz/5.2.4-gcc-8.3.0-dnbfmo2 => xz/5.2.4-gcc-6.4.0-md6kvhs
+  9) zlib/1.2.11-gcc-8.3.0-xaq5v23 => zlib/1.2.11-gcc-6.4.0-vnehb7k
 
+==> Warning: Modules have been omitted for one or more specs, either because they were blacklisted or because the spec is associated with a package that is installed upstream and that installation has not generated a module file. Rerun this command with debug output enabled for more details.
 
 The following have been reloaded with a version change:
   1) libiconv/1.16-gcc-6.4.0-islxuao => libiconv/1.16-gcc-8.3.0-46i2h6v
   2) libpciaccess/0.13.5-gcc-6.4.0-falxk7k => libpciaccess/0.13.5-gcc-8.3.0-eb74crw
   3) libxml2/2.9.9-gcc-6.4.0-ihwbyd2 => libxml2/2.9.9-gcc-8.3.0-t6h6tgg
-  4) mpich/develop-gcc-8.3.0-t3rxhhi => mpich/3.3.2-gcc-8.3.0-btlyk64
-  5) osu-micro-benchmarks/5.6.1-gcc-6.4.0-x5jirha => osu-micro-benchmarks/5.6.1-gcc-8.3.0-ek3oorz
-  6) slurm/19-05-3-2-gcc-6.4.0-sv72ytu => slurm/19-05-3-2-gcc-8.3.0-77kx7yy
-  7) xz/5.2.4-gcc-6.4.0-md6kvhs => xz/5.2.4-gcc-8.3.0-dnbfmo2
-  8) zlib/1.2.11-gcc-6.4.0-vnehb7k => zlib/1.2.11-gcc-8.3.0-xaq5v23
+  4) numactl/2.0.12-gcc-6.4.0-u7csup4 => numactl/2.0.12-gcc-8.3.0-nj4eng5
+  5) osu-micro-benchmarks/5.6.1-gcc-6.4.0-openmpi-x5jirha => osu-micro-benchmarks/5.6.1-gcc-8.3.0-mpich-develop-ydnn6yi
+  6) xz/5.2.4-gcc-6.4.0-md6kvhs => xz/5.2.4-gcc-8.3.0-dnbfmo2
+  7) zlib/1.2.11-gcc-6.4.0-vnehb7k => zlib/1.2.11-gcc-8.3.0-xaq5v23
 
+==> Warning: Modules have been omitted for one or more specs, either because they were blacklisted or because the spec is associated with a package that is installed upstream and that installation has not generated a module file. Rerun this command with debug output enabled for more details.
 
 The following have been reloaded with a version change:
-  1) osu-micro-benchmarks/5.6.1-gcc-8.3.0-ek3oorz => osu-micro-benchmarks/5.6.1-gcc-8.3.0-7x34z32
+  1) mpich/develop-gcc-8.3.0-t3rxhhi => mpich/3.3.2-gcc-8.3.0-z4ez4om
+  2) osu-micro-benchmarks/5.6.1-gcc-8.3.0-mpich-develop-ydnn6yi => osu-micro-benchmarks/5.6.1-gcc-8.3.0-mpich-3.3.2-7q37r7h
 
+==> Warning: Modules have been omitted for one or more specs, either because they were blacklisted or because the spec is associated with a package that is installed upstream and that installation has not generated a module file. Rerun this command with debug output enabled for more details.
 
 The following have been reloaded with a version change:
   1) hwloc/1.11.11-gcc-6.4.0-sq7gszu => hwloc/1.11.11-gcc-8.3.0-ou6zb47
-  2) numactl/2.0.12-gcc-6.4.0-u7csup4 => numactl/2.0.12-gcc-8.3.0-nj4eng5
-  3) openmpi/1.10.5-gcc-6.4.0-ig65ntt => openmpi/4.0.2-gcc-8.3.0-3oe3z62
-  4) osu-micro-benchmarks/5.6.1-gcc-8.3.0-7x34z32 => osu-micro-benchmarks/5.6.1-gcc-8.3.0-u5qxmse
+  2) openmpi/1.10.5-gcc-6.4.0-ig65ntt => openmpi/4.0.2-gcc-8.3.0-glccidt
+  3) osu-micro-benchmarks/5.6.1-gcc-8.3.0-mpich-3.3.2-7q37r7h => osu-micro-benchmarks/5.6.1-gcc-8.3.0-openmpi-2momcvv
 
+==> Warning: Modules have been omitted for one or more specs, either because they were blacklisted or because the spec is associated with a package that is installed upstream and that installation has not generated a module file. Rerun this command with debug output enabled for more details.
+
+The following have been reloaded with a version change:
+  1) osu-micro-benchmarks/5.6.1-gcc-8.3.0-openmpi-2momcvv => osu-micro-benchmarks/5.6.1-gcc-8.3.0-mvapich2-7x34z32
+
+==> Warning: Modules have been omitted for one or more specs, either because they were blacklisted or because the spec is associated with a package that is installed upstream and that installation has not generated a module file. Rerun this command with debug output enabled for more details.
+
+The following have been reloaded with a version change:
+  1) mpich/3.3.2-gcc-8.3.0-z4ez4om => mpich/develop-gcc-8.3.0-osbwqir
+  2) osu-micro-benchmarks/5.6.1-gcc-8.3.0-mvapich2-7x34z32 => osu-micro-benchmarks/5.6.1-gcc-8.3.0-mpich-develop-dr24ede
+
+==> Warning: Modules have been omitted for one or more specs, either because they were blacklisted or because the spec is associated with a package that is installed upstream and that installation has not generated a module file. Rerun this command with debug output enabled for more details.
 
 The following have been reloaded with a version change:
   1) hwloc/1.11.11-gcc-8.3.0-ou6zb47 => hwloc/1.11.11-intel-13.1-2ckkrcq
@@ -38,9 +55,8 @@ The following have been reloaded with a version change:
   3) libpciaccess/0.13.5-gcc-8.3.0-eb74crw => libpciaccess/0.13.5-intel-13.1-goikvev
   4) libxml2/2.9.9-gcc-8.3.0-t6h6tgg => libxml2/2.9.9-intel-13.1-3tas4yx
   5) numactl/2.0.12-gcc-8.3.0-nj4eng5 => numactl/2.0.12-intel-13.1-rg77ini
-  6) openmpi/4.0.2-gcc-8.3.0-3oe3z62 => openmpi/1.10.5-intel-13.1-232hhig
-  7) osu-micro-benchmarks/5.6.1-gcc-8.3.0-u5qxmse => osu-micro-benchmarks/5.6.1-intel-13.1-jozbe3t
-  8) slurm/19-05-3-2-gcc-8.3.0-77kx7yy => slurm/19-05-3-2-intel-13.1-5trrrvx
-  9) xz/5.2.4-gcc-8.3.0-dnbfmo2 => xz/5.2.4-intel-13.1-ohbn4pw
- 10) zlib/1.2.11-gcc-8.3.0-xaq5v23 => zlib/1.2.11-intel-13.1-wsnnmqz
+  6) openmpi/4.0.2-gcc-8.3.0-glccidt => openmpi/1.10.5-intel-13.1-232hhig
+  7) osu-micro-benchmarks/5.6.1-gcc-8.3.0-mpich-develop-dr24ede => osu-micro-benchmarks/5.6.1-intel-13.1-openmpi-jozbe3t
+  8) xz/5.2.4-gcc-8.3.0-dnbfmo2 => xz/5.2.4-intel-13.1-ohbn4pw
+  9) zlib/1.2.11-gcc-8.3.0-xaq5v23 => zlib/1.2.11-intel-13.1-wsnnmqz
 

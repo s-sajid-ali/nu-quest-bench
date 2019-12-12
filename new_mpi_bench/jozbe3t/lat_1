@@ -1,6 +1,6 @@
 ----------------------------------------
-srun job start: Wed Nov 27 15:57:18 CST 2019
-Job ID: 134
+srun job start: Thu Dec 12 09:50:04 CST 2019
+Job ID: 168
 Username: sas4990
 Queue: short
 Account: p30157
@@ -9,44 +9,44 @@ The following variables are not
 guaranteed to be the same in
 prologue and the job run script
 ----------------------------------------
-PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/numactl-2.0.12-rg77iniocxeysrewdftorvgpbxfrduj4/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libxml2-2.9.9-3tas4yxu2ua2n2norai7okueg2znxi2g/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/xz-5.2.4-ohbn4pw45r3cejbct2sdrt7ahrk4lb26/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libiconv-1.16-7p4i23kcv5e4lik2zflvlcdsbpuvss5s/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mvapich2-2.3.2-zxmhzdpidahuoqxvxesrpma5r2a4yjfv/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-btlyk64v7blomfokfsyluv7am4lz2j3c/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/numactl-2.0.12-rg77iniocxeysrewdftorvgpbxfrduj4/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libxml2-2.9.9-3tas4yxu2ua2n2norai7okueg2znxi2g/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/xz-5.2.4-ohbn4pw45r3cejbct2sdrt7ahrk4lb26/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libiconv-1.16-7p4i23kcv5e4lik2zflvlcdsbpuvss5s/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-develop-osbwqir2o7kobsitttwabpuampk55ji6/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libfabric-1.9.0-p73dtmv3wnb5btapucfib25gq2mr7rbc/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mvapich2-2.3.2-zxmhzdpidahuoqxvxesrpma5r2a4yjfv/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
 WORKDIR is: /home/sas4990
 ----------------------------------------
-[qnode5038:14305] *** Process received signal ***
-[qnode5038:14305] Signal: Segmentation fault (11)
-[qnode5038:14305] Signal code: Address not mapped (1)
-[qnode5038:14305] Failing at address: 0x20
+[qnode5038:11519] *** Process received signal ***
+[qnode5038:11519] Signal: Segmentation fault (11)
+[qnode5038:11519] Signal code: Address not mapped (1)
+[qnode5038:11519] Failing at address: 0x20
+[qnode5038:11519] [ 0] /lib64/libpthread.so.0(+0xf370)[0x2b5e7ad06370]
+[qnode5038:11519] [ 1] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libpciaccess-0.13.5-goikvevvwxzw4hzzme3nugqu4v2i33rt/lib/libpciaccess.so.0(pci_device_get_device_name+0x112)[0x2b5e7c0a6292]
+[qnode5038:11519] [ 2] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(+0x2c4aa)[0x2b5e7bc644aa]
+[qnode5038:11519] [ 3] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(+0xbf85)[0x2b5e7bc43f85]
+[qnode5038:11519] [ 4] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(hwloc_topology_load+0x103)[0x2b5e7bc433b3]
+[qnode5038:11519] [ 5] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-pal.so.13(opal_hwloc_base_get_topology+0x138)[0x2b5e7b7e2838]
+[qnode5038:11519] [ 6] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/openmpi/mca_ess_pmi.so(+0x2670)[0x2b5e7f8c1670]
+[qnode5038:11519] [ 7] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-rte.so.12(orte_init+0x17b)[0x2b5e7b4ee7fb]
+[qnode5038:11519] [ 8] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12(ompi_mpi_init+0x40c)[0x2b5e7a22003c]
+[qnode5038:11519] [ 9] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12(MPI_Init+0xeb)[0x2b5e7a2434db]
+[qnode5038:11519] [10] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency[0x4026f3]
+[qnode5038:11519] [11] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b5e7af34b35]
+[qnode5038:11519] [12] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency[0x402569]
+[qnode5038:11519] *** End of error message ***
 srun: error: qnode5038: task 0: Segmentation fault (core dumped)
-[qnode5038:14305] [ 0] /lib64/libpthread.so.0(+0xf370)[0x2b8a945d0370]
-[qnode5038:14305] [ 1] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libpciaccess-0.13.5-goikvevvwxzw4hzzme3nugqu4v2i33rt/lib/libpciaccess.so.0(pci_device_get_device_name+0x112)[0x2b8a95970292]
-[qnode5038:14305] [ 2] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(+0x2c4aa)[0x2b8a9552e4aa]
-[qnode5038:14305] [ 3] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(+0xbf85)[0x2b8a9550df85]
-[qnode5038:14305] [ 4] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(hwloc_topology_load+0x103)[0x2b8a9550d3b3]
-[qnode5038:14305] [ 5] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-pal.so.13(opal_hwloc_base_get_topology+0x138)[0x2b8a950ac838]
-[qnode5038:14305] [ 6] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/openmpi/mca_ess_pmi.so(+0x2670)[0x2b8a9918b670]
-[qnode5038:14305] [ 7] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-rte.so.12(orte_init+0x17b)[0x2b8a94db87fb]
-[qnode5038:14305] [ 8] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12(ompi_mpi_init+0x40c)[0x2b8a93aea03c]
-[qnode5038:14305] [ 9] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12(MPI_Init+0xeb)[0x2b8a93b0d4db]
-[qnode5038:14305] [10] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency[0x4026f3]
-[qnode5038:14305] [11] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b8a947feb35]
-[qnode5038:14305] [12] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency[0x402569]
-[qnode5038:14305] *** End of error message ***
-[qnode5039:12537] *** Process received signal ***
-[qnode5039:12537] Signal: Segmentation fault (11)
-[qnode5039:12537] Signal code: Address not mapped (1)
-[qnode5039:12537] Failing at address: 0x20
-[qnode5039:12537] [ 0] /lib64/libpthread.so.0(+0xf370)[0x2accb1df2370]
-[qnode5039:12537] [ 1] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libpciaccess-0.13.5-goikvevvwxzw4hzzme3nugqu4v2i33rt/lib/libpciaccess.so.0(pci_device_get_device_name+0x112)[0x2accb3192292]
-[qnode5039:12537] [ 2] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(+0x2c4aa)[0x2accb2d504aa]
-[qnode5039:12537] [ 3] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(+0xbf85)[0x2accb2d2ff85]
-[qnode5039:12537] [ 4] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(hwloc_topology_load+0x103)[0x2accb2d2f3b3]
-[qnode5039:12537] [ 5] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-pal.so.13(opal_hwloc_base_get_topology+0x138)[0x2accb28ce838]
-[qnode5039:12537] [ 6] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/openmpi/mca_ess_pmi.so(+0x2670)[0x2accb69ad670]
-[qnode5039:12537] [ 7] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-rte.so.12(orte_init+0x17b)[0x2accb25da7fb]
-[qnode5039:12537] [ 8] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12(ompi_mpi_init+0x40c)[0x2accb130c03c]
-[qnode5039:12537] [ 9] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12(MPI_Init+0xeb)[0x2accb132f4db]
-[qnode5039:12537] [10] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency[0x4026f3]
-[qnode5039:12537] [11] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2accb2020b35]
-[qnode5039:12537] [12] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency[0x402569]
-[qnode5039:12537] *** End of error message ***
+[qnode5039:19999] *** Process received signal ***
+[qnode5039:19999] Signal: Segmentation fault (11)
+[qnode5039:19999] Signal code: Address not mapped (1)
+[qnode5039:19999] Failing at address: 0x20
+[qnode5039:19999] [ 0] /lib64/libpthread.so.0(+0xf370)[0x2aad7d6bd370]
+[qnode5039:19999] [ 1] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/libpciaccess-0.13.5-goikvevvwxzw4hzzme3nugqu4v2i33rt/lib/libpciaccess.so.0(pci_device_get_device_name+0x112)[0x2aad7ea5d292]
+[qnode5039:19999] [ 2] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(+0x2c4aa)[0x2aad7e61b4aa]
+[qnode5039:19999] [ 3] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(+0xbf85)[0x2aad7e5faf85]
+[qnode5039:19999] [ 4] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/hwloc-1.11.11-2ckkrcqexypj7qihjzzadmxti3oktkc7/lib/libhwloc.so.5(hwloc_topology_load+0x103)[0x2aad7e5fa3b3]
+[qnode5039:19999] [ 5] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-pal.so.13(opal_hwloc_base_get_topology+0x138)[0x2aad7e199838]
+[qnode5039:19999] [ 6] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/openmpi/mca_ess_pmi.so(+0x2670)[0x2aad82278670]
+[qnode5039:19999] [ 7] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libopen-rte.so.12(orte_init+0x17b)[0x2aad7dea57fb]
+[qnode5039:19999] [ 8] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12(ompi_mpi_init+0x40c)[0x2aad7cbd703c]
+[qnode5039:19999] [ 9] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/openmpi-1.10.5-232hhigze7njpcfjn4pwwl7a4dwjjmq3/lib/libmpi.so.12(MPI_Init+0xeb)[0x2aad7cbfa4db]
+[qnode5039:19999] [10] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency[0x4026f3]
+[qnode5039:19999] [11] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2aad7d8ebb35]
+[qnode5039:19999] [12] /home/sas4990/packages/spack/opt/spack/linux-rhel7-x86_64/intel-13.1/osu-micro-benchmarks-5.6.1-jozbe3tuwv6izwjq2lbjfcolbfugx6ve/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_latency[0x402569]
+[qnode5039:19999] *** End of error message ***
 srun: error: qnode5039: task 1: Segmentation fault (core dumped)

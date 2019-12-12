@@ -1,0 +1,55 @@
+MPI benchmark and library info :
+==> 1 installed package
+-- linux-rhel7-ivybridge / gcc@8.3.0 ----------------------------
+7q37r7h osu-micro-benchmarks@5.6.1~cuda
+z4ez4om     mpich@3.3.2 device=ch4 +hydra netmod=ucx +pci pmi=pmi2 +romio+slurm~verbs+wrapperrpath
+eb74crw         libpciaccess@0.13.5
+t6h6tgg         libxml2@2.9.9~python
+46i2h6v             libiconv@1.16
+dnbfmo2             xz@5.2.4
+xaq5v23             zlib@1.2.11+optimize+pic+shared
+77kx7yy         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
+zns5osd         ucx@1.6.0
+nj4eng5             numactl@2.0.12
+n4nc6ca             rdma-core@20 build_type=RelWithDebInfo
+mo7nt5v                 libnl@3.3.0
+
+
+
+
+mpirun location :
+/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-z4ez4omkbrmkiitiqdaqvoe6fsvaty3w/bin/mpirun
+
+
+
+Linking info for benchmark executable :
+	linux-vdso.so.1 =>  (0x00007ffd6dfd8000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002ae2a7bc5000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002ae2a7dcd000)
+	libmpicxx.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-z4ez4omkbrmkiitiqdaqvoe6fsvaty3w/lib/libmpicxx.so.12 (0x00002ae2a7fe9000)
+	libmpi.so.12 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-z4ez4omkbrmkiitiqdaqvoe6fsvaty3w/lib/libmpi.so.12 (0x00002ae2a820a000)
+	libstdc++.so.6 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libstdc++.so.6 (0x00002ae2a875a000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002ae2a8ade000)
+	libgcc_s.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libgcc_s.so.1 (0x00002ae2a8de0000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002ae2a8ff8000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002ae2a79a3000)
+	libudev.so.1 => /lib64/libudev.so.1 (0x00002ae2a79db000)
+	libpciaccess.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libpciaccess-0.13.5-eb74crwpcvnxuxfjhjlul4jrrxiosavs/lib/libpciaccess.so.0 (0x00002ae2a93b9000)
+	libOpenCL.so.1 => /lib64/libOpenCL.so.1 (0x00002ae2a95c2000)
+	libxml2.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/lib/libxml2.so.2 (0x00002ae2a97e0000)
+	libz.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/zlib-1.2.11-xaq5v236gaofzukfoe2oaklti7fpzzfk/lib/libz.so.1 (0x00002ae2a9b43000)
+	liblzma.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/lib/liblzma.so.5 (0x00002ae2a9d5a000)
+	libiconv.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/lib/libiconv.so.2 (0x00002ae2a9f80000)
+	libucp.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/lib/libucp.so.0 (0x00002ae2aa27c000)
+	libuct.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/lib/libuct.so.0 (0x00002ae2aa4f1000)
+	libucs.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/lib/libucs.so.0 (0x00002ae2aa715000)
+	libnuma.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/numactl-2.0.12-nj4eng56cvlo4j7xmhmjornipwgbhfco/lib/libnuma.so.1 (0x00002ae2aaa78000)
+	libucm.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/lib/libucm.so.0 (0x00002ae2aac83000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002ae2aae9b000)
+	libgfortran.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libgfortran.so.5 (0x00002ae2ab09f000)
+	libquadmath.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libquadmath.so.0 (0x00002ae2ab50e000)
+	libcap.so.2 => /lib64/libcap.so.2 (0x00002ae2ab74e000)
+	libdw.so.1 => /lib64/libdw.so.1 (0x00002ae2ab953000)
+	libattr.so.1 => /lib64/libattr.so.1 (0x00002ae2abb9b000)
+	libelf.so.1 => /lib64/libelf.so.1 (0x00002ae2abda0000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00002ae2abfb8000)

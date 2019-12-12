@@ -1,0 +1,57 @@
+MPI benchmark and library info :
+==> 1 installed package
+-- linux-rhel7-ivybridge / gcc@8.3.0 ----------------------------
+dh5i74e osu-micro-benchmarks@5.6.1~cuda
+tuoajk2     openmpi@4.0.2~cuda+cxx_exceptions fabrics=verbs ~java~legacylaunchers~memchecker patches=073477a76bba780c67c36e959cd3ee6910743e2735c7e76850ffba6791d498e4 +pmi schedulers=slurm ~sqlite3~thread_multiple+vt
+ou6zb47         hwloc@1.11.11~cairo~cuda~gl+libxml2~nvml+pci+shared
+eb74crw             libpciaccess@0.13.5
+t6h6tgg             libxml2@2.9.9~python
+46i2h6v                 libiconv@1.16
+dnbfmo2                 xz@5.2.4
+xaq5v23                 zlib@1.2.11+optimize+pic+shared
+nj4eng5             numactl@2.0.12
+77kx7yy         slurm@19-05-3-2~gtk~hdf5~hwloc~mariadb~pmix+readline
+
+
+
+
+mpirun location :
+/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/openmpi-4.0.2-tuoajk2hbguymfsi2lzwbgy3gzfp37l7/bin/mpirun
+
+
+
+Linking info for benchmark executable :
+	linux-vdso.so.1 =>  (0x00007ffd8954b000)
+	librt.so.1 => /usr/lib64/librt.so.1 (0x00002ac9c4100000)
+	libmpi_cxx.so.40 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/openmpi-4.0.2-tuoajk2hbguymfsi2lzwbgy3gzfp37l7/lib/libmpi_cxx.so.40 (0x00002ac9c4308000)
+	libmpi.so.40 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/openmpi-4.0.2-tuoajk2hbguymfsi2lzwbgy3gzfp37l7/lib/libmpi.so.40 (0x00002ac9c4524000)
+	libstdc++.so.6 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libstdc++.so.6 (0x00002ac9c49b5000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002ac9c4d39000)
+	libgcc_s.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-4.8.5/gcc-8.3.0-32v3hldcu2eoz5rsbwbyaz3xerqnogyy/lib64/libgcc_s.so.1 (0x00002ac9c503b000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002ac9c5253000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002ac9c546f000)
+	libopen-rte.so.40 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/openmpi-4.0.2-tuoajk2hbguymfsi2lzwbgy3gzfp37l7/lib/libopen-rte.so.40 (0x00002ac9c5830000)
+	libopen-pal.so.40 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/openmpi-4.0.2-tuoajk2hbguymfsi2lzwbgy3gzfp37l7/lib/libopen-pal.so.40 (0x00002ac9c5b50000)
+	librdmacm.so.1 => /usr/lib64/librdmacm.so.1 (0x00002ac9c6057000)
+	libibverbs.so.1 => /usr/lib64/libibverbs.so.1 (0x00002ac9c6273000)
+	libpmi2.so.0 => /usr/lib64/libpmi2.so.0 (0x00002ac9c648c000)
+	libpmi.so.0 => /usr/lib64/libpmi.so.0 (0x00002ac9c66a5000)
+	libutil.so.1 => /usr/lib64/libutil.so.1 (0x00002ac9c68ab000)
+	libhwloc.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/hwloc-1.11.11-ou6zb47a437mm7snjj75yvfmqcuvoayn/lib/libhwloc.so.5 (0x00002ac9c6aae000)
+	libnuma.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/numactl-2.0.12-nj4eng56cvlo4j7xmhmjornipwgbhfco/lib/libnuma.so.1 (0x00002ac9c6cef000)
+	libudev.so.1 => /usr/lib64/libudev.so.1 (0x00002ac9c3f06000)
+	libpciaccess.so.0 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libpciaccess-0.13.5-eb74crwpcvnxuxfjhjlul4jrrxiosavs/lib/libpciaccess.so.0 (0x00002ac9c6efa000)
+	libxml2.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/lib/libxml2.so.2 (0x00002ac9c7103000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002ac9c7466000)
+	libz.so.1 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/zlib-1.2.11-xaq5v236gaofzukfoe2oaklti7fpzzfk/lib/libz.so.1 (0x00002ac9c766a000)
+	liblzma.so.5 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/lib/liblzma.so.5 (0x00002ac9c7881000)
+	libiconv.so.2 => /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/lib/libiconv.so.2 (0x00002ac9c7aa7000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002ac9c3ede000)
+	libnl-route-3.so.200 => /usr/lib64/libnl-route-3.so.200 (0x00002ac9c7da3000)
+	libnl-3.so.200 => /usr/lib64/libnl-3.so.200 (0x00002ac9c8010000)
+	libslurmfull.so => /usr/lib64/slurm/libslurmfull.so (0x00002ac9c8231000)
+	libcap.so.2 => /usr/lib64/libcap.so.2 (0x00002ac9c862b000)
+	libdw.so.1 => /usr/lib64/libdw.so.1 (0x00002ac9c8830000)
+	libattr.so.1 => /usr/lib64/libattr.so.1 (0x00002ac9c8a78000)
+	libelf.so.1 => /lib64/libelf.so.1 (0x00002ac9c8c7d000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00002ac9c8e95000)

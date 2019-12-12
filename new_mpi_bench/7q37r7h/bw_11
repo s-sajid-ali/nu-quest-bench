@@ -1,0 +1,97 @@
+----------------------------------------
+srun job start: Thu Dec 12 09:44:55 CST 2019
+Job ID: 168
+Username: sas4990
+Queue: short
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-7q37r7h2uut4yggsz3g42mnwfm4qudja/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-7q37r7h2uut4yggsz3g42mnwfm4qudja/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-7q37r7h2uut4yggsz3g42mnwfm4qudja/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-7q37r7h2uut4yggsz3g42mnwfm4qudja/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-z4ez4omkbrmkiitiqdaqvoe6fsvaty3w/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/numactl-2.0.12-nj4eng56cvlo4j7xmhmjornipwgbhfco/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/openmpi-1.10.5-ig65nttc5wcmnlg63vlmfuhigcvcgg5y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-6.4.0/hwloc-1.11.11-sq7gszufzusfgdeipuk4keoqptxhw3zw/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key  in req
+# OSU MPI_Get Bandwidth Test v5.6.1
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Size      Bandwidth (MB/s)
+1                       2.41
+2                       4.88
+4                       9.76
+8                      19.49
+16                     39.20
+32                     78.25
+64                    154.98
+128                   297.02
+256                   564.94
+512                  1040.10
+1024                 1798.23
+2048                 2952.18
+4096                 5131.67
+8192                 5924.09
+16384                6204.92
+32768                6299.12
+65536                6324.48
+131072               6305.78
+262144               6348.39
+524288               6088.70
+1048576              5890.37
+2097152              5845.54
+4194304              5827.29
+[1576165498.485953] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f96fc0 was not returned to mpool ucp_rkeys
+[1576165498.485964] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97080 was not returned to mpool ucp_rkeys
+[1576165498.485967] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97140 was not returned to mpool ucp_rkeys
+[1576165498.485980] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97200 was not returned to mpool ucp_rkeys
+[1576165498.485983] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f972c0 was not returned to mpool ucp_rkeys
+[1576165498.485985] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97380 was not returned to mpool ucp_rkeys
+[1576165498.485987] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97440 was not returned to mpool ucp_rkeys
+[1576165498.485989] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97500 was not returned to mpool ucp_rkeys
+[1576165498.485991] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f975c0 was not returned to mpool ucp_rkeys
+[1576165498.485993] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97680 was not returned to mpool ucp_rkeys
+[1576165498.485994] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97740 was not returned to mpool ucp_rkeys
+[1576165498.485996] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97800 was not returned to mpool ucp_rkeys
+[1576165498.485998] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f978c0 was not returned to mpool ucp_rkeys
+[1576165498.486000] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97980 was not returned to mpool ucp_rkeys
+[1576165498.486013] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97a40 was not returned to mpool ucp_rkeys
+[1576165498.486015] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97b00 was not returned to mpool ucp_rkeys
+[1576165498.486017] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97bc0 was not returned to mpool ucp_rkeys
+[1576165498.486019] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97c80 was not returned to mpool ucp_rkeys
+[1576165498.486022] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97d40 was not returned to mpool ucp_rkeys
+[1576165498.486024] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97e00 was not returned to mpool ucp_rkeys
+[1576165498.486026] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97ec0 was not returned to mpool ucp_rkeys
+[1576165498.486028] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f97f80 was not returned to mpool ucp_rkeys
+[1576165498.486030] [qnode5038:3107 :0]          mpool.c:38   UCX  WARN  object 0x1f98040 was not returned to mpool ucp_rkeys
+[1576165498.489555] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x109ffc0 was not returned to mpool ucp_rkeys
+[1576165498.489591] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0080 was not returned to mpool ucp_rkeys
+[1576165498.489598] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0140 was not returned to mpool ucp_rkeys
+[1576165498.489603] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0200 was not returned to mpool ucp_rkeys
+[1576165498.489608] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a02c0 was not returned to mpool ucp_rkeys
+[1576165498.489613] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0380 was not returned to mpool ucp_rkeys
+[1576165498.489617] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0440 was not returned to mpool ucp_rkeys
+[1576165498.489622] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0500 was not returned to mpool ucp_rkeys
+[1576165498.489626] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a05c0 was not returned to mpool ucp_rkeys
+[1576165498.489630] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0680 was not returned to mpool ucp_rkeys
+[1576165498.489635] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0740 was not returned to mpool ucp_rkeys
+[1576165498.489639] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0800 was not returned to mpool ucp_rkeys
+[1576165498.489644] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a08c0 was not returned to mpool ucp_rkeys
+[1576165498.489660] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0980 was not returned to mpool ucp_rkeys
+[1576165498.489665] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0a40 was not returned to mpool ucp_rkeys
+[1576165498.489669] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0b00 was not returned to mpool ucp_rkeys
+[1576165498.489674] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0bc0 was not returned to mpool ucp_rkeys
+[1576165498.489678] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0c80 was not returned to mpool ucp_rkeys
+[1576165498.489682] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0d40 was not returned to mpool ucp_rkeys
+[1576165498.489687] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0e00 was not returned to mpool ucp_rkeys
+[1576165498.489691] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0ec0 was not returned to mpool ucp_rkeys
+[1576165498.489695] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a0f80 was not returned to mpool ucp_rkeys
+[1576165498.489700] [qnode5039:16325:0]          mpool.c:38   UCX  WARN  object 0x10a1040 was not returned to mpool ucp_rkeys

@@ -13,7 +13,7 @@
 source /home/sas4990/packages/spack/share/spack/setup-env.sh
 module purge all 
 
-for i in ydnn6yi x5jirha ek3oorz 7x34z32 u5qxmse jozbe3t
+for i in dh5i74e x5jirha ydnn6yi 7q37r7h 2momcvv 7x34z32 dr24ede jozbe3t
 do
 	mkdir $i
 	cd $i/
@@ -27,12 +27,24 @@ do
 	echo -e "\n\n" >> mpi_config
 	echo "Linking info for benchmark executable :" >> mpi_config
 	ldd $(spack location -i /$i)/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_bw >> mpi_config
+	
+	if  spack find -ldv /$i | grep fabrics\=verbs >> /dev/null ;
+	then 	
+		export OMPI_MCA_btl_openib_allow_ib=1
+		export OMPI_MCA_btl_openib_if_include="mlx4_0:1"		
+		for j in {1..20}
+		do
+			srun --mpi=pmi2 osu_get_bw &> bw_$j
+			srun --mpi=pmi2 osu_get_latency &> lat_$j
+		done
+	else
+		for j in {1..20}
+		do
+			srun --mpi=pmi2 osu_get_bw &> bw_$j
+			srun --mpi=pmi2 osu_get_latency &> lat_$j
+		done
+	fi
 
-	for j in {1..20}
-	do
-		srun --mpi=pmi2 osu_get_bw &> bw_$j
-		srun --mpi=pmi2 osu_get_latency &> lat_$j
-	done
 	cd ../
 done
 
