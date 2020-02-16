@@ -1,3 +1,3 @@
-# nu-quest-mpi
+# nu-quest-bench
 
-Repo containing data from testing mpi installations with slurm integration on NU-Quest cluster.
+Repo containing data from benchmarks for various software installations on NU-Quest cluster.
