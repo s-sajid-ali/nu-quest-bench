@@ -1,0 +1,28 @@
+/var/spool/slurmd/job00220/slurm_script: line 42: NAMD/2.12.modulefile: No such file or directory
+
+The following have been reloaded with a version change:
+  1) NAMD/2.12 => NAMD/2.13
+
+/var/spool/slurmd/job00220/slurm_script: line 42: NAMD/2.13.modulefile: No such file or directory
+
+The following have been reloaded with a version change:
+  1) NAMD/2.13 => NAMD/2.13-smp
+
+/var/spool/slurmd/job00220/slurm_script: line 42: NAMD/2.13-smp.modulefile: No such file or directory
+
+The following have been reloaded with a version change:
+  1) NAMD/2.13-smp => NAMD/namd-2.9-impi
+
+/var/spool/slurmd/job00220/slurm_script: line 42: NAMD/namd-2.9-impi.modulefile: No such file or directory
+
+The following have been reloaded with a version change:
+  1) NAMD/namd-2.9-impi => NAMD/namd-2.9-ompi-gcc
+  2) mpi/intel-mpi-4.1.0 => mpi/openmpi-1.7.2-gcc-4.6.3
+
+/var/spool/slurmd/job00220/slurm_script: line 42: NAMD/namd-2.9-ompi-gcc.modulefile: No such file or directory
+
+The following have been reloaded with a version change:
+  1) NAMD/namd-2.9-ompi-gcc => NAMD/namd-2.9-ompi-intel
+  2) mpi/openmpi-1.7.2-gcc-4.6.3 => mpi/openmpi-1.7.2-intel2013.2
+
+/var/spool/slurmd/job00220/slurm_script: line 42: NAMD/namd-2.9-ompi-intel.modulefile: No such file or directory

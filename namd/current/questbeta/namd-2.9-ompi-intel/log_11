@@ -1,0 +1,16 @@
+
+Running on 48 processors:  ++mpiexec ++remote-shell mpiexec namd2 stmv.namd
+charmrun>  /usr/bin/setarch x86_64 -R  mpirun -np 48  ++mpiexec ++remote-shell mpiexec namd2 stmv.namd
+--------------------------------------------------------------------------
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       qnode5038
+Executable: ++mpiexec
+--------------------------------------------------------------------------
+48 total processes failed to start

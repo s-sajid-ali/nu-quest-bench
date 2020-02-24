@@ -1,0 +1,6 @@
+NAMD/2.12
+NAMD/2.13
+NAMD/2.13-smp
+NAMD/namd-2.9-impi
+NAMD/namd-2.9-ompi-gcc
+NAMD/namd-2.9-ompi-intel
