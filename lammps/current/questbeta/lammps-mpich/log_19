@@ -1,0 +1,953 @@
+----------------------------------------
+srun job start: Tue Feb 18 00:50:09 CST 2020
+Job ID: 205
+Username: sas4990
+Queue: normal
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /software/lammps/lammps-mpich:/software/mpi/mpich-3.0.4-gcc-4.6.3-RH7/bin:/hpc/software/gcc/4.6.3-rhel7/bin:/home/sas4990/miniconda3/envs/ipy3/bin:/home/sas4990/miniconda3/condabin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x000000006239ab90 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7c503)[0x2aaf83970503]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2aaf8126992b]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2aaf81264035]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2aaf813221f7]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2aaf81321bc4]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x000000006311bb90 ***
+lmp_Questmpich(main+0x1d)[0x7524cd]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2aaf83915b35]
+======= Backtrace: =========
+lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+/lib64/libc.so.6(+0x7c503)[0x2b6937e36503]
+00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+62390000-623b1000 rw-p 00000000 00:00 0                                  [heap]
+2aaf80f9b000-2aaf80fbb000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2aaf80fbb000-2aaf80fbe000 rw-p 00000000 00:00 0 
+2aaf80fcf000-2aaf80fd9000 rw-p 00000000 00:00 0 
+2aaf811ba000-2aaf811bb000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2aaf811bb000-2aaf811bc000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2aaf811bc000-2aaf811bd000 rw-p 00000000 00:00 0 
+2aaf811bd000-2aaf813ea000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2aaf813ea000-2aaf815e9000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2aaf815e9000-2aaf815fb000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2aaf815fb000-2aaf81634000 rw-p 00000000 00:00 0 
+2aaf81634000-2aaf817c4000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2aaf817c4000-2aaf819c3000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2aaf819c3000-2aaf819c4000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2aaf819c4000-2aaf819c6000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2aaf819c6000-2aaf819c7000 rw-p 00000000 00:00 0 
+2aaf819c7000-2aaf819dd000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2aaf819dd000-2aaf81bdc000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2aaf81bdc000-2aaf81bdd000 r--p 00015000 fd:00 67174675   /software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2b693572f92b]
+                /usr/lib64/libnsl-2.17.so
+2aaf81bdd000-2aaf81bde000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2aaf81bde000-2aaf81be0000 rw-p 00000000 00:00 0 
+2aaf81be0000-2aaf81be2000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2aaf81be2000-2aaf81de2000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2aaf81de2000-2aaf81de3000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2aaf81de3000-2aaf81de4000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2aaf81de4000-2aaf81e20000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2aaf81e20000-2aaf82020000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2aaf82020000-2aaf82022000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2aaf82022000-2aaf82028000 rw-p 0003e000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2aaf82028000-2aaf8202a000 rw-p 00000000 00:00 0 
+2aaf8202a000-2aaf8204f000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2aaf8204f000-2aaf8224f000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2aaf8224f000-2aaf82253000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2aaf82253000-2aaf82254000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2aaf82254000-2aaf8226b000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2aaf8226b000-2aaf8246a000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2aaf8246a000-2aaf8246b000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2aaf8246b000-2aaf8246c000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2aaf8246c000-2aaf82470000 rw-p 00000000 00:00 0 
+2aaf82470000-2aaf82472000 r-xp 00000000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2aaf82472000-2aaf82671000 ---p 00002000 fd:0/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2b693572a035]
+0 67174707                   /usr/lib64/libutil-2.17.so
+2aaf82671000-2aaf82672000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2aaf82672000-2aaf82673000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2aaf82673000-2aaf82688000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2aaf82688000-2aaf82887000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2aaf82887000-2aaf82888000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2aaf82888000-2aaf82889000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2aaf82889000-2aaf8298f000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2aaf8298f000-2aaf82b8e000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2aaf82b8e000-2aaf82b96000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2b69357e81f7]
+.so.6.0.16
+2aaf82b96000-2aaf82b99000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2aaf82b99000-2aaf82bae000 rw-p 00000000 00:00 0 
+2aaf82bae000-2aaf82bcd000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2aaf82bcd000-2aaf82dcc000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2aaf82dcc000-2aaf82dcf000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2aaf82dcf000-2aaf82dd0000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2aaf82dd0000-2aaf82fcf000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2aaf82fcf000-2aaf82fd0000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2aaf82fd0000-2aaf82fd4000 r-xp 00000000 00:2b 15220335                   /hpc/s/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2b69357e7bc4]
+oftware/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2aaf82fd4000-2aaf831d3000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2aaf831d3000-2aaf831d4000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2aaf831d4000-2aaf831db000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2aaf831db000-2aaf833da000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2aaf833da000-2aaf833db000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2aaf833db000-2aaf833dc000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2aaf833dc000-2aaf834dc000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2aaf834dc000-2aaf836dc000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2aaf836dc000-2aaf836dd000 r--p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2aaf836dd000-2aaf836de000 rw-p 00101000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2aaf836de000-2aaf836f3000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2aaf836f3000-2aaf838f2000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2aaf838f2000-2aaf838f3000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2aaf838f3000-2aaf838f4000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2aaf838f4000-2aaf83aab000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2aaf83aab000-2aaf83caa000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2aaf83caa000-2aaf83cae000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2aaf83cae000-2aaf83cb0000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2aaf83cb0000-2aaf83cb5000 rw-p 00000000 00:00 0 
+2aaf83cb5000-2aaf83cf1000 r-xp 00000000 00:2b 119lmp_Questmpich(main+0x1d)[0x7524cd]
+86969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2aaf83cf1000-2aaf83ef0000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2aaf83ef0000-2aaf83ef1000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2aaf83ef1000-2aaf83ef2000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2aaf84000000-2aaf84021000 rw-p 00000000 00:00 0 
+2aaf84021000-2aaf88000000 ---p 00000000 00:00 0 
+7ffef4a75000-7ffef4a98000 rw-p 00000000 00:00 0                          [stack]
+7ffef4b14000-7ffef4b16000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b6937ddbb35]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x00000000629f9b90 ***
+lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+======= Backtrace: =========
+00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+63111000-63132000 rw-p 00000000 00:00 0                                  [heap]
+2b6935461000-2b6935481000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b6935481000-2b6935484000 rw-p 00000000 00:00 0 
+2b6935495000-2b693549f000 rw-p 00000000 00:00 0 
+2b6935680000-2b6935681000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b6935681000-2b6935682000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b6935682000-2b6935683000 rw-p 00000000 00:00 0 
+2b6935683000-2b69358b0000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b69358b0000-2b6935aaf000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b6935aaf000-2b6935ac1000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b6935ac1000-2b6935afa000 rw-p 00000000 00:00 0 
+2b6935afa000-2b6935c8a000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b6935c8a000-2b6935e89000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b6935e89000-2b6935e8a000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b6935e8a000-2b6935e8c000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b6935e8c000-2b6935e8d000 rw-p 00000000 00:00 0 
+2b6935e8d000-2b6935ea3000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b6935ea3000-2b69360a2000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b69360a2000-2b69360a3000 r--p 00015000 fd:00 67174675   /lib64/libc.so.6(+0x7c503)[0x2b86c0b74503]
+                /usr/lib64/libnsl-2.17.so
+2b69360a3000-2b69360a4000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b69360a4000-2b69360a6000 rw-p 00000000 00:00 0 
+2b69360a6000-2b69360a8000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b69360a8000-2b69362a8000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b69362a8000-2b69362a9000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b69362a9000-2b69362aa000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b69362aa000-2b69362e6000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b69362e6000-2b69364e6000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b69364e6000-2b69364e8000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b69364e8000-2b69364ee000 rw-p 0003e000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b69364ee000-2b69364f0000 rw-p/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2b86be46d92b]
+ 00000000 00:00 0 
+2b69364f0000-2b6936515000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b6936515000-2b6936715000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b6936715000-2b6936719000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b6936719000-2b693671a000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b693671a000-2b6936731000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b6936731000-2b6936930000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b6936930000-2b6936931000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b6936931000-2b6936932000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b6936932000-2b6936936000 rw-p 00000000 00:00 0 
+2b6936936000-2b6936938000 r-xp 00000000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b6936938000-2b6936b37000 ---p 00002000 fd:0/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2b86be468035]
+0 67174707                   /usr/lib64/libutil-2.17.so
+2b6936b37000-2b6936b38000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b6936b38000-2b6936b39000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b6936b39000-2b6936b4e000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b6936b4e000-2b6936d4d000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b6936d4d000-2b6936d4e000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b6936d4e000-2b6936d4f000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b6936d4f000-2b6936e55000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b6936e55000-2b6937054000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b6937054000-2b693705c000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b693705c000-2b693705f000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b693705f000-2b6937074000 rw-p 00000000 00:00 0 
+2b6937074000-2b6937093000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b6937093000-2b6937292000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b6937292000-2b6937295000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b6937295000-2b6937296000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b6937296000-2b6937495000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b6937495000-2b6937496000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b6937496000-2b693749a000 r-xp 00000000 00:2b 15220335                   /hpc/s/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2b86be5261f7]
+oftware/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b693749a000-2b6937699000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b6937699000-2b693769a000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b693769a000-2b69376a1000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b69376a1000-2b69378a0000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b69378a0000-2b69378a1000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b69378a1000-2b69378a2000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b69378a2000-2b69379a2000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b69379a2000-2b6937ba2000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b6937ba2000-2b6937ba3000 r--p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b6937ba3000-2b6937ba4000 rw-p 00101000 fd:00 67174/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2b86be525bc4]
+671                   /usr/lib64/libm-2.17.so
+2b6937ba4000-2b6937bb9000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b6937bb9000-2b6937db8000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b6937db8000-2b6937db9000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b6937db9000-2b6937dba000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b6937dba000-2b6937f71000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b6937f71000-2b6938170000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b6938170000-2b6938174000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b6938174000-2b6938176000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b6938176000-2b693817b000 rw-p 00000000 00:00 0 
+2b693817b000-2b69381b7000 r-xp 00000000 00:2b 119lmp_Questmpich(main+0x1d)[0x7524cd]
+86969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b69381b7000-2b69383b6000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b69383b6000-2b69383b7000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b69383b7000-2b69383b8000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b693c000000-2b693c021000 rw-p 00000000 00:00 0 
+2b693c021000-2b6940000000 ---p 00000000 00:00 0 
+7ffcd6892000-7ffcd68b5000 rw-p 00000000 00:00 0                          [stack]
+7ffcd69c9000-7ffcd69cb000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b86c0b19b35]
+lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+629ef000-62a10000 rw-p 00000000 00:00 0                                  [heap]
+2b86be19f000-2b86be1bf000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b86be1bf000-2b86be1c2000 rw-p 00000000 00:00 0 
+2b86be1d3000-2b86be1dd000 rw-p 00000000 00:00 0 
+2b86be3be000-2b86be3bf000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b86be3bf000-2b86be3c0000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b86be3c0000-2b86be3c1000 rw-p 00000000 00:00 0 
+2b86be3c1000-2b86be5ee000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b86be5ee000-2b86be7ed000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b86be7ed000-2b86be7ff000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b86be7ff000-2b86be838000 rw-p 00000000 00:00 0 
+2b86be838000-2b86be9c8000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b86be9c8000-2b86bebc7000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b86bebc7000-2b86bebc8000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b86bebc8000-2b86bebca000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b86bebca000-2b86bebcb000 rw-p 00000000 00:00 0 
+2b86bebcb000-2b86bebe1000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b86bebe1000-2b86bede0000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b86bede0000-2b86bede1000 r--p 00015000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b86bede1000-2b86bede2000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b86bede2000-2b86bede4000 rw-p 00000000 00:00 0 
+2b86bede4000-2b86bede6000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b86bede6000-2b86befe6000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b86befe6000-2b86befe7000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b86befe7000-2b86befe8000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b86befe8000-2b86bf024000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b86bf024000-2b86bf224000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b86bf224000-2b86bf226000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b86bf226000-2b86bf22c000 rw-p 0003e000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b86bf22c000-2b86bf22e000 rw-p 00000000 00:00 0 
+2b86bf22e000-2b86bf253000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b86bf253000-2b86bf453000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b86bf453000-2b86bf457000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b86bf457000-2b86bf458000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b86bf458000-2b86bf46f000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b86bf46f000-2b86bf66e000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b86bf66e000-2b86bf66f000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b86bf66f000-2b86bf670000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b86bf670000-2b86bf674000 rw-p 00000000 00:00 0 
+2b86bf674000-2b86bf676000 r-xp 00000000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b86bf676000-2b86bf875000 ---p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b86bf875000-2b86bf876000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b86bf876000-2b86bf877000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b86bf877000-2b86bf88c000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b86bf88c000-2b86bfa8b000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b86bfa8b000-2b86bfa8c000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b86bfa8c000-2b86bfa8d000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b86bfa8d000-2b86bfb93000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b86bfb93000-2b86bfd92000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b86bfd92000-2b86bfd9a000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b86bfd9a000-2b86bfd9d000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b86bfd9d000-2b86bfdb2000 rw-p 00000000 00:00 0 
+2b86bfdb2000-2b86bfdd1000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b86bfdd1000-2b86bffd0000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b86bffd0000-2b86bffd3000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b86bffd3000-2b86bffd4000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b86bffd4000-2b86c01d3000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b86c01d3000-2b86c01d4000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b86c01d4000-2b86c01d8000 r-xp 00000000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b86c01d8000-2b86c03d7000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b86c03d7000-2b86c03d8000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b86c03d8000-2b86c03df000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b86c03df000-2b86c05de000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b86c05de000-2b86c05df000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b86c05df000-2b86c05e0000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b86c05e0000-2b86c06e0000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b86c06e0000-2b86c08e0000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b86c08e0000-2b86c08e1000 r--p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b86c08e1000-2b86c08e2000 rw-p 00101000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b86c08e2000-2b86c08f7000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b86c08f7000-2b86c0af6000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b86c0af6000-2b86c0af7000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b86c0af7000-2b86c0af8000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b86c0af8000-2b86c0caf000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b86c0caf000-2b86c0eae000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b86c0eae000-2b86c0eb2000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b86c0eb2000-2b86c0eb4000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b86c0eb4000-2b86c0eb9000 rw-p 00000000 00:00 0 
+2b86c0eb9000-2b86c0ef5000 r-xp 00000000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b86c0ef5000-2b86c10f4000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b86c10f4000-2b86c10f5000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b86c10f5000-2b86c10f6000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b86c4000000-2b86c4021000 rw-p 00000000 00:00 0 
+2b86c4021000-2b86c8000000 ---p 00000000 00:00 0 
+7ffdf1fa1000-7ffdf1fc4000 rw-p 00000000 00:00 0                          [stack]
+7ffdf1ff9000-7ffdf1ffb000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x000000006125db90 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7c503)[0x2ae328298503]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2ae325b9192b]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2ae325b8c035]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x00000000628ceb90 ***
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2ae325c4a1f7]
+======= Backtrace: =========
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2ae325c49bc4]
+/lib64/libc.so.6(+0x7c503)[0x2afc475c6503]
+lmp_Questmpich(main+0x1d)[0x7524cd]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2afc44ebf92b]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae32823db35]
+lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2afc44eba035]
+00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+61253000-61274000 rw-p 00000000 00:00 0                                  [heap]
+2ae3258c3000-2ae3258e3000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ae3258e3000-2ae3258e6000 rw-p 00000000 00:00 0 
+2ae3258f7000-2ae325901000 rw-p 00000000 00:00 0 
+2ae325ae2000-2ae325ae3000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ae325ae3000-2ae325ae4000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ae325ae4000-2ae325ae5000 rw-p 00000000 00:00 0 
+2ae325ae5000-2ae325d12000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2ae325d12000-2ae325f11000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2ae325f11000-2ae325f23000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2ae325f23000-2ae325f5c000 rw-p 00000000 00:00 0 
+2ae325f5c000-2ae3260ec000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ae3260ec000-2ae3262eb000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ae3262eb000-2ae3262ec000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ae3262ec000-2ae3262ee000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ae3262ee000-2ae3262ef000 rw-p 00000000 00:00 0 
+2ae3262ef000-2ae326305000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ae326305000-2ae326504000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ae326504000-2ae326505000 r--p 00015000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ae326505000-2ae326506000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ae326506000-2ae326508000 rw-p 00000000 00:00 0 
+2ae326508000-2ae32650a000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ae32650a000-2ae32670a000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ae32670a000-2ae32670b000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ae32670b000-2ae32670c000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ae32670c000-2ae326748000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ae326748000-2ae326948000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ae326948000-2ae32694a000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ae32694a000-2ae326950000 rw-p 0003e000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ae326950000-2ae326952000 rw-p 00000000 00:00 0 
+2ae326952000-2ae326977000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ae326977000-2ae326b77000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ae326b77000-2ae326b7b000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ae326b7b000-2ae326b7c000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ae326b7c000-2ae326b93000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ae326b93000-2ae326d92000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ae326d92000-2ae326d93000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ae326d93000-2ae326d94000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ae326d94000-2ae326d98000 rw-p 00000000 00:00 0 
+2ae326d98000-2ae326d9a000 r-xp 00000000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ae326d9a000-2ae326f99000 ---p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ae326f99000-2ae326f9a000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ae326f9a000-2ae326f9b000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ae326f9b000-2ae326fb0000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ae326fb0000-2ae3271af000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ae3271af000-2ae3271b0000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ae3271b0000-2ae3271b1000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ae3271b1000-2ae3272b7000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ae3272b7000-2ae3274b6000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ae3274b6000-2ae3274be000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2afc44f781f7]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2afc44f77bc4]
+.so.6.0.16
+2ae3274be000-2ae3274c1000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ae3274c1000-2ae3274d6000 rw-p 00000000 00:00 0 
+2ae3274d6000-2ae3274f5000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ae3274f5000-2ae3276f4000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ae3276f4000-2ae3276f7000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ae3276f7000-2ae3276f8000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ae3276f8000-2ae3278f7000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ae3278f7000-2ae3278f8000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ae3278f8000-2ae3278fc000 r-xp 00000000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ae3278fc000-2ae327afb000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ae327afb000-2ae327afc000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ae327afc000-2ae327b03000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ae327b03000-2ae327d02000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ae327d02000-2ae327d03000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ae327d03000-2ae327d04000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ae327d04000-2ae327e04000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ae327e04000-2ae328004000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ae328004000-2ae328005000 r--p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ae328005000-2ae328006000 rw-p 00101000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ae328006000-2ae32801b000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ae32801b000-2ae32821a000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ae32821a000-2ae32821b000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ae32821b000-2ae32821c000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ae32821c000-2ae3283d3000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ae3283d3000-2ae3285d2000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ae3285d2000-2ae3285d6000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ae3285d6000-2ae3285d8000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ae3285d8000-2ae3285dd000 rw-p 00000000 00:00 0 
+2ae3285dd000-2ae328619000 r-xp 00000000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ae328619000-2ae328818000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ae328818000-2ae328819000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ae328819000-2ae32881a000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ae32c000000-2ae32c021000 rw-p 00000000 00:00 0 
+2ae32c021000-2ae330000000 ---p 00000000 00:00 0 
+7ffed97b8000-7ffed97db000 rw-p 00000000 00:00 0                          [stack]
+7ffed97ec000-7ffed97ee000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+lmp_Questmpich(main+0x1d)[0x7524cd]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afc4756bb35]
+lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+628c4000-628e5000 rw-p 00000000 00:00 0                                  [heap]
+2afc44bf1000-2afc44c11000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2afc44c11000-2afc44c14000 rw-p 00000000 00:00 0 
+2afc44c25000-2afc44c2f000 rw-p 00000000 00:00 0 
+2afc44e10000-2afc44e11000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2afc44e11000-2afc44e12000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2afc44e12000-2afc44e13000 rw-p 00000000 00:00 0 
+2afc44e13000-2afc45040000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2afc45040000-2afc4523f000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2afc4523f000-2afc45251000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2afc45251000-2afc4528a000 rw-p 00000000 00:00 0 
+2afc4528a000-2afc4541a000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2afc4541a000-2afc45619000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2afc45619000-2afc4561a000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2afc4561a000-2afc4561c000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2afc4561c000-2afc4561d000 rw-p 00000000 00:00 0 
+2afc4561d000-2afc45633000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2afc45633000-2afc45832000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2afc45832000-2afc45833000 r--p 00015000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2afc45833000-2afc45834000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2afc45834000-2afc45836000 rw-p 00000000 00:00 0 
+2afc45836000-2afc45838000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2afc45838000-2afc45a38000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2afc45a38000-2afc45a39000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2afc45a39000-2afc45a3a000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2afc45a3a000-2afc45a76000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2afc45a76000-2afc45c76000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2afc45c76000-2afc45c78000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2afc45c78000-2afc45c7e000 rw-p 0003e000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2afc45c7e000-2afc45c80000 rw-p 00000000 00:00 0 
+2afc45c80000-2afc45ca5000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2afc45ca5000-2afc45ea5000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2afc45ea5000-2afc45ea9000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2afc45ea9000-2afc45eaa000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2afc45eaa000-2afc45ec1000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2afc45ec1000-2afc460c0000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2afc460c0000-2afc460c1000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2afc460c1000-2afc460c2000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2afc460c2000-2afc460c6000 rw-p 00000000 00:00 0 
+2afc460c6000-2afc460c8000 r-xp 00000000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2afc460c8000-2afc462c7000 ---p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2afc462c7000-2afc462c8000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2afc462c8000-2afc462c9000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2afc462c9000-2afc462de000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2afc462de000-2afc464dd000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2afc464dd000-2afc464de000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2afc464de000-2afc464df000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2afc464df000-2afc465e5000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2afc465e5000-2afc467e4000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2afc467e4000-2afc467ec000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2afc467ec000-2afc467ef000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2afc467ef000-2afc46804000 rw-p 00000000 00:00 0 
+2afc46804000-2afc46823000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2afc46823000-2afc46a22000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2afc46a22000-2afc46a25000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2afc46a25000-2afc46a26000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2afc46a26000-2afc46c25000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2afc46c25000-2afc46c26000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2afc46c26000-2afc46c2a000 r-xp 00000000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2afc46c2a000-2afc46e29000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2afc46e29000-2afc46e2a000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2afc46e2a000-2afc46e31000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2afc46e31000-2afc47030000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2afc47030000-2afc47031000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2afc47031000-2afc47032000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2afc47032000-2afc47132000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2afc47132000-2afc47332000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2afc47332000-2afc47333000 r--p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2afc47333000-2afc47334000 rw-p 00101000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2afc47334000-2afc47349000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2afc47349000-2afc47548000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2afc47548000-2afc47549000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2afc47549000-2afc4754a000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2afc4754a000-2afc47701000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2afc47701000-2afc47900000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2afc47900000-2afc47904000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2afc47904000-2afc47906000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2afc47906000-2afc4790b000 rw-p 00000000 00:00 0 
+2afc4790b000-2afc47947000 r-xp 00000000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2afc47947000-2afc47b46000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2afc47b46000-2afc47b47000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2afc47b47000-2afc47b48000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2afc48000000-2afc48021000 rw-p 00000000 00:00 0 
+2afc48021000-2afc4c000000 ---p 00000000 00:00 0 
+7ffd489e5000-7ffd48a08000 rw-p 00000000 00:00 0                          [stack]
+7ffd48b29000-7ffd48b2b000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x000000006277cb90 ***
+======= Backtrace: =========
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x000000006299bb90 ***
+/lib64/libc.so.6(+0x7c503)[0x2b0e9c86c503]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2b0e9a16592b]
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7c503)[0x2b7410688503]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2b0e9a160035]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2b740df8192b]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2b0e9a21e1f7]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2b740df7c035]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2b0e9a21dbc4]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2b740e03a1f7]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2b740e039bc4]
+lmp_Questmpich(main+0x1d)[0x7524cd]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b0e9c811b35]
+lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+lmp_Questmpich(main+0x1d)[0x7524cd]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b741062db35]
+00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+62772000-62793000 rw-p 00000000 00:00 0                                  [heap]
+2b0e99e97000-2b0e99eb7000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b0e99eb7000-2b0e99eb9000 r-xp 00000000 00:00 0                          [vdso]
+2b0e99eb9000-2b0e99ebc000 rw-p 00000000 00:00 0 
+2b0e99ecd000-2b0e99ed7000 rw-p 00000000 00:00 0 
+2b0e9a0b6000-2b0e9a0b7000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b0e9a0b7000-2b0e9a0b8000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b0e9a0b8000-2b0e9a0b9000 rw-p 00000000 00:00 0 
+2b0e9a0b9000-2b0e9a2e6000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b0e9a2e6000-2b0e9a4e5000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b0e9a4e5000-2b0e9a4f7000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b0e9a4f7000-2b0e9a530000 rw-p 00000000 00:00 0 
+2b0e9a530000-2b0e9a6c0000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b0e9a6c0000-2b0e9a8bf000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b0e9a8bf000-2b0e9a8c0000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b0e9a8c0000-2b0e9a8c2000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b0e9a8c2000-2b0e9a8c3000 rw-p 00000000 00:00 0 
+2b0e9a8c3000-2b0e9a8d9000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b0e9a8d9000-2b0e9aad8000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b0e9aad8000-2b0e9aad9000 r--p 00015000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b0e9aad9000-2b0e9aada000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b0e9aada000-2b0e9aadc000 rw-p 00000000 00:00 0 
+2b0e9aadc000-2b0e9aade000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b0e9aade000-2b0e9acde000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b0e9acde000-2b0e9acdf000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b0e9acdf000-2b0e9ace0000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b0e9ace0000-2b0e9ad1c000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b0e9ad1c000-2b0e9af1c000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b0e9af1c000-2b0e9af1e000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b0e9af1e000-2b0e9af24000 rw-p 0003e000 fd:00 6717506*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x0000000062541b90 ***
+4                   /usr/lib64/libreadline.so.6.2
+2b0e9af24000-2b0e9af26000 rw-p 00000000 00:00 0 
+2b0e9af26000-2b0e9af4b000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b0e9af4b000-2b0e9b14b000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b0e9b14b000-2b0e9b14f000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b0e9b14f000-2b0e9b150000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b0e9b150000-2b0e9b167000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b0e9b167000-2b0e9b366000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b0e9b366000-2b0e9b367000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b0e9b367000-2b0e9b368000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b0e9b368000-2b0e9b36c000 rw-p 00000000 00:00 0 
+2b0e9b36c000-2b0e9b36e000 r-xp 00000000 fd:00 67174707          lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+62991000-629b2000 rw-p 00000000 00:00 0                                  [heap]
+2b740dcb3000-2b740dcd3000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b740dcd3000-2b740dcd5000 r-xp 00000000 00:00 0                          [vdso]
+2b740dcd5000-2b740dcd8000 rw-p 00000000 00:00 0 
+2b740dce9000-2b740dcf3000 rw-p 00000000 00:00 0 
+2b740ded2000-2b740ded3000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b740ded3000-2b740ded4000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b740ded4000-2b740ded5000 rw-p 00000000 00:00 0 
+2b740ded5000-2b740e102000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b740e102000-2b740e30         /usr/lib64/libutil-2.17.so
+2b0e9b36e000-2b0e9b56d000 ---p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b0e9b56d000-2b0e9b56e000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b0e9b56e000-2b0e9b56f000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b0e9b56f000-2b0e9b584000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b0e9b584000-2b0e9b783000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b0e9b783000-2b0e9b784000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b0e9b784000-2b0e9b785000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b0e9b785000-2b0e9b88b000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b0e9b88b000-2b0e9ba8a000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b0e9ba8a000-2b0e9ba92000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b0e9ba92000-2b0e9ba95000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b0e9ba95000-2b0e9baaa000 rw-p 00000000 00:00 0 
+2b0e9baaa000-2b0e9bac9000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b0e9bac9000-2b0e9bcc8000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b0e9bcc8000-2b0e9bccb000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b0e9bccb000-2b0e9bccc000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b0e9bccc000-2b0e9becb000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b0e9becb000-2b0e9becc000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b0e9becc000-2b0e9bed0000 r-xp 00000000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b0e9bed0000-2b0e9c0cf000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b0e9c0cf000-2b0e9c0d0000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b0e9c0d0000-2b0e9c0d7000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b0e9c0d7000-2b0e9c2d6000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b0e9c2d6000-2b0e9c2d7000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b0e9c2d7000-2b0e9c2d8000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b0e9c2d8000-2b0e9c3d8000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b0e9c3d8000-2b0e9c5d8000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b0e9c5d8000-2b0e9c5d9000 r--p 00100000 fd:00 67174671              1000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b740e301000-2b740e313000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2b740e313000-2b740e34c000 rw-p 00000000 00:00 0 
+2b740e34c000-2b740e4dc000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b740e4dc000-2b740e6db000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b740e6db000-2b740e6dc000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b740e6dc000-2b740e6de000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2b740e6de000-2b740e6df000 rw-p 00000000 00:00 0 
+2b740e6df000-2b740e6f5000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b740e6f5000-2b740e8f4000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b740e8f4000-2b740e8f5000 r--p 00015000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b740e8f5000-2b740e8f6000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2b740e8f6000-2b740e8f8000 rw-p 00000000 00:00 0 
+2b740e8f8000-2b740e8fa000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b740e8fa000-2b740eafa000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b740eafa000-2b740eafb000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b740eafb000-2b740eafc000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b740eafc000-2b740eb38000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b740eb38000-2b740ed38000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b740ed38000-2b740ed3a000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2b740ed3a000-2b740ed40000 rw-p 0003e000 fd:00 6717506     /usr/lib64/libm-2.17.so
+2b0e9c5d9000-2b0e9c5da000 rw-p 00101000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b0e9c5da000-2b0e9c5ef000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b0e9c5ef000-2b0e9c7ee000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b0e9c7ee000-2b0e9c7ef000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b0e9c7ef000-2b0e9c7f0000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b0e9c7f0000-2b0e9c9a7000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b0e9c9a7000-2b0e9cba6000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b0e9cba6000-2b0e9cbaa000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b0e9cbaa000-2b0e9cbac000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b0e9cbac000-2b0e9cbb1000 rw-p 00000000 00:00 0 
+2b0e9cbb1000-2b0e9cbed000 r-xp 00000000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b0e9cbed000-2b0e9cdec000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b0e9cdec000-2b0e9cded000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b0e9cded000-2b0e9cdee000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b0ea0000000-2b0ea0021000 rw-p 00000000 00:00 0 
+2b0ea0021000-2b0ea4000000 ---p 00000000 00:00 0 
+7ffc383dd000-7ffc38400000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+4                   /usr/lib64/libreadline.so.6.2
+2b740ed40000-2b740ed42000 rw-p 00000000 00:00 0 
+2b740ed42000-2b740ed67000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b740ed67000-2b740ef67000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b740ef67000-2b740ef6b000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b740ef6b000-2b740ef6c000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2b740ef6c000-2b740ef83000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b740ef83000-2b740f182000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b740f182000-2b740f183000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b740f183000-2b740f184000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b740f184000-2b740f188000 rw-p 00000000 00:00 0 
+2b740f188000-2b740f18a000 r-xp 00000000 fd:00 67174707          ======= Backtrace: =========
+         /usr/lib64/libutil-2.17.so
+2b740f18a000-2b740f389000 ---p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b740f389000-2b740f38a000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b740f38a000-2b740f38b000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b740f38b000-2b740f3a0000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b740f3a0000-2b740f59f000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b740f59f000-2b740f5a0000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b740f5a0000-2b740f5a1000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2b740f5a1000-2b740f6a7000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b740f6a7000-2b740f8a6000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b740f8a6000-2b740f8ae000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b740f8ae000-2b740f8b1000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2b740f8b1000-2b740f8c6000 rw-p 00000000 00:00 0 
+2b740f8c6000-2b740f8e5000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b740f8e5000-2b740fae4000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b740fae4000-2b740fae7000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2b740fae7000-2b740fae8000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b740fae8000-2b740fce7000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b740fce7000-2b740fce8000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2b740fce8000-2b740fcec000 r-xp 00000000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b740fcec000-2b740feeb000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b740feeb000-2b740feec000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2b740feec000-2b740fef3000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b740fef3000-2b74100f2000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b74100f2000-2b74100f3000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b74100f3000-2b74100f4000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b74100f4000-2b74101f4000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b74101f4000-2b74103f4000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b74103f4000-2b74103f5000 r--p 00100000 fd:00 67174671              /lib64/libc.so.6(+0x7c503)[0x2b3b084de503]
+     /usr/lib64/libm-2.17.so
+2b74103f5000-2b74103f6000 rw-p 00101000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b74103f6000-2b741040b000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b741040b000-2b741060a000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b741060a000-2b741060b000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b741060b000-2b741060c000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2b741060c000-2b74107c3000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b74107c3000-2b74109c2000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b74109c2000-2b74109c6000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b74109c6000-2b74109c8000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b74109c8000-2b74109cd000 rw-p 00000000 00:00 0 
+2b74109cd000-2b7410a09000 r-xp 00000000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b7410a09000-2b7410c08000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b7410c08000-2b7410c09000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b7410c09000-2b7410c0a000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2b7414000000-2b7414021000 rw-p 00000000 00:00 0 
+2b7414021000-2b7418000000 ---p 00000000 00:00 0 
+7ffd439dd000-7ffd43a00000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2b3b05dd792b]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x0000000061f15b90 ***
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x000000006173bb90 ***
+======= Backtrace: =========
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7c503)[0x2ad457a12503]
+/lib64/libc.so.6(+0x7c503)[0x2ba372ffb503]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2ad45530b92b]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2ba3708f492b]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2ad455306035]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2ba3708ef035]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2ad4553c41f7]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2ba3709ad1f7]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2ba3709acbc4]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPI_Init+0x84)[0x2ad4553c3bc4]
+lmp_Questmpich(main+0x1d)[0x7524cd]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba372fa0b35]
+lmp_Questmpich(main+0x1d)[0x7524cd]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ad4579b7b35]
+lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+lmp_Questmpich[0x4e2959]
+======= Memory map: ========
+00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+61731000-61752000 rw-p 00000000 00:00 0                                  [heap]
+2ba370626000-2ba370646000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ba370646000-2ba370649000 rw-p 00000000 00:00 0 
+2ba37065a000-2ba370664000 rw-p 00000000 00:00 0 
+2ba370845000-2ba370846000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ba370846000-2ba370847000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ba370847000-2ba370848000 rw-p 00000000 00:00 0 
+2ba370848000-2ba370a75000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2ba370a75000-2ba370c74000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.00400000-00d39000 r-xp 00000000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f38000-00f78000 rw-p 00938000 00:2b 17198225                           /hpc/software/lammps/lammps-mpich/lmp_Questmpich
+00f78000-61130000 rw-p 00000000 00:00 0 
+61f0b000-61f2c000 rw-p 00000000 00:00 0                                  [heap]
+2ad45503d000-2ad45505d000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ad45505d000-2ad455060000 rw-p 00000000 00:00 0 
+2ad455071000-2ad45507b000 rw-p 00000000 00:00 0 
+2ad45525c000-2ad45525d000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ad45525d000-2ad45525e000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2ad45525e000-2ad45525f000 rw-p 00000000 00:00 0 
+2ad45525f000-2ad45548c000 r-xp 00000000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2ad45548c000-2ad45568b000 ---p 0022d000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2ad45568b000-2ad45569d000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2ad45569d000-2ad4556d6000 rw-p 00000000 00:00 0 
+2ad4556d6000-2ad455866000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ad455866000-2ad455a65000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ad455a65000-2ad455a66000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ad455a66000-2ad455a68000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ad455a68000-2ad455a69000 rw-p 00000000 00:00 0 
+2ad455a69000-2ad455a7f000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ad455a7f000-2ad455c7e000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ad455c7e000-2ad455c7f000 r--p 00015000 fd:00 67174675   4/lib/libmpich.so.11.0.1
+2ba370c74000-2ba370c86000 rw-p 0022c000 00:2b 15220326                   /hpc/software/mpi/mpich/3.0.4/lib/libmpich.so.11.0.1
+2ba370c86000-2ba370cbf000 rw-p 00000000 00:00 0 
+2ba370cbf000-2ba370e4f000 r-xp 00000000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ba370e4f000-2ba37104e000 ---p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ba37104e000-2ba37104f000 r--p 0018f000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ba37104f000-2ba371051000 rw-p 00190000 00:2b 11986983                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgfortran.so.3.0.0
+2ba371051000-2ba371052000 rw-p 00000000 00:00 0 
+2ba371052000-2ba371068000 r-xp 00000000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ba371068000-2ba371267000 ---p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ba371267000-2ba371268000 r--p 00015000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ba371268000-2ba371269000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ba371269000-2ba37126b000 rw-p 00000000 00:00 0 
+2ba37126b000-2ba37126d000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ba37126d000-2ba37146d000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ba37146d000-2ba37146e000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ba37146e000-2ba37146f000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ba37146f000-2ba3714ab000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ba3714ab000-2ba3716ab000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ba3716ab000-2ba3716ad000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ba3716ad000-2ba3716b3000 rw-p 0003e000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ba3716b3000-2ba3716b5000 rw-p                /usr/lib64/libnsl-2.17.so
+2ad455c7f000-2ad455c80000 rw-p 00016000 fd:00 67174675                   /usr/lib64/libnsl-2.17.so
+2ad455c80000-2ad455c82000 rw-p 00000000 00:00 0 
+2ad455c82000-2ad455c84000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ad455c84000-2ad455e84000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ad455e84000-2ad455e85000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ad455e85000-2ad455e86000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2ad455e86000-2ad455ec2000 r-xp 00000000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ad455ec2000-2ad4560c2000 ---p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ad4560c2000-2ad4560c4000 r--p 0003c000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ad4560c4000-2ad4560ca000 rw-p 0003e000 fd:00 67175064                   /usr/lib64/libreadline.so.6.2
+2ad4560ca000-2ad4560cc000 rw-p 00000000 00:00 0 
+2ad4560cc000-2ad4560f1000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ad4560f1000-2ad4562f1000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ad4562f1000-2ad4562f5000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ad4562f5000-2ad4562f6000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ad4562f6000-2ad45630d000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ad45630d000-2ad45650c000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ad45650c000-2ad45650d000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ad45650d000-2ad45650e000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ad45650e000-2ad456512000 rw-p 00000000 00:00 0 
+2ad456512000-2ad456514000 r-xp 00000000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ad456514000-2ad456713000 ---p 00002000 fd:0 00000000 00:00 0 
+2ba3716b5000-2ba3716da000 r-xp 00000000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ba3716da000-2ba3718da000 ---p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ba3718da000-2ba3718de000 r--p 00025000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ba3718de000-2ba3718df000 rw-p 00029000 fd:00 67174836                   /usr/lib64/libtinfo.so.5.9
+2ba3718df000-2ba3718f6000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ba3718f6000-2ba371af5000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ba371af5000-2ba371af6000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ba371af6000-2ba371af7000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2ba371af7000-2ba371afb000 rw-p 00000000 00:00 0 
+2ba371afb000-2ba371afd000 r-xp 00000000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ba371afd000-2ba371cfc000 ---p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ba371cfc000-2ba371cfd000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ba371cfd000-2ba371cfe000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ba371cfe000-2ba371d13000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ba371d13000-2ba371f12000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ba371f12000-2ba371f13000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ba371f13000-2ba371f14000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ba371f14000-2ba37201a000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ba37201a000-2ba372219000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ba372219000-2ba372221000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++0 67174707                   /usr/lib64/libutil-2.17.so
+2ad456713000-2ad456714000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ad456714000-2ad456715000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2ad456715000-2ad45672a000 r-xp 00000000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ad45672a000-2ad456929000 ---p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ad456929000-2ad45692a000 r--p 00014000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ad45692a000-2ad45692b000 rw-p 00015000 fd:00 67174868                   /usr/lib64/libz.so.1.2.7
+2ad45692b000-2ad456a31000 r-xp 00000000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ad456a31000-2ad456c30000 ---p 00106000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ad456c30000-2ad456c38000 r--p 00105000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ad456c38000-2ad456c3b000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ad456c3b000-2ad456c50000 rw-p 00000000 00:00 0 
+2ad456c50000-2ad456c6f000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ad456c6f000-2ad456e6e000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ad456e6e000-2ad456e71000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ad456e71000-2ad456e72000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ad456e72000-2ad457071000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ad457071000-2ad457072000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ad457072000-2ad457076000 r-xp 00000000 00:2b 15220335                   /hpc/s.so.6.0.16
+2ba372221000-2ba372224000 rw-p 0010d000 00:2b 11462621                   /hpc/software/gcc/4.6.3-rhel7/lib64/libstdc++.so.6.0.16
+2ba372224000-2ba372239000 rw-p 00000000 00:00 0 
+2ba372239000-2ba372258000 r-xp 00000000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ba372258000-2ba372457000 ---p 0001f000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ba372457000-2ba37245a000 rw-p 0001e000 00:2b 15220329                   /hpc/software/mpi/mpich/3.0.4/lib/libmpichcxx.so.11.0.1
+2ba37245a000-2ba37245b000 r-xp 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ba37245b000-2ba37265a000 ---p 00001000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ba37265a000-2ba37265b000 rw-p 00000000 00:2b 15220338                   /hpc/software/mpi/mpich/3.0.4/lib/libopa.so.1.0.0
+2ba37265b000-2ba37265f000 r-xp 00000000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ba37265f000-2ba37285e000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ba37285e000-2ba37285f000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ba37285f000-2ba372866000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ba372866000-2ba372a65000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ba372a65000-2ba372a66000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ba372a66000-2ba372a67000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ba372a67000-2ba372b67000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ba372b67000-2ba372d67000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ba372d67000-2ba372d68000 r--p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ba372d68000-2ba372d69000 rw-p 00101000 fd:00 67174oftware/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ad457076000-2ad457275000 ---p 00004000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ad457275000-2ad457276000 rw-p 00003000 00:2b 15220335                   /hpc/software/mpi/mpich/3.0.4/lib/libmpl.so.1.0.0
+2ad457276000-2ad45727d000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ad45727d000-2ad45747c000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ad45747c000-2ad45747d000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ad45747d000-2ad45747e000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2ad45747e000-2ad45757e000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ad45757e000-2ad45777e000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ad45777e000-2ad45777f000 r--p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ad45777f000-2ad457780000 rw-p 00101000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2ad457780000-2ad457795000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ad457795000-2ad457994000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ad457994000-2ad457995000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ad457995000-2ad457996000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ad457996000-2ad457b4d000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ad457b4d000-2ad457d4c000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ad457d4c000-2ad457d50000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ad457d50000-2ad457d52000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ad457d52000-2ad457d57000 rw-p 00000000 00:00 0 
+2ad457d57000-2ad457d93000 r-xp 00000000 00:2b 119671                   /usr/lib64/libm-2.17.so
+2ba372d69000-2ba372d7e000 r-xp 00000000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ba372d7e000-2ba372f7d000 ---p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ba372f7d000-2ba372f7e000 r--p 00014000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ba372f7e000-2ba372f7f000 rw-p 00015000 00:2b 11986954                   /hpc/software/gcc/4.6.3-rhel7/lib64/libgcc_s.so.1
+2ba372f7f000-2ba373136000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ba373136000-2ba373335000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ba373335000-2ba373339000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ba373339000-2ba37333b000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2ba37333b000-2ba373340000 rw-p 00000000 00:00 0 
+2ba373340000-2ba37337c000 r-xp 00000000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ba37337c000-2ba37357b000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ba37357b000-2ba37357c000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ba37357c000-2ba37357d000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ba374000000-2ba374021000 rw-p 00000000 00:00 0 
+2ba374021000-2ba378000000 ---p 00000000 00:00 0 
+7ffe9db04000-7ffe9db27000 rw-p 00000000 00:00 0                          [stack]
+7ffe9db6a000-7ffe9db6c000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+86969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ad457d93000-2ad457f92000 ---p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ad457f92000-2ad457f93000 r--p 0003b000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ad457f93000-2ad457f94000 rw-p 0003c000 00:2b 11986969                   /hpc/software/gcc/4.6.3-rhel7/lib64/libquadmath.so.0.0.0
+2ad458000000-2ad458021000 rw-p 00000000 00:00 0 
+2ad458021000-2ad45c000000 ---p 00000000 00:00 0 
+7fffeaa11000-7fffeaa34000 rw-p 00000000 00:00 0                          [stack]
+7fffeabfb000-7fffeabfd000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x000000006132cb90 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7c503)[0x2ad5e38ea503]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x00000000625dcb90 ***
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2ad5e11e392b]
+======= Backtrace: =========
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPID_Init+0x145)[0x2ad5e11de035]
+/lib64/libc.so.6(+0x7c503)[0x2b6d1203d503]
+*** Error in `lmp_Questmpich': double free or corruption (fasttop): 0x00000000616b3b90 ***
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIR_Init_thread+0x247)[0x2ad5e129c1f7]
+/software/mpi/mpich/3.0.4/lib/libmpich.so.11(MPIDI_Populate_vc_node_ids+0x43b)[0x2b6d0f93692b]
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   EXIT CODE: 134
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+[proxy:0:1@qnode5039] HYD_pmcd_pmip_control_cmd_cb (./pm/pmiserv/pmip_cb.c:886): assert (!closed) failed
+[proxy:0:1@qnode5039] HYDT_dmxu_poll_wait_for_event (./tools/demux/demux_poll.c:77): callback returned error status
+[proxy:0:1@qnode5039] main (./pm/pmiserv/pmip.c:206): demux engine error waiting for event
+srun: error: qnode5039: task 1: Exited with exit code 7
+[mpiexec@qnode5038] HYDT_bscu_wait_for_completion (./tools/bootstrap/utils/bscu_wait.c:76): one of the processes terminated badly; aborting
+[mpiexec@qnode5038] HYDT_bsci_wait_for_completion (./tools/bootstrap/src/bsci_wait.c:23): launcher returned error waiting for completion
+[mpiexec@qnode5038] HYD_pmci_wait_for_completion (./pm/pmiserv/pmiserv_pmci.c:217): launcher returned error waiting for completion
+[mpiexec@qnode5038] main (./ui/mpich/mpiexec.c:331): process manager error waiting for completion

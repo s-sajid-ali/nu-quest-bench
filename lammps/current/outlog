@@ -1,0 +1,14 @@
+lammps-22Aug18
+lmp
+lammps-31Mar17-mpich
+lmp_Questmpich
+lammps-gcc
+lmp_Quest_gcc
+lammps-gcc-mkl
+lmp_Quest_gcc_mkl
+lammps-intel
+lmp_Quest_intel
+lammps-intel-mkl
+lmp_Quest_intel_mkl
+lammps-mpich
+lmp_Questmpich

@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            qnode5038
+  Device name:           mlx4_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4103
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+LAMMPS (11 Jan 2013)
+Lattice spacing in x,y,z = 1.6796 1.6796 1.6796
+Created orthogonal box = (0 0 0) to (33.5919 33.5919 33.5919)
+  3 by 4 by 4 MPI processor grid
+Created 32000 atoms
+Setting up run ...
+Memory usage per processor = 1.84869 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0         1.44   -6.7733681            0   -4.6134356   -5.0197073 
+     100    0.7574531   -5.7585055            0   -4.6223613   0.20726105 
+Loop time of 0.0940975 on 48 procs for 100 steps with 32000 atoms
+
+Pair  time (%) = 0.045461 (48.3127)
+Neigh time (%) = 0.00599383 (6.36981)
+Comm  time (%) = 0.0411631 (43.7452)
+Outpt time (%) = 0.000147124 (0.156353)
+Other time (%) = 0.00133241 (1.41599)
+
+Nlocal:    666.667 ave 695 max 636 min
+Histogram: 1 3 4 6 9 8 7 3 4 3
+Nghost:    2199.15 ave 2234 max 2168 min
+Histogram: 2 4 7 5 12 5 2 4 4 3
+Neighs:    25059 ave 26611 max 23829 min
+Histogram: 4 4 5 11 3 12 2 2 2 3
+
+Total # of neighbors = 1202833
+Ave neighs/atom = 37.5885
+Neighbor list builds = 5
+Dangerous builds = 0
+[qnode5038:17704] 47 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[qnode5038:17704] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

@@ -1,0 +1,73 @@
+----------------------------------------
+srun job start: Tue Feb 18 00:46:38 CST 2020
+Job ID: 205
+Username: sas4990
+Queue: normal
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /software/lammps/lammps-31Mar17-mpich-RH7/bin:/software/mpi/mpich-3.0.4-gcc-4.8.3-RH7/bin:/hpc/software/gcc/4.8.3/bin:/software/cuda/cuda_7.5.18/samples/bin/x86_64/linux/release:/software/cuda/cuda_7.5.18/bin/computeprof:/software/cuda/cuda_7.5.18/bin:/home/sas4990/miniconda3/envs/ipy3/bin:/home/sas4990/miniconda3/condabin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+lmp_Questmpich: error while loading shared libraries: libcuda.so.1: cannot open shared object file: No such file or directory
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 4698 RUNNING AT qnode5038
+=   EXIT CODE: 127
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+[proxy:0:1@qnode5039] HYD_pmcd_pmip_control_cmd_cb (pm/pmiserv/pmip_cb.c:877): assert (!closed) failed
+[proxy:0:1@qnode5039] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[proxy:0:1@qnode5039] main (pm/pmiserv/pmip.c:206): demux engine error waiting for event
+srun: error: qnode5039: task 1: Exited with exit code 7
+[mpiexec@qnode5038] HYDT_bscu_wait_for_completion (tools/bootstrap/utils/bscu_wait.c:76): one of the processes terminated badly; aborting
+[mpiexec@qnode5038] HYDT_bsci_wait_for_completion (tools/bootstrap/src/bsci_wait.c:23): launcher returned error waiting for completion
+[mpiexec@qnode5038] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:218): launcher returned error waiting for completion
+[mpiexec@qnode5038] main (ui/mpich/mpiexec.c:325): process manager error waiting for completion

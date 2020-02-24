@@ -1,0 +1,430 @@
+LAMMPS (10 Feb 2015)
+  using 1 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 1.6796 1.6796 1.6796
+Created orthogonal box = (0 0 0) to (33.5919 33.5919 33.5919)
+  3 by 4 by 4 MPI processor grid
+Created 32000 atoms
+Neighbor list info ...
+  1 neighbor list requests
+  update every 20 steps, delay 0 steps, check no
+  master list distance cutoff = 2.8
+Setting up run ...
+Memory usage per processor = 2.06927 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0         1.44   -6.7733681            0   -4.6134356   -5.0197073 
+*** Error in `lmp_mpi': corrupted double-linked list: 0x0000000062610130 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7bc02)[0x2b30e56b6c02]
+/lib64/libc.so.6(+0x7d385)[0x2b30e56b8385]
+/lib64/libc.so.6(+0x7e145)[0x2b30e56b9145]
+/lib64/libc.so.6(__libc_memalign+0x75)[0x2b30e56bb875]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_bucket.so(mca_allocator_bucket_alloc+0xe1)[0x2b30e83f3231]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so(+0x406d)[0x2b30eadfc06d]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so(+0xc0bb)[0x2b30eae040bb]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so(mca_pml_ob1_recv_frag_callback_match+0x103)[0x2b30eae04813]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_openib.so(+0x1329b)[0x2b30e901e29b]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_openib.so(+0x152a9)[0x2b30e90202a9]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-pal.so.6(opal_progress+0x4a)[0x2b30e5edd83a]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi.so.1(ompi_request_default_wait+0x75)[0x2b30e493f735]
+/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi.so.1(MPI_Wait+0x59)[0x2b30e4972769]
+lmp_mpi[0x555b2a]
+lmp_mpi[0x114ad95]
+lmp_mpi[0x110d874]
+lmp_mpi[0x894586]
+lmp_mpi[0x892c83]
+lmp_mpi[0x8936e5]
+lmp_mpi[0x8a59fb]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b30e565cb35]
+lmp_mpi[0x41be39]
+======= Memory map: ========
+00400000-016e2000 r-xp 00000000 00:2b 16982961                           /hpc/software/lammps/lammps-10Feb15/bin/lmp_mpi
+018e2000-0190b000 rw-p 012e2000 00:2b 16982961                           /hpc/software/lammps/lammps-10Feb15/bin/lmp_mpi
+0190b000-61ab3000 rw-p 00000000 00:00 0 
+62196000-6261a000 rw-p 00000000 00:00 0                                  [heap]
+2b30e2d93000-2b30e2db3000 r-xp 00000000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b30e2db3000-2b30e2db5000 rw-p 00000000 00:00 0 
+2b30e2db5000-2b30e2db6000 -w-s 00000000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2db6000-2b30e2db7000 -w-s 00001000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2db7000-2b30e2db8000 r--s 00003000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2db8000-2b30e2db9000 -w-s 00000000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2db9000-2b30e2dba000 -w-s 00001000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2dba000-2b30e2dbb000 r--s 00003000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2dbb000-2b30e2dbc000 rw-p 00000000 00:00 0 
+2b30e2dbc000-2b30e2dbf000 rw-s 00e02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2dbf000-2b30e2dc0000 rw-p 00000000 00:00 0 
+2b30e2dc0000-2b30e2dc1000 rw-s 00000000 08:02 3221228765                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/shared_mem_btl_module.qnode5039 (deleted)
+2b30e2dc1000-2b30e2dc2000 rw-p 00000000 00:00 0 
+2b30e2dc2000-2b30e2dc4000 rw-s 00d02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2dc4000-2b30e2dc6000 rw-s 00d02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2dc7000-2b30e2e14000 rw-p 00000000 00:00 0 
+2b30e2e14000-2b30e2e16000 rw-s 00d02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2e16000-2b30e2e18000 rw-s 00d02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2e18000-2b30e2e20000 rw-s 00f02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2e20000-2b30e2e30000 rw-s 01002000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2e30000-2b30e2e40000 rw-s 01002000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2e40000-2b30e2f72000 rw-p 00000000 00:00 0 
+2b30e2f72000-2b30e2f74000 rw-s 00d02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2f74000-2b30e2f76000 rw-s 00d02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2f76000-2b30e2f78000 rw-s 00d02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2f78000-2b30e2f80000 rw-s 00f02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2f80000-2b30e2fa2000 rw-s 01202000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2fa2000-2b30e2fa4000 rw-s 00d02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2fa8000-2b30e2fb0000 rw-s 00f02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30e2fb2000-2b30e2fb3000 r--p 0001f000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b30e2fb3000-2b30e2fb4000 rw-p 00020000 fd:00 67174654                   /usr/lib64/ld-2.17.so
+2b30e2fb4000-2b30e2fb5000 rw-p 00000000 00:00 0 
+2b30e2fb5000-2b30e30b8000 r-xp 00000000 00:2b 17301978                   /hpc/software/FFTW/3.3.4-gcc-sse/lib/libfftw3.so.3.4.4
+2b30e30b8000-2b30e32b8000 ---p 00103000 00:2b 17301978                   /hpc/software/FFTW/3.3.4-gcc-sse/lib/libfftw3.so.3.4.4
+2b30e32b8000-2b30e32bf000 rw-p 00103000 00:2b 17301978                   /hpc/software/FFTW/3.3.4-gcc-sse/lib/libfftw3.so.3.4.4
+2b30e32bf000-2b30e3340000 r-xp 00000000 00:2b 24877218                   /hpc/software/lapack/3.5.0_gcc/lib/libblas.so
+2b30e3340000-2b30e353f000 ---p 00081000 00:2b 24877218                   /hpc/software/lapack/3.5.0_gcc/lib/libblas.so
+2b30e353f000-2b30e3540000 rw-p 00080000 00:2b 24877218                   /hpc/software/lapack/3.5.0_gcc/lib/libblas.so
+2b30e3540000-2b30e3c94000 r-xp 00000000 00:2b 24877220                   /hpc/software/lapack/3.5.0_gcc/lib/liblapack.so
+2b30e3c94000-2b30e3e94000 ---p 00754000 00:2b 24877220                   /hpc/software/lapack/3.5.0_gcc/lib/liblapack.so
+2b30e3e94000-2b30e3e98000 rw-p 00754000 00:2b 24877220                   /hpc/software/lapack/3.5.0_gcc/lib/liblapack.so
+2b30e3e98000-2b30e3fa6000 rw-p 00000000 00:00 0 
+2b30e3fa6000-2b30e3fa8000 r-xp 00000000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b30e3fa8000-2b30e41a8000 ---p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b30e41a8000-2b30e41a9000 r--p 00002000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b30e41a9000-2b30e41aa000 rw-p 00003000 fd:00 67174667                   /usr/lib64/libdl-2.17.so
+2b30e41aa000-2b30e41c1000 r-xp 00000000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b30e41c1000-2b30e43c0000 ---p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b30e43c0000-2b30e43c1000 r--p 00016000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b30e43c1000-2b30e43c2000 rw-p 00017000 fd:00 67174697                   /usr/lib64/libpthread-2.17.so
+2b30e43c2000-2b30e43c6000 rw-p 00000000 00:00 0 
+2b30e43c6000-2b30e44db000 r-xp 00000000 00:2b 665729                     /hpc/software/gcc/4.8.3/lib64/libgfortran.so.3.0.0
+2b30e44db000-2b30e46db000 ---p 00115000 00:2b 665729                     /hpc/software/gcc/4.8.3/lib64/libgfortran.so.3.0.0
+2b30e46db000-2b30e46dd000 rw-p 00115000 00:2b 665729                     /hpc/software/gcc/4.8.3/lib64/libgfortran.so.3.0.0
+2b30e46dd000-2b30e46f5000 r-xp 00000000 00:2b 851925                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi_cxx.so.1.1.3
+2b30e46f5000-2b30e48f5000 ---p 00018000 00:2b 851925                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi_cxx.so.1.1.3
+2b30e48f5000-2b30e48f7000 r--p 00018000 00:2b 851925                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi_cxx.so.1.1.3
+2b30e48f7000-2b30e48f8000 rw-p 0001a000 00:2b 851925                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi_cxx.so.1.1.3
+2b30e48f8000-2b30e49b9000 r-xp 00000000 00:2b 851546                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi.so.1.6.0
+2b30e49b9000-2b30e4bb8000 ---p 000c1000 00:2b 851546                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi.so.1.6.0
+2b30e4bb8000-2b30e4bba000 r--p 000c0000 00:2b 851546                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi.so.1.6.0
+2b30e4bba000-2b30e4bca000 rw-p 000c2000 00:2b 851546                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi.so.1.6.0
+2b30e4bca000-2b30e4bdd000 rw-p 00000000 00:00 0 
+2b30e4bdd000-2b30e4cf5000 r-xp 00000000 00:2b 665768                     /hpc/software/gcc/4.8.3/lib64/libstdc++.so.6.0.19
+2b30e4cf5000-2b30e4ef5000 ---p 00118000 00:2b 665768                     /hpc/software/gcc/4.8.3/lib64/libstdc++.so.6.0.19
+2b30e4ef5000-2b30e4efd000 r--p 00118000 00:2b 665768                     /hpc/software/gcc/4.8.3/lib64/libstdc++.so.6.0.19
+2b30e4efd000-2b30e4f00000 rw-p 00120000 00:2b 665768                     /hpc/software/gcc/4.8.3/lib64/libstdc++.so.6.0.19
+2b30e4f00000-2b30e4f15000 rw-p 00000000 00:00 0 
+2b30e4f15000-2b30e5015000 r-xp 00000000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b30e5015000-2b30e5215000 ---p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b30e5215000-2b30e5216000 r--p 00100000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b30e5216000-2b30e5217000 rw-p 00101000 fd:00 67174671                   /usr/lib64/libm-2.17.so
+2b30e5217000-2b30e5224000 r-xp 00000000 00:2b 665739                     /hpc/software/gcc/4.8.3/lib64/libgomp.so.1.0.0
+2b30e5224000-2b30e5424000 ---p 0000d000 00:2b 665739                     /hpc/software/gcc/4.8.3/lib64/libgomp.so.1.0.0
+2b30e5424000-2b30e5425000 rw-p 0000d000 00:2b 665739                     /hpc/software/gcc/4.8.3/lib64/libgomp.so.1.0.0
+2b30e5425000-2b30e543a000 r-xp 00000000 00:2b 665720                     /hpc/software/gcc/4.8.3/lib64/libgcc_s.so.1
+2b30e543a000-2b30e563a000 ---p 00015000 00:2b 665720                     /hpc/software/gcc/4.8.3/lib64/libgcc_s.so.1
+2b30e563a000-2b30e563b000 rw-p 00015000 00:2b 665720                     /hpc/software/gcc/4.8.3/lib64/libgcc_s.so.1
+2b30e563b000-2b30e57f2000 r-xp 00000000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b30e57f2000-2b30e59f1000 ---p 001b7000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b30e59f1000-2b30e59f5000 r--p 001b6000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b30e59f5000-2b30e59f7000 rw-p 001ba000 fd:00 67174661                   /usr/lib64/libc-2.17.so
+2b30e59f7000-2b30e59fc000 rw-p 00000000 00:00 0 
+2b30e59fc000-2b30e5a37000 r-xp 00000000 00:2b 665760                     /hpc/software/gcc/4.8.3/lib64/libquadmath.so.0.0.0
+2b30e5a37000-2b30e5c36000 ---p 0003b000 00:2b 665760                     /hpc/software/gcc/4.8.3/lib64/libquadmath.so.0.0.0
+2b30e5c36000-2b30e5c37000 rw-p 0003a000 00:2b 665760                     /hpc/software/gcc/4.8.3/lib64/libquadmath.so.0.0.0
+2b30e5c37000-2b30e5cb0000 r-xp 00000000 00:2b 851359                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-rte.so.7.0.5
+2b30e5cb0000-2b30e5eb0000 ---p 00079000 00:2b 851359                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-rte.so.7.0.5
+2b30e5eb0000-2b30e5eb1000 r--p 00079000 00:2b 851359                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-rte.so.7.0.5
+2b30e5eb1000-2b30e5eb4000 rw-p 0007a000 00:2b 851359                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-rte.so.7.0.5
+2b30e5eb4000-2b30e5eb6000 rw-p 00000000 00:00 0 
+2b30e5eb6000-2b30e5f7c000 r-xp 00000000 00:2b 851305                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-pal.so.6.2.1
+2b30e5f7c000-2b30e617b000 ---p 000c6000 00:2b 851305                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-pal.so.6.2.1
+2b30e617b000-2b30e617f000 r--p 000c5000 00:2b 851305                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-pal.so.6.2.1
+2b30e617f000-2b30e6183000 rw-p 000c9000 00:2b 851305                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-pal.so.6.2.1
+2b30e6183000-2b30e6189000 rw-p 00000000 00:00 0 
+2b30e6189000-2b30e6193000 r-xp 00000000 fd:00 68108084                   /usr/lib64/libnuma.so.1
+2b30e6193000-2b30e6393000 ---p 0000a000 fd:00 68108084                   /usr/lib64/libnuma.so.1
+2b30e6393000-2b30e6394000 r--p 0000a000 fd:00 68108084                   /usr/lib64/libnuma.so.1
+2b30e6394000-2b30e6395000 rw-p 0000b000 fd:00 68108084                   /usr/lib64/libnuma.so.1
+2b30e6395000-2b30e639c000 r-xp 00000000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b30e639c000-2b30e659b000 ---p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b30e659b000-2b30e659c000 r--p 00006000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b30e659c000-2b30e659d000 rw-p 00007000 fd:00 67174703                   /usr/lib64/librt-2.17.so
+2b30e659d000-2b30e659f000 r-xp 00000000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b30e659f000-2b30e679e000 ---p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b30e679e000-2b30e679f000 r--p 00001000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b30e679f000-2b30e67a0000 rw-p 00002000 fd:00 67174707                   /usr/lib64/libutil-2.17.so
+2b30e67a0000-2b30e67a3000 r-xp 00000000 00:2b 851332                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_shmem_mmap.so
+2b30e67a3000-2b30e69a2000 ---p 00003000 00:2b 851332                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_shmem_mmap.so
+2b30e69a2000-2b30e69a3000 r--p 00002000 00:2b 851332                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_shmem_mmap.so
+2b30e69a3000-2b30e69a4000 rw-p 00003000 00:2b 851332                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_shmem_mmap.so
+2b30e69a4000-2b30e69a5000 r-xp 00000000 00:2b 851330                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_sec_basic.so
+2b30e69a5000-2b30e6ba4000 ---p 00001000 00:2b 851330                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_sec_basic.so
+2b30e6ba4000-2b30e6ba5000 r--p 00000000 00:2b 851330                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_sec_basic.so
+2b30e6ba5000-2b30e6ba6000 rw-p 00001000 00:2b 851330                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_sec_basic.so
+2b30e6ba6000-2b30e6ba8000 r-xp 00000000 00:2b 851390                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_ess_env.so
+2b30e6ba8000-2b30e6da7000 ---p 00002000 00:2b 851390                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_ess_env.so
+2b30e6da7000-2b30e6da8000 r--p 00001000 00:2b 851390                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_ess_env.so
+2b30e6da8000-2b30e6da9000 rw-p 00002000 00:2b 851390                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_ess_env.so
+2b30e6da9000-2b30e6dab000 r-xp 00000000 00:2b 851472                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_state_app.so
+2b30e6dab000-2b30e6faa000 ---p 00002000 00:2b 851472                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_state_app.so
+2b30e6faa000-2b30e6fab000 r--p 00001000 00:2b 851472                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_state_app.so
+2b30e6fab000-2b30e6fac000 rw-p 00002000 00:2b 851472                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_state_app.so
+2b30e6fac000-2b30e6fae000 r-xp 00000000 00:2b 851382                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_errmgr_default_app.so
+2b30e6fae000-2b30e71ad000 ---p 00002000 00:2b 851382                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_errmgr_default_app.so
+2b30e71ad000-2b30e71ae000 r--p 00001000 00:2b 851382                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_errmgr_default_app.so
+2b30e71ae000-2b30e71af000 rw-p 00002000 00:2b 851382                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_errmgr_default_app.so
+2b30e71af000-2b30e71b3000 r-xp 00000000 00:2b 851470                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_routed_binomial.so
+2b30e71b3000-2b30e73b2000 ---p 00004000 00:2b 851470                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_routed_binomial.so
+2b30e73b2000-2b30e73b3000 r--p 00003000 00:2b 851470                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_routed_binomial.so
+2b30e73b3000-2b30e73b4000 rw-p 00004000 00:2b 851470                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_routed_binomial.so
+2b30e73b4000-2b30e73b7000 r-xp 00000000 00:2b 851325                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_db_hash.so
+2b30e73b7000-2b30e75b7000 ---p 00003000 00:2b 851325                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_db_hash.so
+2b30e75b7000-2b30e75b8000 r--p 00003000 00:2b 851325                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_db_hash.so
+2b30e75b8000-2b30e75b9000 rw-p 00004000 00:2b 851325                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_db_hash.so
+2b30e75b9000-2b30e75ba000 ---p 00000000 00:00 0 
+2b30e75ba000-2b30e77ba000 rw-p 00000000 00:00 0 
+2b30e77bb000-2b30e77cd000 r-xp 00000000 00:2b 851415                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_oob_tcp.so
+2b30e77cd000-2b30e79cd000 ---p 00012000 00:2b 851415                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_oob_tcp.so
+2b30e79cd000-2b30e79ce000 r--p 00012000 00:2b 851415                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_oob_tcp.so
+2b30e79ce000-2b30e79cf000 rw-p 00013000 00:2b 851415                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_oob_tcp.so
+2b30e79cf000-2b30e79d2000 r-xp 00000000 00:2b 851462                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_rml_oob.so
+2b30e79d2000-2b30e7bd2000 ---p 00003000 00:2b 851462                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_rml_oob.so
+2b30e7bd2000-2b30e7bd3000 r--p 00003000 00:2b 851462                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_rml_oob.so
+2b30e7bd3000-2b30e7bd4000 rw-p 00004000 00:2b 851462                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_rml_oob.so
+2b30e7bd4000-2b30e7bd6000 r-xp 00000000 00:2b 851323                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_db_print.so
+2b30e7bd6000-2b30e7dd5000 ---p 00002000 00:2b 851323                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_db_print.so
+2b30e7dd5000-2b30e7dd6000 r--p 00001000 00:2b 851323                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_db_print.so
+2b30e7dd6000-2b30e7dd7000 rw-p 00002000 00:2b 851323                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_db_print.so
+2b30e7dd7000-2b30e7dd9000 r-xp 00000000 00:2b 851399                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_grpcomm_bad.so
+2b30e7dd9000-2b30e7fd9000 ---p 00002000 00:2b 851399                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_grpcomm_bad.so
+2b30e7fd9000-2b30e7fda000 r--p 00002000 00:2b 851399                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_grpcomm_bad.so
+2b30e7fda000-2b30e7fdb000 rw-p 00003000 00:2b 851399                     /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_grpcomm_bad.so
+2b30e7fdb000-2b30e7fe7000 r-xp 00000000 fd:00 67174685                   /usr/lib64/libnss_files-2.17.so
+2b30e7fe7000-2b30e81e6000 ---p 0000c000 fd:00 67174685                   /usr/lib64/libnss_files-2.17.so
+2b30e81e6000-2b30e81e7000 r--p 0000b000 fd:00 67174685                   /usr/lib64/libnss_files-2.17.so
+2b30e81e7000-2b30e81e8000 rw-p 0000c000 fd:00 67174685                   /usr/lib64/libnss_files-2.17.so
+2b30e81e8000-2b30e81ee000 rw-p 00000000 00:00 0 
+2b30e81ee000-2b30e81f0000 r-xp 00000000 00:2b 1376276                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_basic.so
+2b30e81f0000-2b30e83f0000 ---p 00002000 00:2b 1376276                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_basic.so
+2b30e83f0000-2b30e83f1000 r--p 00002000 00:2b 1376276                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_basic.so
+2b30e83f1000-2b30e83f2000 rw-p 00003000 00:2b 1376276                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_basic.so
+2b30e83f2000-2b30e83f4000 r-xp 00000000 00:2b 1376274                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_bucket.so
+2b30e83f4000-2b30e85f3000 ---p 00002000 00:2b 1376274                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_bucket.so
+2b30e85f3000-2b30e85f4000 r--p 00001000 00:2b 1376274                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_bucket.so
+2b30e85f4000-2b30e85f5000 rw-p 00002000 00:2b 1376274                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_bucket.so
+2b30e85f5000-2b30e85f9000 r-xp 00000000 00:2b 1376368                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_rcache_vma.so
+2b30e85f9000-2b30e87f8000 ---p 00004000 00:2b 1376368                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_rcache_vma.so
+2b30e87f8000-2b30e87f9000 r--p 00003000 00:2b 1376368                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_rcache_vma.so
+2b30e87f9000-2b30e87fa000 rw-p 00004000 00:2b 1376368                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_rcache_vma.so
+2b30e87fa000-2b30e87fe000 r-xp 00000000 00:2b 1376345                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_mpool_grdma.so
+2b30e87fe000-2b30e89fd000 ---p 00004000 00:2b 1376345                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_mpool_grdma.so
+2b30e89fd000-2b30e89fe000 r--p 00003000 00:2b 1376345                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_mpool_grdma.so
+2b30e89fe000-2b30e89ff000 rw-p 00004000 00:2b 1376345                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_mpool_grdma.so
+2b30e89ff000-2b30e8a01000 r-xp 00000000 00:2b 1376348                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_mpool_sm.so
+2b30e8a01000-2b30e8c00000 ---p 00002000 00:2b 1376348                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_mpool_sm.so
+2b30e8c00000-2b30e8c01000 r--p 00001000 00:2b 1376348                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_mpool_sm.so
+2b30e8c01000-2b30e8c02000 rw-p 00002000 00:2b 1376348                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_mpool_sm.so
+2b30e8c02000-2b30e8c05000 r-xp 00000000 00:2b 1376264                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmca_common_sm.so.4.0.4
+2b30e8c05000-2b30e8e04000 ---p 00003000 00:2b 1376264                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmca_common_sm.so.4.0.4
+2b30e8e04000-2b30e8e05000 r--p 00002000 00:2b 1376264                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmca_common_sm.so.4.0.4
+2b30e8e05000-2b30e8e06000 rw-p 00003000 00:2b 1376264                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmca_common_sm.so.4.0.4
+2b30e8e06000-2b30e8e09000 r-xp 00000000 00:2b 1376281                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_bml_r2.so
+2b30e8e09000-2b30e9009000 ---p 00003000 00:2b 1376281                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_bml_r2.so
+2b30e9009000-2b30e900a000 r--p 00003000 00:2b 1376281                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_bml_r2.so
+2b30e900a000-2b30e900b000 rw-p 00004000 00:2b 1376281                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_bml_r2.so
+2b30e900b000-2b30e9042000 r-xp 00000000 00:2b 1376299                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_openib.so
+2b30e9042000-2b30e9241000 ---p 00037000 00:2b 1376299                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_openib.so
+2b30e9241000-2b30e9242000 r--p 00036000 00:2b 1376299                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_openib.so
+2b30e9242000-2b30e9244000 rw-p 00037000 00:2b 1376299                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_openib.so
+2b30e9244000-2b30e9245000 rw-p 00000000 00:00 0 
+2b30e9245000-2b30e925f000 r-xp 00000000 fd:00 71402940                   /usr/lib64/librdmacm.so.1.0.0
+2b30e925f000-2b30e945e000 ---p 0001a000 fd:00 71402940                   /usr/lib64/librdmacm.so.1.0.0
+2b30e945e000-2b30e945f000 r--p 00019000 fd:00 71402940                   /usr/lib64/librdmacm.so.1.0.0
+2b30e945f000-2b30e9460000 rw-p 0001a000 fd:00 71402940                   /usr/lib64/librdmacm.so.1.0.0
+2b30e9460000-2b30e9461000 rw-p 00000000 00:00 0 
+2b30e9461000-2b30e9465000 r-xp 00000000 00:2b 1376269                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmca_common_verbs.so.0.2.3
+2b30e9465000-2b30e9664000 ---p 00004000 00:2b 1376269                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmca_common_verbs.so.0.2.3
+2b30e9664000-2b30e9665000 r--p 00003000 00:2b 1376269                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmca_common_verbs.so.0.2.3
+2b30e9665000-2b30e9666000 rw-p 00004000 00:2b 1376269                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmca_common_verbs.so.0.2.3
+2b30e9666000-2b30e9675000 r-xp 00000000 fd:00 71409803                   /usr/lib64/libosmcomp.so.3.0.6
+2b30e9675000-2b30e9874000 ---p 0000f000 fd:00 71409803                   /usr/lib64/libosmcomp.so.3.0.6
+2b30e9874000-2b30e9875000 r--p 0000e000 fd:00 71409803                   /usr/lib64/libosmcomp.so.3.0.6
+2b30e9875000-2b30e9876000 rw-p 0000f000 fd:00 71409803                   /usr/lib64/libosmcomp.so.3.0.6
+2b30e9876000-2b30e988e000 r-xp 00000000 fd:00 68570821                   /usr/lib64/libibverbs.so.1.0.0
+2b30e988e000-2b30e9a8d000 ---p 00018000 fd:00 68570821                   /usr/lib64/libibverbs.so.1.0.0
+2b30e9a8d000-2b30e9a8e000 r--p 00017000 fd:00 68570821                   /usr/lib64/libibverbs.so.1.0.0
+2b30e9a8e000-2b30e9a8f000 rw-p 00018000 fd:00 68570821                   /usr/lib64/libibverbs.so.1.0.0
+2b30e9a8f000-2b30e9a97000 r-xp 00000000 fd:00 71402841                   /usr/lib64/libibumad.so.3.2.0
+2b30e9a97000-2b30e9c97000 ---p 00008000 fd:00 71402841                   /usr/lib64/libibumad.so.3.2.0
+2b30e9c97000-2b30e9c98000 r--p 00008000 fd:00 71402841                   /usr/lib64/libibumad.so.3.2.0
+2b30e9c98000-2b30e9c99000 rw-p 00009000 fd:00 71402841                   /usr/lib64/libibumad.so.3.2.0
+2b30e9c99000-2b30e9cfd000 r-xp 00000000 fd:00 67186605                   /usr/lib64/libnl-route-3.so.200.23.0
+2b30e9cfd000-2b30e9efc000 ---p 00064000 fd:00 67186605                   /usr/lib64/libnl-route-3.so.200.23.0
+2b30e9efc000-2b30e9eff000 r--p 00063000 fd:00 67186605                   /usr/lib64/libnl-route-3.so.200.23.0
+2b30e9eff000-2b30e9f04000 rw-p 00066000 fd:00 67186605                   /usr/lib64/libnl-route-3.so.200.23.0
+2b30e9f04000-2b30e9f06000 rw-p 00000000 00:00 0 
+2b30e9f06000-2b30e9f24000 r-xp 00000000 fd:00 67175890                   /usr/lib64/libnl-3.so.200.23.0
+2b30e9f24000-2b30ea124000 ---p 0001e000 fd:00 67175890                   /usr/lib64/libnl-3.so.200.23.0
+2b30ea124000-2b30ea126000 r--p 0001e000 fd:00 67175890                   /usr/lib64/libnl-3.so.200.23.0
+2b30ea126000-2b30ea127000 rw-p 00020000 fd:00 67175890                   /usr/lib64/libnl-3.so.200.23.0
+2b30ea127000-2b30ea12a000 r-xp 00000000 00:2b 1376284                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_self.so
+2b30ea12a000-2b30ea32a000 ---p 00003000 00:2b 1376284                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_self.so
+2b30ea32a000-2b30ea32b000 r--p 00003000 00:2b 1376284                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_self.so
+2b30ea32b000-2b30ea32c000 rw-p 00004000 00:2b 1376284                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_self.so
+2b30ea32c000-2b30ea333000 r-xp 00000000 00:2b 1376287                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_sm.so
+2b30ea333000-2b30ea532000 ---p 00007000 00:2b 1376287                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_sm.so
+2b30ea532000-2b30ea533000 r--p 00006000 00:2b 1376287                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_sm.so
+2b30ea533000-2b30ea534000 rw-p 00007000 00:2b 1376287                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_sm.so
+2b30ea534000-2b30ea541000 r-xp 00000000 00:2b 1376291                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_tcp.so
+2b30ea541000-2b30ea740000 ---p 0000d000 00:2b 1376291                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_tcp.so
+2b30ea740000-2b30ea741000 r--p 0000c000 00:2b 1376291                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_tcp.so
+2b30ea741000-2b30ea742000 rw-p 0000d000 00:2b 1376291                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_tcp.so
+2b30ea742000-2b30ea7c2000 rw-p 00000000 00:00 0 
+2b30ea7c2000-2b30ea7c7000 r-xp 00000000 00:2b 1376302                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_vader.so
+2b30ea7c7000-2b30ea9c6000 ---p 00005000 00:2b 1376302                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_vader.so
+2b30ea9c6000-2b30ea9c7000 r--p 00004000 00:2b 1376302                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_vader.so
+2b30ea9c7000-2b30ea9c9000 rw-p 00005000 00:2b 1376302                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_vader.so
+2b30ea9c9000-2b30ea9ca000 ---p 00000000 00:00 0 
+2b30ea9ca000-2b30eabeb000 rw-p 00000000 00:00 0 
+2b30eabef000-2b30eabf5000 r-xp 00000000 00:2b 1376318                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_hierarch.so
+2b30eabf5000-2b30eadf5000 ---p 00006000 00:2b 1376318                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_hierarch.so
+2b30eadf5000-2b30eadf6000 r--p 00006000 00:2b 1376318                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_hierarch.so
+2b30eadf6000-2b30eadf7000 rw-p 00007000 00:2b 1376318                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_hierarch.so
+2b30eadf8000-2b30eae15000 r-xp 00000000 00:2b 1376363                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so
+2b30eae15000-2b30eb015000 ---p 0001d000 00:2b 1376363                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so
+2b30eb015000-2b30eb016000 r--p 0001d000 00:2b 1376363                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so
+2b30eb016000-2b30eb017000 rw-p 0001e000 00:2b 1376363                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so
+2b30eb017000-2b30eb0f9000 rw-p 00000000 00:00 0 
+2b30eb100000-2b30eb200000 rw-s 01402000 00:05 17739                      /dev/infiniband/uverbs0
+2b30eb200000-2b30eb208000 rw-s 00f02000 00:05 17739                      /dev/infiniband/uverbs0
+2b30eb220000-2b30eb22d000 r-xp 00000000 00:2b 1376314                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_basic.so
+2b30eb22d000-2b30eb42c000 ---p 0000d000 00:2b 1376314                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_basic.so
+2b30eb42c000-2b30eb42d000 r--p 0000c000 00:2b 1376314                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_basic.so
+2b30eb42d000-2b30eb42e000 rw-p 0000d000 00:2b 1376314                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_basic.so
+2b30eb42e000-2b30eb432000 r-xp 00000000 00:2b 1376316                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_inter.so
+2b30eb432000-2b30eb631000 ---p 00004000 00:2b 1376316                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_inter.so
+2b30eb631000-2b30eb632000 r--p 00003000 00:2b 1376316                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_inter.so
+2b30eb632000-2b30eb633000 rw-p 00004000 00:2b 1376316                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_inter.so
+2b30eb633000-2b30eb64c000 r-xp 00000000 00:2b 1376306                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_libnbc.so
+2b30eb64c000-2b30eb84c000 ---p 00019000 00:2b 1376306                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_libnbc.so
+2b30eb84c000-2b30eb84d000 r--p 00019000 00:2b 1376306                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_libnbc.so
+2b30eb84d000-2b30eb84e000 rw-p 0001a000 00:2b 1376306                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_libnbc.so
+2b30eb84e000-2b30eb866000 r-xp 00000000 00:2b 1376355                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_osc_rdma.so
+2b30eb866000-2b30eba65000 ---p 00018000 00:2b 1376355                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_osc_rdma.so
+2b30eba65000-2b30eba66000 r--p 00017000 00:2b 1376355                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_osc_rdma.so
+2b30eba66000-2b30eba67000 rw-p 00018000 00:2b 1376355                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_osc_rdma.so
+2b30eba67000-2b30eba88000 rw-p 00000000 00:00 0 
+2b30eba8c000-2b30eba8e000 r-xp 00000000 00:2b 1376309                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_self.so
+2b30eba8e000-2b30ebc8e000 ---p 00002000 00:2b 1376309                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_self.so
+2b30ebc8e000-2b30ebc8f000 r--p 00002000 00:2b 1376309                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_self.so
+2b30ebc8f000-2b30ebc90000 rw-p 00003000 00:2b 1376309                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_self.so
+2b30ebc90000-2b30ebcf1000 rw-p 00000000 00:00 0 
+2b30ebd00000-2b30ebe00000 rw-s 01402000 00:05 17739                      /dev/infiniband/uverbs0
+2b30ebe00000-2b30ebe95000 rw-p 00000000 00:00 0 
+2b30ebe97000-2b30ebff9000 rw-p 00000000 00:00 0 
+2b30ec000000-2b30ec023000 rw-p 00000000 00:00 0 
+2b30ec023000-2b30f0000000 ---p 00000000 00:00 0 
+2b30f0000000-2b30f001e000 r-xp 00000000 00:2b 1376304                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_tuned.so
+2b30f001e000-2b30f021e000 ---p 0001e000 00:2b 1376304                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_tuned.so
+2b30f021e000-2b30f021f000 r--p 0001e000 00:2b 1376304                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_tuned.so
+2b30f021f000-2b30f0220000 rw-p 0001f000 00:2b 1376304                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_coll_tuned.so
+2b30f0220000-2b30f0225000 r-xp 00000000 00:2b 1376353                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_osc_sm.so
+2b30f0225000-2b30f0424000 ---p 00005000 00:2b 1376353                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_osc_sm.so
+2b30f0424000-2b30f0425000 r--p 00004000 00:2b 1376353                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_osc_sm.so
+2b30f0425000-2b30f0427000 rw-p 00005000 00:2b 1376353                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_osc_sm.so
+2b30f0427000-2b30f0428000 ---p 00000000 00:00 0 
+2b30f0428000-2b30f0628000 rw-p 00000000 00:00 0 
+2b30f0628000-2b30f062c000 r-xp 00000000 fd:00 71402827                   /usr/lib64/librxe-rdmav2.so
+2b30f062c000-2b30f082b000 ---p 00004000 fd:00 71402827                   /usr/lib64/librxe-rdmav2.so
+2b30f082b000-2b30f082c000 r--p 00003000 fd:00 71402827                   /usr/lib64/librxe-rdmav2.so
+2b30f082c000-2b30f082d000 rw-p 00004000 fd:00 71402827                   /usr/lib64/librxe-rdmav2.so
+2b30f082d000-2b30f0885000 r-xp 00000000 fd:00 71402822                   /usr/lib64/libmlx5.so.1.0.0
+2b30f0885000-2b30f0a85000 ---p 00058000 fd:00 71402822                   /usr/lib64/libmlx5.so.1.0.0
+2b30f0a85000-2b30f0a86000 r--p 00058000 fd:00 71402822                   /usr/lib64/libmlx5.so.1.0.0
+2b30f0a86000-2b30f0a88000 rw-p 00059000 fd:00 71402822                   /usr/lib64/libmlx5.so.1.0.0
+2b30f0a88000-2b30f0aaa000 r-xp 00000000 fd:00 71402818                   /usr/lib64/libmlx4-rdmav2.so
+2b30f0aaa000-2b30f0ca9000 ---p 00022000 fd:00 71402818                   /usr/lib64/libmlx4-rdmav2.so
+2b30f0ca9000-2b30f0caa000 r--p 00021000 fd:00 71402818                   /usr/lib64/libmlx4-rdmav2.so
+2b30f0caa000-2b30f0cac000 rw-p 00022000 fd:00 71402818                   /usr/lib64/libmlx4-rdmav2.so
+2b30f0cac000-2b30f10ad000 rw-s 00000000 08:02 1073777089                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/25/vader_segment.qnode5039.1
+2b30f10ad000-2b30f14ae000 rw-s 00000000 08:02 14399                      /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/24/vader_segment.qnode5039.0
+2b30f14ae000-2b30f18af000 rw-s 00000000 08:02 2149119100                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/26/vader_segment.qnode5039.2
+2b30f18af000-2b30f1cb0000 rw-s 00000000 08:02 3221228762                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/27/vader_segment.qnode5039.3
+2b30f1cb0000-2b30f20b1000 rw-s 00000000 08:02 14528                      /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/28/vader_segment.qnode5039.4
+2b30f20b1000-2b30f24b2000 rw-s 00000000 08:02 1073777090                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/29/vader_segment.qnode5039.5
+2b30f24b2000-2b30f28b3000 rw-s 00000000 08:02 2149119101                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/30/vader_segment.qnode5039.6
+2b30f28b3000-2b30f2cb4000 rw-s 00000000 08:02 3221228767                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/31/vader_segment.qnode5039.7
+2b30f2cb4000-2b30f30b5000 rw-s 00000000 08:02 14529                      /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/32/vader_segment.qnode5039.8
+2b30f30b5000-2b30f34b6000 rw-s 00000000 08:02 1073777091                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/33/vader_segment.qnode5039.9
+2b30f34b6000-2b30f38b7000 rw-s 00000000 08:02 2149119102                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/34/vader_segment.qnode5039.10
+2b30f38b7000-2b30f3cb8000 rw-s 00000000 08:02 3221225792                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/35/vader_segment.qnode5039.11
+2b30f3cb8000-2b30f3e3c000 rw-p 00000000 00:00 0 
+2b30f3e40000-2b30f3e62000 rw-s 01202000 00:05 17739                      /dev/infiniband/uverbs0
+2b30f3e62000-2b30f3fe7000 rw-p 00000000 00:00 0 
+2b30f4000000-2b30f4021000 rw-p 00000000 00:00 0 
+2b30f4021000-2b30f8000000 ---p 00000000 00:00 0 
+2b30f8000000-2b30f8401000 rw-s 00000000 08:02 14530                      /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/36/vader_segment.qnode5039.12
+2b30f8401000-2b30f8802000 rw-s 00000000 08:02 1073777092                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/37/vader_segment.qnode5039.13
+2b30f8802000-2b30f8c03000 rw-s 00000000 08:02 2149119103                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/38/vader_segment.qnode5039.14
+2b30f8c03000-2b30f9004000 rw-s 00000000 08:02 3221225793                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/39/vader_segment.qnode5039.15
+2b30f9004000-2b30f9405000 rw-s 00000000 08:02 14531                      /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/40/vader_segment.qnode5039.16
+2b30f9405000-2b30f9806000 rw-s 00000000 08:02 1073777093                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/41/vader_segment.qnode5039.17
+2b30f9806000-2b30f9c07000 rw-s 00000000 08:02 2149153152                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/42/vader_segment.qnode5039.18
+2b30f9c07000-2b30fa008000 rw-s 00000000 08:02 3221225794                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/43/vader_segment.qnode5039.19
+2b30fa008000-2b30fa409000 rw-s 00000000 08:02 14532                      /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/44/vader_segment.qnode5039.20
+2b30fa409000-2b30fa80a000 rw-s 00000000 08:02 1073777094                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/45/vader_segment.qnode5039.21
+2b30fa80a000-2b30fac0b000 rw-s 00000000 08:02 2149153153                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/46/vader_segment.qnode5039.22
+2b30fac0b000-2b30fb00c000 rw-s 00000000 08:02 3221225795                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/47/vader_segment.qnode5039.23
+2b30fb00c000-2b310300d000 rw-s 00000000 08:02 3221228763                 /tmp/openmpi-sessions-sas4990@qnode5039_0/3504/1/shared_mem_pool.qnode5039 (deleted)
+2b310300d000-2b3103e48000 rw-p 00000000 00:00 0 
+2b3103e80000-2b3103ea2000 rw-s 01202000 00:05 17739                      /dev/infiniband/uverbs0
+2b3103ec0000-2b3103ee2000 rw-s 01202000 00:05 17739                      /dev/infiniband/uverbs0
+2b3104000000-2b3104021000 rw-p 00000000 00:00 0 
+2b3104021000-2b3108000000 ---p 00000000 00:00 0 
+2b3108000000-2b3108201000 rw-p 00000000 00:00 0 
+2b3108201000-2b3108204000 r-xp 00000000 00:2b 1376366                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pubsub_orte.so
+2b3108204000-2b3108403000 ---p 00003000 00:2b 1376366                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pubsub_orte.so
+2b3108403000-2b3108404000 r--p 00002000 00:2b 1376366                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pubsub_orte.so
+2b3108404000-2b3108405000 rw-p 00003000 00:2b 1376366                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pubsub_orte.so
+2b3108405000-2b310840b000 r-xp 00000000 00:2b 1376325                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_dpm_orte.so
+2b310840b000-2b310860a000 ---p 00006000 00:2b 1376325                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_dpm_orte.so
+2b310860a000-2b310860b000 r--p 00005000 00:2b 1376325                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_dpm_orte.so
+2b310860b000-2b310860c000 rw-p 00006000 00:2b 1376325                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_dpm_orte.so
+2b310860c000-2b310860d000 r-xp 00000000 00:2b 1376382                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_topo_basic.so
+2b310860d000-2b310880c000 ---p 00001000 00:2b 1376382                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_topo_basic.so
+2b310880c000-2b310880d000 r--p 00000000 00:2b 1376382                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_topo_basic.so
+2b310880d000-2b310880e000 rw-p 00001000 00:2b 1376382                    /hpc/software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_topo_basic.so
+2b310c000000-2b310c021000 rw-p 00000000 00:00 0 
+2b310c021000-2b3110000000 ---p 00000000 00:00 0 
+7ffc6347f000-7ffc634a3000 rw-p 00000000 00:00 0                          [stack]
+7ffc63530000-7ffc63532000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+[qnode5039:10847] *** Process received signal ***
+[qnode5039:10847] Signal: Aborted (6)
+[qnode5039:10847] Signal code:  (-6)
+[qnode5039:10847] [ 0] /lib64/libpthread.so.0(+0xf370)[0x2b30e41b9370]
+[qnode5039:10847] [ 1] /lib64/libc.so.6(gsignal+0x37)[0x2b30e56701d7]
+[qnode5039:10847] [ 2] /lib64/libc.so.6(abort+0x148)[0x2b30e56718c8]
+[qnode5039:10847] [ 3] /lib64/libc.so.6(+0x74f07)[0x2b30e56aff07]
+[qnode5039:10847] [ 4] /lib64/libc.so.6(+0x7bc02)[0x2b30e56b6c02]
+[qnode5039:10847] [ 5] /lib64/libc.so.6(+0x7d385)[0x2b30e56b8385]
+[qnode5039:10847] [ 6] /lib64/libc.so.6(+0x7e145)[0x2b30e56b9145]
+[qnode5039:10847] [ 7] /lib64/libc.so.6(__libc_memalign+0x75)[0x2b30e56bb875]
+[qnode5039:10847] [ 8] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_allocator_bucket.so(mca_allocator_bucket_alloc+0xe1)[0x2b30e83f3231]
+[qnode5039:10847] [ 9] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so(+0x406d)[0x2b30eadfc06d]
+[qnode5039:10847] [10] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so(+0xc0bb)[0x2b30eae040bb]
+[qnode5039:10847] [11] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_pml_ob1.so(mca_pml_ob1_recv_frag_callback_match+0x103)[0x2b30eae04813]
+[qnode5039:10847] [12] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_openib.so(+0x1329b)[0x2b30e901e29b]
+[qnode5039:10847] [13] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/openmpi/mca_btl_openib.so(+0x152a9)[0x2b30e90202a9]
+[qnode5039:10847] [14] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libopen-pal.so.6(opal_progress+0x4a)[0x2b30e5edd83a]
+[qnode5039:10847] [15] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi.so.1(ompi_request_default_wait+0x75)[0x2b30e493f735]
+[qnode5039:10847] [16] /software/mpi/openmpi-1.8.3-gcc-4.8.3-RH7/lib64/libmpi.so.1(MPI_Wait+0x59)[0x2b30e4972769]
+[qnode5039:10847] [17] lmp_mpi[0x555b2a]
+[qnode5039:10847] [18] lmp_mpi[0x114ad95]
+[qnode5039:10847] [19] lmp_mpi[0x110d874]
+[qnode5039:10847] [20] lmp_mpi[0x894586]
+[qnode5039:10847] [21] lmp_mpi[0x892c83]
+[qnode5039:10847] [22] lmp_mpi[0x8936e5]
+[qnode5039:10847] [23] lmp_mpi[0x8a59fb]
+[qnode5039:10847] [24] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b30e565cb35]
+[qnode5039:10847] [25] lmp_mpi[0x41be39]
+[qnode5039:10847] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 25 with PID 10847 on node qnode5039 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------

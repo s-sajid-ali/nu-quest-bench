@@ -1,0 +1,54 @@
+LAMMPS (22 Aug 2018)
+  using 1 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 1.6796 1.6796 1.6796
+Created orthogonal box = (0 0 0) to (33.5919 33.5919 33.5919)
+  3 by 4 by 4 MPI processor grid
+Created 32000 atoms
+  Time spent = 0.066596 secs
+Neighbor list info ...
+  update every 20 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 2.8
+  ghost atom cutoff = 2.8
+  binsize = 1.4, bins = 24 24 24
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.005
+Per MPI rank memory allocation (min/avg/max) = 2.641 | 2.657 | 2.671 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0         1.44   -6.7733681            0   -4.6134356   -5.0197073 
+     100    0.7574531   -5.7585055            0   -4.6223613   0.20726105 
+Loop time of 0.124184 on 48 procs for 100 steps with 32000 atoms
+
+Performance: 347869.734 tau/day, 805.254 timesteps/s
+62.7% CPU use with 48 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.050857   | 0.075529   | 0.10065    |   4.7 | 60.82
+Neigh   | 0.006892   | 0.010052   | 0.013481   |   1.7 |  8.09
+Comm    | 0.024006   | 0.036285   | 0.049928   |   3.4 | 29.22
+Output  | 0.000117   | 0.00025808 | 0.000445   |   0.0 |  0.21
+Modify  | 0.000853   | 0.0013249  | 0.001752   |   0.6 |  1.07
+Other   |            | 0.0007353  |            |       |  0.59
+
+Nlocal:    666.667 ave 695 max 636 min
+Histogram: 1 3 4 6 9 8 7 3 4 3
+Nghost:    2199.15 ave 2234 max 2168 min
+Histogram: 2 4 7 5 12 5 2 4 4 3
+Neighs:    25059 ave 26611 max 23829 min
+Histogram: 4 4 5 11 3 12 2 2 2 3
+
+Total # of neighbors = 1202833
+Ave neighs/atom = 37.5885
+Neighbor list builds = 5
+Dangerous builds not checked
+Total wall time: 0:00:00
