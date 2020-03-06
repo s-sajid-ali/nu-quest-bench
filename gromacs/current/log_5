@@ -1,0 +1,74 @@
+                      :-) GROMACS - gmx mdrun, 2018.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2018.2
+Executable:   /software/sources/builds/gromacs-2018.2/build_cpu/bin/gmx_mpi
+Data prefix:  /hpc/software/sources/builds/gromacs-2018.2 (source tree)
+Working dir:  /home/sas4990/projects/gromacs/current
+Command line:
+  gmx_mpi mdrun -s lignocellulose-rf.tpr -maxh 0.50 -resethway -noconfout -nsteps 10000 -g
+
+
+Back Off! I just backed up md.log to ./#md.log.6#
+Compiled SIMD: AVX_256, but for this host/run AVX2_256 might be better (see
+log).
+Reading file lignocellulose-rf.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 112
+Overriding nsteps with value passed on the command line: 10000 steps, 20 ps
+Changing nstlist from 10 to 25, rlist from 1.263 to 1.408
+
+
+Using 48 MPI processes
+Using 1 OpenMP thread per MPI process
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+
+Back Off! I just backed up ener.edr to ./#ener.edr.6#
+starting mdrun ''
+10000 steps,     20.0 ps.
+
+step 75 Turning on dynamic load balancing, because the performance loss due to load imbalance is 4.9 %.
+
+
+step 5000: resetting all time and cycle counters
+
+ Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 0.9%.
+ The balanceable part of the MD step is 83%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.7%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 % Y 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    23264.643      484.680     4800.0
+                 (ns/day)    (hour/ns)
+Performance:        1.783       13.461
+
+GROMACS reminds you: "It always takes longer than you think even when you take Hofstadter's Law into account." (Hofstadter's Law)
+
