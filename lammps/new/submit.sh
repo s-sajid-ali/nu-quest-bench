@@ -15,7 +15,7 @@ BASE_DIR=$(pwd)
 rm -rf questbeta
 mkdir questbeta
 
-for i in ylc6qz7
+for i in syxhn6t
 do
 
     cd $BASE_DIR

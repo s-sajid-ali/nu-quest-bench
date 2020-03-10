@@ -1,6 +1,6 @@
 ----------------------------------------
-srun job start: Mon Feb 24 00:40:58 CST 2020
-Job ID: 218
+srun job start: Tue Mar 10 10:48:15 CDT 2020
+Job ID: 339
 Username: sas4990
 Queue: normal
 Account: p30157
@@ -9,25 +9,24 @@ The following variables are not
 guaranteed to be the same in
 prologue and the job run script
 ----------------------------------------
-PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-haswell/gcc-8.3.0/lammps-20190807-ylc6qz7fy2eindllog7ummbmwsviah3x/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-z4ez4omkbrmkiitiqdaqvoe6fsvaty3w/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/numactl-2.0.12-nj4eng56cvlo4j7xmhmjornipwgbhfco/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/lammps-20180822-syxhn6t26myqi4f4tzwruqkojhw4wmjq/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-3.3.2-z4ez4omkbrmkiitiqdaqvoe6fsvaty3w/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ucx-1.6.0-zns5osdffg6yeysfalb4mk52wor2ictj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/rdma-core-20-n4nc6catawd2xjiotmyzuvdcldcfaa4y/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libnl-3.3.0-mo7nt5vu7xhh7evvo3c57p2ydsh55lfb/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/numactl-2.0.12-nj4eng56cvlo4j7xmhmjornipwgbhfco/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.9-t6h6tggg2tagxcxklg6ztlkuw6ffbjaj/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.4-dnbfmo26ji3slykck52zvwfqhoyj45yd/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libpng-1.6.37-cibttlztsbl2opsodngmdii636wgpgnt/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libjpeg-turbo-2.0.3-fekjgacvcj45klurxcxlxwajxy6vcmkt/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/ffmpeg-4.1.1-arqer6znbla3x47wuqjm2d5dirgd3bd3/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/yasm-1.3.0-4vu4jabmh2nj75c2oan7lclt54a4zkgi/bin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
 WORKDIR is: /home/sas4990
 ----------------------------------------
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key }ßı in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
+slurmstepd: error: mpi/pmi2: no value for key áäÿ in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key “¢ı in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key E”ÿ in req
-slurmstepd: error: mpi/pmi2: no value for key äçü in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
@@ -75,14 +74,12 @@ slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key nBı in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key Í¦ü in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
@@ -113,27 +110,31 @@ slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key .Åÿ in req
-slurmstepd: error: mpi/pmi2: no value for key „Úÿ in req
-slurmstepd: error: mpi/pmi2: no value for key şÎü in req
-slurmstepd: error: mpi/pmi2: no value for key ßgÿ in req
-slurmstepd: error: mpi/pmi2: no value for key i¢ş in req
-slurmstepd: error: mpi/pmi2: no value for key Şyı in req
-slurmstepd: error: mpi/pmi2: no value for key >Fş in req
+slurmstepd: error: mpi/pmi2: no value for key YIü in req
+slurmstepd: error: mpi/pmi2: no value for key úpş in req
+slurmstepd: error: mpi/pmi2: no value for key İùÿ in req
+slurmstepd: error: mpi/pmi2: no value for key k‚ı in req
+slurmstepd: error: mpi/pmi2: no value for key áíş in req
+slurmstepd: error: mpi/pmi2: no value for key øóı in req
+slurmstepd: error: mpi/pmi2: no value for key éı in req
+slurmstepd: error: mpi/pmi2: no value for key «Jı in req
+slurmstepd: error: mpi/pmi2: no value for key ü in req
+slurmstepd: error: mpi/pmi2: no value for key Àÿ in req
+slurmstepd: error: mpi/pmi2: no value for key ¸ş in req
+slurmstepd: error: mpi/pmi2: no value for key ´„ı in req
+slurmstepd: error: mpi/pmi2: no value for key 3Ğü in req
+slurmstepd: error: mpi/pmi2: no value for key Ë¶ı in req
+slurmstepd: error: mpi/pmi2: no value for key ÿìş in req
+slurmstepd: error: mpi/pmi2: no value for key Vdÿ in req
+slurmstepd: error: mpi/pmi2: no value for key ˜6ÿ in req
+slurmstepd: error: mpi/pmi2: no value for key Ÿ%ş in req
+slurmstepd: error: mpi/pmi2: no value for key ¹Ûü in req
+slurmstepd: error: mpi/pmi2: no value for key /Ãÿ in req
+slurmstepd: error: mpi/pmi2: no value for key õ^ü in req
+slurmstepd: error: mpi/pmi2: no value for key “‰ş in req
+slurmstepd: error: mpi/pmi2: no value for key \Îÿ in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key Ÿzü in req
-slurmstepd: error: mpi/pmi2: no value for key îı in req
-slurmstepd: error: mpi/pmi2: no value for key :¿ÿ in req
-slurmstepd: error: mpi/pmi2: no value for key Êş in req
-slurmstepd: error: mpi/pmi2: no value for key ¡õÿ in req
-slurmstepd: error: mpi/pmi2: value not properly terminated in client request
-slurmstepd: error: mpi/pmi2: no value for key "Cÿ in req
-slurmstepd: error: mpi/pmi2: no value for key ´oÿ in req
-slurmstepd: error: mpi/pmi2: no value for key )Eı in req
-slurmstepd: error: mpi/pmi2: no value for key ’ƒı in req
-slurmstepd: error: mpi/pmi2: no value for key ÷Õş in req
-slurmstepd: error: mpi/pmi2: no value for key •ßü in req
-slurmstepd: error: mpi/pmi2: no value for key ˜öı in req
+slurmstepd: error: mpi/pmi2: no value for key ‹ü in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
@@ -158,29 +159,27 @@ slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key µ:ş in req
-slurmstepd: error: mpi/pmi2: no value for key •ü in req
-slurmstepd: error: mpi/pmi2: no value for key Jı in req
-slurmstepd: error: mpi/pmi2: no value for key Ëÿ in req
-slurmstepd: error: mpi/pmi2: no value for key :ü in req
+slurmstepd: error: mpi/pmi2: no value for key ğĞı in req
+slurmstepd: error: mpi/pmi2: no value for key åÌü in req
+slurmstepd: error: mpi/pmi2: no value for key Ş<ü in req
+slurmstepd: error: mpi/pmi2: no value for key ±~ı in req
+slurmstepd: error: mpi/pmi2: no value for key øjÿ in req
+slurmstepd: error: mpi/pmi2: no value for key ã¹ş in req
+slurmstepd: error: mpi/pmi2: no value for key ŒIş in req
+slurmstepd: error: mpi/pmi2: no value for key ê¹ÿ in req
+slurmstepd: error: mpi/pmi2: no value for key IWü in req
+slurmstepd: error: mpi/pmi2: no value for key ®aş in req
+slurmstepd: error: mpi/pmi2: no value for key  Šü in req
+slurmstepd: error: mpi/pmi2: no value for key jş in req
+slurmstepd: error: mpi/pmi2: no value for key ûeş in req
+slurmstepd: error: mpi/pmi2: no value for key ’pÿ in req
+slurmstepd: error: mpi/pmi2: no value for key ?ı in req
+slurmstepd: error: mpi/pmi2: no value for key şü in req
+slurmstepd: error: mpi/pmi2: no value for key JOş in req
+slurmstepd: error: mpi/pmi2: no value for key ]ı in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-slurmstepd: error: mpi/pmi2: no value for key âsş in req
-slurmstepd: error: mpi/pmi2: no value for key Nvı in req
-slurmstepd: error: mpi/pmi2: no value for key ¤Kı in req
-slurmstepd: error: mpi/pmi2: no value for key y–ş in req
-slurmstepd: error: mpi/pmi2: no value for key üjÿ in req
-slurmstepd: error: mpi/pmi2: no value for key Óı in req
-slurmstepd: error: mpi/pmi2: no value for key 
-Xü in req
-slurmstepd: error: mpi/pmi2: no value for key ¸4ş in req
-slurmstepd: error: mpi/pmi2: no value for key Ëÿ in req
-slurmstepd: error: mpi/pmi2: no value for key ¸Hü in req
-slurmstepd: error: mpi/pmi2: no value for key àı in req
-slurmstepd: error: mpi/pmi2: no value for key ´íü in req
-slurmstepd: error: mpi/pmi2: no value for key »kü in req
-slurmstepd: error: mpi/pmi2: no value for key “ş in req
-slurmstepd: error: mpi/pmi2: no value for key ™+ş in req
-slurmstepd: error: mpi/pmi2: no value for key ÌÌş in req
+slurmstepd: error: mpi/pmi2: no value for key ›@ı in req
+slurmstepd: error: mpi/pmi2: no value for key œÿ in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
@@ -301,13 +300,13 @@ slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
 slurmstepd: error: mpi/pmi2: no value for key  in req
-LAMMPS (7 Aug 2019)
+LAMMPS (22 Aug 2018)
   using 1 OpenMP thread(s) per MPI task
 Lattice spacing in x,y,z = 1.6796 1.6796 1.6796
 Created orthogonal box = (0 0 0) to (33.5919 33.5919 33.5919)
   3 by 4 by 4 MPI processor grid
 Created 32000 atoms
-  create_atoms CPU = 0.00675797 secs
+  Time spent = 0.00200725 secs
 Neighbor list info ...
   update every 20 steps, delay 0 steps, check no
   max neighbors/atom: 2000, page size: 100000
@@ -324,24 +323,24 @@ Setting up Verlet run ...
   Unit style    : lj
   Current step  : 0
   Time step     : 0.005
-Per MPI rank memory allocation (min/avg/max) = 2.642 | 2.658 | 2.672 Mbytes
+Per MPI rank memory allocation (min/avg/max) = 2.641 | 2.657 | 2.671 Mbytes
 Step Temp E_pair E_mol TotEng Press 
        0         1.44   -6.7733681            0   -4.6134356   -5.0197073 
      100    0.7574531   -5.7585055            0   -4.6223613   0.20726105 
-Loop time of 0.101285 on 48 procs for 100 steps with 32000 atoms
+Loop time of 0.112678 on 48 procs for 100 steps with 32000 atoms
 
-Performance: 426517.447 tau/day, 987.309 timesteps/s
-97.6% CPU use with 48 MPI tasks x 1 OpenMP threads
+Performance: 383392.047 tau/day, 887.482 timesteps/s
+97.7% CPU use with 48 MPI tasks x 1 OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 0.037599   | 0.044977   | 0.054069   |   1.3 | 44.41
-Neigh   | 0.0052705  | 0.0063261  | 0.0075202  |   0.4 |  6.25
-Comm    | 0.037697   | 0.048184   | 0.056871   |   1.5 | 47.57
-Output  | 8.3923e-05 | 0.00016306 | 0.00029659 |   0.0 |  0.16
-Modify  | 0.00061703 | 0.00076064 | 0.00088501 |   0.0 |  0.75
-Other   |            | 0.0008745  |            |       |  0.86
+Pair    | 0.038365   | 0.045033   | 0.052696   |   1.8 | 39.97
+Neigh   | 0.0053289  | 0.0062284  | 0.0068994  |   0.6 |  5.53
+Comm    | 0.048582   | 0.057628   | 0.067172   |   1.9 | 51.14
+Output  | 7.0095e-05 | 0.0020499  | 0.0028553  |   2.5 |  1.82
+Modify  | 0.00077724 | 0.00090295 | 0.0010886  |   0.0 |  0.80
+Other   |            | 0.0008361  |            |       |  0.74
 
 Nlocal:    666.667 ave 695 max 636 min
 Histogram: 1 3 4 6 9 8 7 3 4 3
