@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.6.9)  14 APR 2020 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.6.9)  14 APR 2020 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**pearc20_poster.tex
-(./pearc20_poster.tex
+**pearc20.tex
+(./pearc20.tex
 LaTeX2e <2018-12-01>
 (./acmart.cls
 Document Class: acmart 2020/02/08 v1.69 Typesetting articles for the Associatio
@@ -850,8 +850,8 @@ Package: balance 1999/02/23 4.3 (PWD)
 \oldvsize=\dimen156
 )
 Excluding comment 'screenonly' Include comment 'printonly'
-Include comment 'anonsuppress' (./pearc20_poster.aux)
-\openout1 = `pearc20_poster.aux'.
+Include comment 'anonsuppress' (./pearc20.aux)
+\openout1 = `pearc20.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 48.
 LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 48
@@ -977,9 +977,9 @@ LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
 
-(./pearc20_poster.out) (./pearc20_poster.out)
+(./pearc20.out) (./pearc20.out)
 \@outlinefile=\write4
-\openout4 = `pearc20_poster.out'.
+\openout4 = `pearc20.out'.
 
 
 (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1135,86 +1135,101 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 127.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 127.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 140.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 140.
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 151.
-(c:/texlive/2019/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+<curr_mpi_combined.png, id=49, 867.24pt x 578.16pt>
+File: curr_mpi_combined.png Graphic file (type png)
+<use curr_mpi_combined.png>
+Package pdftex.def Info: curr_mpi_combined.png  used on input line 145.
+(pdftex.def)             Requested size: 241.14749pt x 160.76329pt.
+<new_mpi.png, id=51, 1011.78pt x 361.35pt>
+File: new_mpi.png Graphic file (type png)
+<use new_mpi.png>
+Package pdftex.def Info: new_mpi.png  used on input line 152.
+(pdftex.def)             Requested size: 241.14749pt x 86.12477pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 36.135pt on input line 181.
+LaTeX Font Info:    Calculating math sizes for size <36.135> on input line 181.
+
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 36.135pt on input line 181.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 26.37839pt on input line 181.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 19.87434pt on input line 181.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 181.
+[1.1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+ <./curr_mpi_combined.png>]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 187.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 187.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 189.
+ (c:/texlive/2019/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 151.
+(Font)              scaled to size 9.0pt on input line 189.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sample-franklin.png, id=46, 411.5375pt x 323.2075pt>
-File: sample-franklin.png Graphic file (type png)
-<use sample-franklin.png>
-Package pdftex.def Info: sample-franklin.png  used on input line 157.
-(pdftex.def)             Requested size: 241.14749pt x 189.3888pt.
 
 Processing 'acks' comment.
 \openout3 = `comment.cut'.
 
  Comment 'acks' writing to comment.cut.
-Straight input of comment.cut. (./comment.cut) (./pearc20_poster.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 40.
-
+Straight input of comment.cut. (./comment.cut) (./pearc20.bbl
+LaTeX Info: Redefining \tempurl on input line 61.
+LaTeX Info: Redefining \tempurl on input line 81.
 )
 
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 36.135pt on input line 198.
-LaTeX Font Info:    Calculating math sizes for size <36.135> on input line 198.
-
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 36.135pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 26.37839pt on input line 198.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 19.87434pt on input line 198.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 198.
-[1.1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
- <./sample-franklin.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
- (./pearc20_poster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
-Package rerunfilecheck Info: File `pearc20_poster.out' has not changed.
-(rerunfilecheck)             Checksum: D17C05F096FC0B22449F569CC0CEB9AC;1050.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 231.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 231.
+[2.2 <./new_mpi.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+ (./pearc20.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package rerunfilecheck Info: File `pearc20.out' has not changed.
+(rerunfilecheck)             Checksum: B8545034393D78F242246FC19E020FCC;1191.
  ) 
 Here is how much of TeX's memory you used:
- 18146 strings out of 492609
- 272276 string characters out of 6132819
- 398381 words of memory out of 5000000
- 21411 multiletter control sequences out of 15000+600000
- 156140 words of font info for 207 fonts, out of 8000000 for 9000
+ 18250 strings out of 492609
+ 274376 string characters out of 6132819
+ 401622 words of memory out of 5000000
+ 21441 multiletter control sequences out of 15000+600000
+ 173048 words of font info for 257 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,15n,94p,805b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,94p,890b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{c:/texli
-ve/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{c:/texlive/2019/t
-exmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{c:/texlive/2019/texmf-dist
-/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{c:/texlive/2019/texmf-dist/fonts/en
-c/dvips/libertine/lbtn_nh77jq.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/l
-ibertine/lbtn_76gpa5.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/inconso
-lata/Inconsolata-zi4r.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/libert
-ine/LinBiolinumTB.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/libertine/
-LinBiolinumTI.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinL
-ibertineT.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinLiber
-tineTB.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/libertine/LinLibertin
-eTI.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on pearc20_poster.pdf (1 page, 468349 bytes).
+ve/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2019/texmf-dist/font
+s/enc/dvips/libertine/lbtn_25tcsq.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvi
+ps/libertine/lbtn_oexx6f.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/libert
+ine/lbtn_7grukw.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_
+naooyc.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.en
+c}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}<c:/tex
+live/2019/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/te
+xlive/2019/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:/texlive
+/2019/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/texlive/201
+9/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2019/te
+xmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb><c:/texlive/2019/texmf
+-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><c:/texlive/2019/texmf-di
+st/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
+ublic/newtx/zxlri.pfb>
+Output written on pearc20.pdf (2 pages, 566897 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 50778 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 53855 words of extra memory for PDF output out of 61914 (max. 10000000)
 

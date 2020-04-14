@@ -91,7 +91,7 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  We present the work performed at Quest, a high performance computing cluster at Northwestern University regarding benchmarking of software perfromed to guide software upgrades. We performed extensive evaluation of all mpi libraries present on the system for functionality and performance in addition to testing architecture optimized software that can be loaded dynamically at runtime.
+  We present the work performed at Quest, a high performance computing cluster at Northwestern University regarding benchmarking of software perfromed to guide software upgrades. We performed extensive evaluation of all mpi libraries present on the system for functionality and performance in addition to testing a strategy to deploy architecture optimized software that can be loaded dynamically at runtime.
 \end{abstract}
 
 %%
@@ -127,47 +127,82 @@
 \maketitle
 
 \section{Introduction}
-Software stack management is complex. We want to improve it.
+
+Quest is a heterogenous HPC cluster\cite{quest} at Northwestern University consisting of Intel Haswell/Broadwell/Skylake nodes with varying interconects which uses the slurm\cite{slurm} as resource manager and job scheduler (should we mention fairhsare ?). The cluster operates with very high uptimes and only shuts down once every academic year for maintainence (for approximately two weeks). While this high uptime is great for research throughput, it compresses critical maintaince tasks into those two weeks and makes the operators prioritize in place uprgrades over major redesigns. While such an operations scheme works in the short run, managing a large set of software stacks that were installed at various points in time becomes challenging. The software stack was kept stable even through maintaince cycles that involved major and minor OS upgrades. 
+
+This has led to a bloated software stack with inconstent naming schemes for modules and executables that is challenging to continuously benchmark for functionality and performance. Thus, we are motivated to develop a strategy to maintain our software stacks that will enable us to provide functional and performant software for our users while reducing the maintainence and support workload for the operators and software specialists. In addition to the above, we also face an immediate need to make mpi providers compatible with srun as a slurm update is on the agenda for the next downtime.
+
+In this article we present the results of our benchmarking studies that inform our plans for deprecating modules and prelimary tests on our beta cluster for a strategy to deploy optimized builds for each architecture that are dynamically loaded at runtime based upon the nodelist for the job.
 
 
-\section{MPI}
-Our benchmarks.
+\section{MPI libraries}
+Over time multiple builds of libraries proving the message passing interface\cite{mpi_3_1} functionality were installed. Some of these are quite old (before major OS version upgrades) and the naming scheme is inconsistent. Since none of these were installed with slurm support, we had to write a bash script to run the tests. The results are presented in the figure-abc.
+
+In total, $42\%$ of the available mpi libraries were faulty with $28\%$ being nonfunctional and the rest being nonperformant.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{curr_mpi_combined}
+	\caption{Benchmark of currently available mpi builds}
+	\Description{Benchmark of currently available mpi builds}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{new_mpi}
+	\caption{Benchmark of new mpi builds}
+	\Description{Benchmark of new mpi builds}
+\end{figure}
 
 
 \subsection{Improvements}
+ 
+Spack\cite{spack} was used to build new versions of mpi libraries with slurm support. This allows us to automate a large set of parameterized builds and eases the testing. Consistent with the literature we decided to use the "UCX" transport layer for all mpi libraries and to enable the "PMIx" plugin in slurm for better performance.
 
-\subsubsection{UCX}
-\subsubsection{PMIx}
+What is UCX ? How do we want to install it ?
+What is PMIx ? How do we want to install it ?
 
 \section{Node arch dependent software}
+
 \subsection{benchmarks}
-\subsubsection{LAMMPS}
-\subsubsection{GROMACS}
+Table with benchmarks for LAMMPS/GROMACS.
+
+\begin{table}
+	\caption{Optimized builds on Haswell nodes}
+	\label{tab:bench_apps}
+	\begin{tabular}{ccl}
+		\toprule
+		Software &Current&Optimized\\
+		\midrule
+		LAMMPS & 765.8 timesteps/day&1013.4 timesteps/day\\
+		GROMACS & 1.78 ns/day&2.00 ns/day\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+ 
+Elaborate on the benchmark probelm, add citation.
 
 
+\subsection{deployment strategy}
+On Quest, users are not reuqired to choose a partition and the jobs are assigned to nodes dynamically based on availability. We plan to build each software package optimzed for all possible architectures and configure a task prolog script that sets the modulepath based on $SLURM\_NODELIST$ as shown below.
 
-\section{Figures}
+\begin{verbatim}
+short_list=${SLURM_JOB_NODELIST##worker}
+if [ $short_list == "01" ]
+then
+echo "export MODULEPATH=/home/path1"
+fi
+if [ $short_list == "02" ]
+then
+echo "export MODULEPATH=/home/path2"
+fi
+\end{verbatim}
 
-The ``\verb|figure|'' environment should be used for figures. One or
-more images can be placed within a figure. If your figure contains
-third-party material, you must clearly identify it as such, as shown
-in the example below.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=\linewidth]{sample-franklin}
-  \caption{A figure}
-  \Description{The 1907 Franklin Model D roadster.}
-\end{figure}
-
-Your figures should contain a caption which describes the figure to
-the reader. Figure captions go below the figure. Your figures should
-{\bfseries also} include a description suitable for screen readers, to
-assist the visually-challenged to better understand your work.
-
-Figure captions are placed {\itshape below} the figure.
+This was tested on a virtual slurm cluster provisioned by four docker containers tied together via docker-compose. [cite].
 
 
-
+\section{Conclusion}
+Thus, an important study was conducted.
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
@@ -182,7 +217,7 @@ To Alex from NUiT for help, to various mailing lists and forums including but no
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{sample-base}
+\bibliography{pearc20}
 
 %%
 %% If your work has an appendix, this is the place to put it.
