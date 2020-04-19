@@ -134,11 +134,8 @@ This has led to a bloated software stack with inconstent naming schemes for modu
 
 In this article we present the results of our benchmarking studies that inform our plans for deprecating modules and prelimary tests on our beta cluster for a strategy to deploy optimized builds for each architecture that are dynamically loaded at runtime based upon the nodelist for the job.
 
-
 \section{MPI libraries}
 Over time multiple builds of libraries proving the message passing interface\cite{mpi_3_1} functionality were installed. Some of these are quite old (before major OS version upgrades) and the naming scheme is inconsistent. Since none of these were installed with slurm support, we had to write a bash script to run the tests. The results are presented in the figure-abc.
-
-In total, $42\%$ of the available mpi libraries were faulty with $28\%$ being nonfunctional and the rest being nonperformant.
 
 \begin{figure}[h]
 	\centering
@@ -146,6 +143,8 @@ In total, $42\%$ of the available mpi libraries were faulty with $28\%$ being no
 	\caption{Benchmark of currently available mpi builds}
 	\Description{Benchmark of currently available mpi builds}
 \end{figure}
+
+In total, $42\%$ of the available mpi libraries were faulty with $28\%$ being nonfunctional and the rest being nonperformant.
 
 \begin{figure}[h]
 	\centering
