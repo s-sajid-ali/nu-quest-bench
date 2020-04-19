@@ -191,7 +191,7 @@ We benchmarked optimzed builds for two of our most commonly used applications, L
 \subsection{Deployment Strategy}
 On Quest, users are not reuqired to choose a partition and the jobs are assigned to nodes dynamically based on availability. Thus, we are faced with the following deployment challenge : how do we deploy optimized builds for each processor family but not require our users to choose the exact build of the application for their job ?
 
-To answer the above, we have chosen a simple strategy where we confiure a task prolog script for slurm that automatically sets the modulepath based on $SLURM\_NODELIST$. To test this, we provisioned a virtual slurm cluster on a laptop by by four docker containers tied together via docker-compose using an existing repository \cite{slurmdocker_repository} for the same developed by SciDAS (Scientific Data Analysis At Scale).
+To answer the above, we have chosen a simple strategy where we confiure a task prolog script for slurm that automatically sets the modulepath based on $SLURM\_NODELIST$. We tested this on a virtual slurm cluster with two noes on a laptop provisioned by four docker containers tied together via docker-compose using an existing repository \cite{slurmdocker_repository} for the same developed by SciDAS (Scientific Data Analysis At Scale).
 
 \begin{verbatim}
 short_list=${SLURM_JOB_NODELIST##worker}
@@ -207,7 +207,7 @@ fi
 
 \section{Conclusion}
 
-Thus, we have effectively used benchmarking tests that gives us valuable insight regarding the health of the software on the NUiT-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software. Moreover, executing the node-architecute opmized sotware stragey in the future would enable a sifnificant enhancement in the productivity of the cluster.
+Thus, we have effectively used benchmarking tests that gives us valuable insight regarding the health of the software on the NUiT-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software. Moreover, executing the node-architecute opmized sotware stragey in the future would enable a significant enhancement in the productivity of the cluster.
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
