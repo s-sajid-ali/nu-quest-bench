@@ -148,7 +148,7 @@ In total, $42\%$ of the available mpi libraries were faulty with $28\%$ being no
 
 \subsection{Improvements}
  
-Spack\cite{spack} was used to build new versions of mpi libraries with slurm support. This allows us to automate a large set of parameterized builds and eases the testing. Alongside testing the new installations for srun launcher support, we also tested the relative performance of the ucx transport layer \cite{shamis2015ucx,openucx-website}. Unified Communication X (abbreviated as ucx) is a portable, high performance middleware that sits between programming models (like MPI, PGAS, charm++, etc) and network device drivers. The results of benchmarks with new installations are presented in the figure \ref{fig:currmpi}. 
+Spack\cite{spack} was used to build new versions of mpi libraries with slurm support. This allows us to automate a large set of parameterized builds and eases the testing. Alongside testing the new installations for srun launcher support, we also tested the relative performance of the UCX transport layer \cite{shamis2015ucx,openucx-website}. Unified Communication X (abbreviated as UCX) is a portable, high performance middleware that sits between programming models (like MPI, PGAS, charm++, etc) and network device drivers. The results of benchmarks with new installations are presented in the figure \ref{fig:currmpi}. 
 
 \begin{figure}[h]
 	\centering
@@ -158,12 +158,12 @@ Spack\cite{spack} was used to build new versions of mpi libraries with slurm sup
 	\label{fig:newmpi}
 \end{figure}
 
-As indicated in a recent OpenMPI deployment guide \cite{openmpi_deployment_tuning}, newer versions of the libraries configured with "ucx" transport layer perform better. We have thus  decided to use the "UCX" transport layer for all mpi libraries. In addition to this, we also plan to enable the "PMIx" plugin \cite{slurm_pmix_sc17,slurm_pmix_2019} in slurm to use the PMIx process management standard \cite{pmix,pmix_website} (implemented via the OpenPMIx library \cite{openpmix_website}) which improves the job startup time. We also note that the slurm plugin for PMIx allows it use UCX for communication.
+As indicated in a recent OpenMPI deployment guide \cite{openmpi_deployment_tuning}, newer versions of the libraries configured with UCX transport layer perform better. We have thus  decided to use the UCX transport layer for all mpi libraries. In addition to this, we also plan to enable the PMIx plugin \cite{slurm_pmix_sc17,slurm_pmix_2019} in slurm to use the PMIx process management standard \cite{pmix,pmix_website} (implemented via the OpenPMIx library \cite{openpmix_website}) which improves the job startup time. We also note that the slurm plugin for PMIx allows it use UCX for communication.
 
 \subsection{Deploying UCX and PMIx}
-While UCX was installed on the GPFS filesystem for convinience of testing, we plan to install it on the node-local filesystem (specifically at $/usr/local$) of each compute node since it is a runtime dependency. We already had an older version of UCX, $1.4.0$ available (as part of the mellanox driver installations) and used this alongside an installation of OpenPMIx \cite{openpmix_website}, version $2.2.3$ for testing. Unfortunately due to a bug in the slurm plugin \cite{slurm_ucx_bug}, this configuration led to crash during the job start which reuqires ucx to be installed with rdma-core \cite{rdmacore_repository}(which provide the user space components for the IB drivers) dependency or update the drivers to a newer version.
+While UCX was installed on the GPFS filesystem for convinience of testing, we plan to install it on the node-local filesystem (specifically at $/usr/local$) of each compute node given it's nature as a widely used runtime dependency for mpi libraries. We already had an older version of UCX, $1.4.0$ available (as part of the mellanox driver installations) and used this alongside an installation of OpenPMIx \cite{openpmix_website}, version $2.2.3$ for testing. Unfortunately due to a bug in the slurm plugin \cite{slurm_ucx_bug}, this configuration led to crash during the job start which reuqires ucx to be installed with rdma-core \cite{rdmacore_repository}(which provide the user space components for the IB drivers) dependency or update the drivers to a newer version.
 
-Since there are no plans on updating the infibinand dirvers, we first attempted at manually creating binaries (in the $.rpm$ format using $rpm-builder$ tool) for ucx and pmix that overcome the aforementioned bug. We had no success with this approach as we were unable to properly patch the libarires.
+Since there are no plans on updating the infibinand dirvers, we first attempted at manually creating binaries (in the $.rpm$ format using $rpm-builder$ tool) for UCX and PMIx that overcome the aforementioned bug. We had no success with this approach as we were unable to properly patch the libarires.
 
 Thus, we plan to use spack \cite{spack} to install the libraries to a common prefix (by using a filesystem view in an environment) and create an rpm binary from this for easy deployment on the compute nodes.
 
@@ -207,7 +207,7 @@ fi
 
 \section{Conclusion}
 
-Thus, we have effectively used benchmarking tests to inform our software upgrade strategy for the NUiT-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software and executing the future node-architecute opmized sotware stragey would enable a  sifnificant enhancement in the productivity of the cluster.
+Thus, we have effectively used benchmarking tests that gives us valuable insight regarding the health of the software on the NUiT-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software. Moreover, executing the node-architecute opmized sotware stragey in the future would enable a sifnificant enhancement in the productivity of the cluster.
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
@@ -215,7 +215,7 @@ Thus, we have effectively used benchmarking tests to inform our software upgrade
 %% identification of the section in the article metadata, and the
 %% consistent spelling of the heading.
 \begin{acks}
-To Alex Mamach from NUiT for significant help with ucx/pmix testing and execution of sysadmin duites for the beta cluster, to various mailing lists, slack channels and forums including but not limited to mpich-discuss, slurm-info, spack-users.
+To Alex Mamach from NUiT for significant help with UCX/PMIx testing and execution of sysadmin duites for the beta cluster, to various mailing lists, slack channels and forums including but not limited to mpich-discuss, slurm-info, spack-users.
 \end{acks}
 
 %%
