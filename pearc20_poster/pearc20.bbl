@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{4}
+\begin{thebibliography}{23}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,15 +37,190 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{??}{lam}{[n.d.]}]%
+        {lammps_bench}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{LAMMPS Benchmarks}}.
+\newblock
+\urldef\tempurl%
+\url{https://lammps.sandia.gov/bench.html}
+\showURL{%
+Retrieved April 14, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{gro}{1995}]%
+        {gromacs_1995}
+ \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{GROMACS: A message-passing parallel molecular
+  dynamics implementation}.
+\newblock \bibinfo{journal}{\emph{Computer Physics Communications}}
+  \bibinfo{volume}{91}, \bibinfo{number}{1} (\bibinfo{year}{1995}),
+  \bibinfo{pages}{43 -- 56}.
+\newblock
+\showISSN{0010-4655}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/0010-4655(95)00042-E}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{gro}{2015}]%
+        {gromacs_2015}
+ \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{GROMACS: High performance molecular simulations
+  through multi-level parallelism from laptops to supercomputers}.
+\newblock \bibinfo{journal}{\emph{SoftwareX}}  \bibinfo{volume}{1-2}
+  (\bibinfo{year}{2015}), \bibinfo{pages}{19 -- 25}.
+\newblock
+\showISSN{2352-7110}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.softx.2015.06.001}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{??}{que}{2019}]%
         {quest}
  \bibinfo{year}{2019}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Quest}}.
+\newblock \bibinfo{booktitle}{\emph{NUiT Quest}}.
 \newblock
 \urldef\tempurl%
 \url{https://www.it.northwestern.edu/research/user-services/quest/specs.html}
 \showURL{%
-Retrieved May 1, 2019 from \tempurl}
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{ope}{2020a}]%
+        {openpmix_website}
+ \bibinfo{year}{2020}\natexlab{a}.
+\newblock \bibinfo{booktitle}{\emph{OpenPMIx repository}}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/openpmix/openpmix}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{osu}{2020}]%
+        {osu_bench_website}
+ \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{OSU Micro Benchmarks website}}.
+\newblock
+\urldef\tempurl%
+\url{http://mvapich.cse.ohio-state.edu/benchmarks/}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{pmi}{2020}]%
+        {pmix_website}
+ \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{PMIx webpage}}.
+\newblock
+\urldef\tempurl%
+\url{https://pmix.org/}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{rdm}{2020}]%
+        {rdmacore_repository}
+ \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{rdma-core repository}}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/linux-rdma/rdma-core}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{slu}{2020a}]%
+        {slurm_ucx_bug}
+ \bibinfo{year}{2020}\natexlab{a}.
+\newblock \bibinfo{booktitle}{\emph{Slurm Bug Report}}.
+\newblock
+\urldef\tempurl%
+\url{https://bugs.schedmd.com/show_bug.cgi?id=7646}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{slu}{2020b}]%
+        {slurmdocker_repository}
+ \bibinfo{year}{2020}\natexlab{b}.
+\newblock \bibinfo{booktitle}{\emph{Slurm in Docker - Exploring Slurm using
+  CentOS 7 based Docker images}}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/SciDAS/slurm-in-docker}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{ope}{2020b}]%
+        {openucx-website}
+ \bibinfo{year}{2020}\natexlab{b}.
+\newblock \bibinfo{title}{The Unified Communication X Library}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.openucx.org/}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{uea}{2020a}]%
+        {ueabs_prace}
+ \bibinfo{year}{2020}\natexlab{a}.
+\newblock \bibinfo{booktitle}{\emph{Unified European Applications Benchmark
+  Suite}}.
+\newblock
+\urldef\tempurl%
+\url{https://prolinktrials.co.uk/prace/training-support/technical-documentation/benchmark-suites/}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{uea}{2020b}]%
+        {ueabs_repo}
+ \bibinfo{year}{2020}\natexlab{b}.
+\newblock \bibinfo{booktitle}{\emph{Unified European Applications Benchmark
+  Suite}}.
+\newblock
+\urldef\tempurl%
+\url{https://repository.prace-ri.eu/git/UEABS/ueabs}
+\showURL{%
+Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Castain, Hursey, Bouteiller, and Solt}{Castain
+  et~al\mbox{.}}{2018}]%
+        {pmix}
+\bibfield{author}{\bibinfo{person}{Ralph~H. Castain}, \bibinfo{person}{Joshua
+  Hursey}, \bibinfo{person}{Aurelien Bouteiller}, {and} \bibinfo{person}{David
+  Solt}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{PMIx: Process management for exascale
+  environments}.
+\newblock \bibinfo{journal}{\emph{Parallel Comput.}}  \bibinfo{volume}{79}
+  (\bibinfo{year}{2018}), \bibinfo{pages}{9 -- 29}.
+\newblock
+\showISSN{0167-8191}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.parco.2018.08.002}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Forum}{Forum}{2009}]%
+        {mpi_2_2}
+\bibfield{author}{\bibinfo{person}{Message Passing~Interface Forum}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{MPI: A Message Passing Interface Standard,
+  Version 2.2}}.
+\newblock \bibinfo{publisher}{High-Performance Computing Center Stuttgart,
+  University of Stuttgart}.
+\newblock
+\urldef\tempurl%
+\url{https://fs.hlrs.de/projects/par/mpi//mpi22/}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Forum}{Forum}{2015}]%
@@ -53,12 +228,12 @@ Retrieved May 1, 2019 from \tempurl}
 \bibfield{author}{\bibinfo{person}{Message Passing~Interface Forum}.}
   \bibinfo{year}{2015}\natexlab{}.
 \newblock \bibinfo{booktitle}{\emph{MPI: A Message-passing Interface Standard,
-  Version 3.1 ; June 4, 2015}}.
+  Version 3.1}}.
 \newblock \bibinfo{publisher}{High-Performance Computing Center Stuttgart,
   University of Stuttgart}.
 \newblock
 \urldef\tempurl%
-\url{https://books.google.com/books?id=Fbv7jwEACAAJ}
+\url{https://fs.hlrs.de/projects/par/mpi//mpi31/}
 \showURL{%
 \tempurl}
 
@@ -80,6 +255,83 @@ Retrieved May 1, 2019 from \tempurl}
 \urldef\tempurl%
 \url{https://doi.org/10.1145/2807591.2807623}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Plimpton}{Plimpton}{1995}]%
+        {lammps}
+\bibfield{author}{\bibinfo{person}{Steve Plimpton}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Fast Parallel Algorithms for Short-Range Molecular
+  Dynamics}.
+\newblock \bibinfo{journal}{\emph{J. Comput. Phys.}} \bibinfo{volume}{117},
+  \bibinfo{number}{1} (\bibinfo{date}{March} \bibinfo{year}{1995}),
+  \bibinfo{pages}{1–19}.
+\newblock
+\showISSN{0021-9991}
+\urldef\tempurl%
+\url{https://doi.org/10.1006/jcph.1995.1039}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Polyakov, Karasev, Hursey, Ladd, Brinskii, and
+  Shipunova}{Polyakov et~al\mbox{.}}{2019}]%
+        {slurm_pmix_2019}
+\bibfield{author}{\bibinfo{person}{Artem~Y. Polyakov},
+  \bibinfo{person}{Boris~I. Karasev}, \bibinfo{person}{Joshua Hursey},
+  \bibinfo{person}{Joshua Ladd}, \bibinfo{person}{Mikhail Brinskii}, {and}
+  \bibinfo{person}{Elena Shipunova}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{A Performance Analysis and Optimization of
+  PMIx-Based HPC Software Stacks}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 26th European MPI Users’ Group Meeting}}
+  \emph{(\bibinfo{series}{EuroMPI ’19})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA}, Article
+  \bibinfo{articleno}{Article 9}, \bibinfo{numpages}{10}~pages.
+\newblock
+\showISBNx{9781450371759}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3343211.3343220}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Polyakov, Ladd, and Karasev}{Polyakov
+  et~al\mbox{.}}{2017}]%
+        {slurm_pmix_sc17}
+\bibfield{author}{\bibinfo{person}{Artem~Y Polyakov}, \bibinfo{person}{Joshua~S
+  Ladd}, {and} \bibinfo{person}{Boris~I Karasev}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Towards Exascale: Leveraging InfiniBand to
+  accelerate the performance and scalability of Slurm jobstart}.
+\newblock  (\bibinfo{year}{2017}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pritchard, Naughton, and Bosilca}{Pritchard
+  et~al\mbox{.}}{2020}]%
+        {openmpi_deployment_tuning}
+\bibfield{author}{\bibinfo{person}{Howard Porter~Jr. Pritchard},
+  \bibinfo{person}{Thomas Naughton}, {and} \bibinfo{person}{George Bosilca}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Getting It Right with Open MPI: Best Practices for
+  Deployment and Tuning of Open MPI}.
+\newblock  (\bibinfo{date}{2} \bibinfo{year}{2020}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Shamis, Venkata, Lopez, Baker, Hernandez,
+  Itigin, Dubman, Shainer, Graham, Liss, et~al\mbox{.}}{Shamis
+  et~al\mbox{.}}{2015}]%
+        {shamis2015ucx}
+\bibfield{author}{\bibinfo{person}{Pavel Shamis},
+  \bibinfo{person}{Manjunath~Gorentla Venkata}, \bibinfo{person}{M~Graham
+  Lopez}, \bibinfo{person}{Matthew~B Baker}, \bibinfo{person}{Oscar Hernandez},
+  \bibinfo{person}{Yossi Itigin}, \bibinfo{person}{Mike Dubman},
+  \bibinfo{person}{Gilad Shainer}, \bibinfo{person}{Richard~L Graham},
+  \bibinfo{person}{Liran Liss}, {et~al\mbox{.}}}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{UCX: an open source framework for HPC network APIs
+  and beyond}. In \bibinfo{booktitle}{\emph{2015 IEEE 23rd Annual Symposium on
+  High-Performance Interconnects}}. IEEE, \bibinfo{pages}{40--43}.
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Yoo, Jette, and Grondona}{Yoo

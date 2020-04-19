@@ -1,43 +1,51 @@
 
-
 @online{quest,
-	title ={Quest},
+	title ={NUiT Quest},
 	url = {https://www.it.northwestern.edu/research/user-services/quest/specs.html},
 	month ={may},
 	year = {2019},
-	lastaccessed ={May 1, 2019},
+	lastaccessed ={April 19, 2020},
 }
 
-@inproceedings{shamis2015ucx,
-	title={UCX: an open source framework for HPC network APIs and beyond},
-	author={Shamis, Pavel and Venkata, Manjunath Gorentla and Lopez, M Graham and Baker, Matthew B and Hernandez, Oscar and Itigin, Yossi and Dubman, Mike and Shainer, Gilad and Graham, Richard L and Liss, Liran and others},
-	booktitle={2015 IEEE 23rd Annual Symposium on High-Performance Interconnects},
-	pages={40--43},
+@InProceedings{slurm,
+	author={Yoo, Andy B.
+	and Jette, Morris A.
+	and Grondona, Mark},
+	editor={Feitelson, Dror
+	and Rudolph, Larry
+	and Schwiegelshohn, Uwe},
+	title={SLURM: Simple Linux Utility for Resource Management},
+	booktitle={Job Scheduling Strategies for Parallel Processing},
+	year={2003},
+	publisher={Springer Berlin Heidelberg},
+	address={Berlin, Heidelberg},
+	pages={44--60},
+	isbn={978-3-540-39727-4},
+}
+
+
+@book{mpi_3_1,
+	title={MPI: A Message-passing Interface Standard, Version 3.1},
+	author={Message Passing Interface Forum},
+	url={https://fs.hlrs.de/projects/par/mpi//mpi31/},
 	year={2015},
-	organization={IEEE}
+	publisher={High-Performance Computing Center Stuttgart, University of Stuttgart}
 }
 
-@misc{openucx-website,
-	title = {{The Unified Communication X Library}},
-	key = {{{The Unified Communication X Library}},
-	howpublished = {{\url{http://www.openucx.org}}}
-	}
+@book{mpi_2_2,
+	title={MPI: A Message Passing Interface Standard, Version 2.2},
+	author={Message Passing Interface Forum},
+	url={https://fs.hlrs.de/projects/par/mpi//mpi22/},
+	year={2009},
+	publisher={High-Performance Computing Center Stuttgart, University of Stuttgart}
+	
 }
 
-@inproceedings{pmix,
-	author = {Castain, Ralph H. and Solt, David and Hursey, Joshua and Bouteiller, Aurelien},
-	title = {PMIx: Process Management for Exascale Environments},
-	year = {2017},
-	isbn = {9781450348492},
-	publisher = {Association for Computing Machinery},
-	address = {New York, NY, USA},
-	url = {https://doi.org/10.1145/3127024.3127027},
-	doi = {10.1145/3127024.3127027},
-	booktitle = {Proceedings of the 24th European MPI Users’ Group Meeting},
-	articleno = {Article 14},
-	numpages = {10},
-	location = {Chicago, Illinois},
-	series = {EuroMPI ’17}
+@online{osu_bench_website,
+	title ={OSU Micro Benchmarks website},
+	url ={http://mvapich.cse.ohio-state.edu/benchmarks/},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
 }
 
 @INPROCEEDINGS {spack,
@@ -56,41 +64,54 @@
 	month = {nov}
 }
 
-@book{mpi_3_1,
-	title={MPI: A Message-passing Interface Standard, Version 3.1 ; June 4, 2015},
-	author={Message Passing Interface Forum},
-	url={https://books.google.com/books?id=Fbv7jwEACAAJ},
+@inproceedings{shamis2015ucx,
+	title={UCX: an open source framework for HPC network APIs and beyond},
+	author={Shamis, Pavel and Venkata, Manjunath Gorentla and Lopez, M Graham and Baker, Matthew B and Hernandez, Oscar and Itigin, Yossi and Dubman, Mike and Shainer, Gilad and Graham, Richard L and Liss, Liran and others},
+	booktitle={2015 IEEE 23rd Annual Symposium on High-Performance Interconnects},
+	pages={40--43},
 	year={2015},
-	publisher={High-Performance Computing Center Stuttgart, University of Stuttgart}
+	organization={IEEE}
 }
+
+@misc{openucx-website,
+	title = {The Unified Communication X Library},
+	url = {https://www.openucx.org/},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
+}
+
 
 @article{openmpi_deployment_tuning,
 	title = {Getting It Right with Open MPI: Best Practices for Deployment and Tuning of Open MPI},
 	author = {Pritchard, Howard Porter Jr. and Naughton, Thomas and Bosilca, George},
-	abstractNote = {},
-	doi = {},
-	journal = {},
-	number = ,
-	volume = ,
 	place = {United States},
 	year = {2020},
 	month = {2}
 }
 
-@InProceedings{slurm,
-	author={Yoo, Andy B.
-	and Jette, Morris A.
-	and Grondona, Mark},
-	editor={Feitelson, Dror
-	and Rudolph, Larry
-	and Schwiegelshohn, Uwe},
-	title={SLURM: Simple Linux Utility for Resource Management},
-	booktitle={Job Scheduling Strategies for Parallel Processing},
-	year={2003},
-	publisher={Springer Berlin Heidelberg},
-	address={Berlin, Heidelberg},
-	pages={44--60},
-	isbn={978-3-540-39727-4},
+@article{pmix,
+	title = {PMIx: Process management for exascale environments},
+	author = {Ralph H. Castain and Joshua Hursey and Aurelien Bouteiller and David Solt},
+	journal = {Parallel Computing},
+	volume = {79},
+	pages = {9 - 29},
+	year = {2018},
+	issn = {0167-8191},
+	doi = {https://doi.org/10.1016/j.parco.2018.08.002},
+}
+
+@online{pmix_website,
+	title ={PMIx webpage},
+	url ={https://pmix.org/},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
+}
+
+@online{openpmix_website,
+	title ={OpenPMIx repository},
+	url ={https://github.com/openpmix/openpmix},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
 }
 
 @article{slurm_pmix_sc17,
@@ -116,23 +137,18 @@
 	series = {EuroMPI ’19}
 }
 
-@online{lammps_bench,
-	title ={LAMMPS Benchmarks},
-	url ={https://lammps.sandia.gov/bench.html},
-	lastaccessed ={April 14, 2020},
+@online{slurm_ucx_bug,
+	title ={Slurm Bug Report},
+	url ={https://bugs.schedmd.com/show_bug.cgi?id=7646},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
 }
 
-
-@online{ueabs_prace,
-	title={Unified European Applications Benchmark Suite},
-	url={https://prolinktrials.co.uk/prace/training-support/technical-documentation/benchmark-suites/},
-	lastaccessed ={April 14, 2020},
-}
-
-@online{ueabs_repo,
-	title={Unified European Applications Benchmark Suite},
-	url={https://repository.prace-ri.eu/git/UEABS/ueabs},
-	lastaccessed ={April 14, 2020},
+@online{rdmacore_repository,
+	title ={rdma-core repository},
+	url ={https://github.com/linux-rdma/rdma-core},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
 }
 
 @article{lammps,
@@ -151,6 +167,12 @@
 	month = mar,
 	pages = {1–19},
 	numpages = {19}
+}
+
+@online{lammps_bench,
+	title ={LAMMPS Benchmarks},
+	url ={https://lammps.sandia.gov/bench.html},
+	lastaccessed ={April 14, 2020},
 }
 
 @article{gromacs_1995,
@@ -173,3 +195,26 @@
 	issn = {2352-7110},
 	doi = {https://doi.org/10.1016/j.softx.2015.06.001},
 }
+
+@online{ueabs_prace,
+	title={Unified European Applications Benchmark Suite},
+	url={https://prolinktrials.co.uk/prace/training-support/technical-documentation/benchmark-suites/},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
+}
+@online{ueabs_repo,
+	title={Unified European Applications Benchmark Suite},
+	url={https://repository.prace-ri.eu/git/UEABS/ueabs},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
+}
+
+@online{slurmdocker_repository,
+	title ={Slurm in Docker - Exploring Slurm using CentOS 7 based Docker images},
+	url ={https://github.com/SciDAS/slurm-in-docker},
+	year = {2020},
+	lastaccessed ={April 19, 2020},
+}
+
+
+

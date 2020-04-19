@@ -135,36 +135,45 @@ This has led to a bloated software stack with inconstent naming schemes for modu
 In this article we present the results of our benchmarking studies that inform our plans for deprecating modules and prelimary tests on our beta cluster for a strategy to deploy optimized builds for each architecture that are dynamically loaded at runtime based upon the nodelist for the job.
 
 \section{MPI libraries}
-Over time multiple builds of libraries proving the message passing interface\cite{mpi_3_1} functionality were installed. Some of these are quite old (before major OS version upgrades) and the naming scheme is inconsistent. Since none of these were installed with slurm support, we had to write a bash script to run the tests. The results are presented in the figure-abc.
+Over time, multiple versions of libraries proving functionality specified by the message passing interface standard \cite{mpi_3_1,mpi_2_2} were installed. Some of these are quite old (before major OS version upgrades) and the naming scheme for the corresponding modulefiles is inconsistent. To test these libraries for funcaionaly and performance, we compiled and executed two point-to-point benchmarks, bandwith and latency from the OSU micro-benchmarks suite \cite{osu_bench_website}. Since none of these were installed with slurm support, we wrote a bash script to run the tests. The results are presented in the figure \ref{fig:currmpi}.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{curr_mpi_combined}
 	\caption{Benchmark of currently available mpi builds}
-	\Description{Benchmark of currently available mpi builds}
+	\Description{Benchmark of currently available mpi builds}	  \label{fig:currmpi}
 \end{figure}
 
-In total, $42\%$ of the available mpi libraries were faulty with $28\%$ being nonfunctional and the rest being nonperformant.
+In total, $42\%$ of the available mpi libraries were faulty with $28\%$ being nonfunctional (failure to compile or run) and the rest being nonperformant.
+
+\subsection{Improvements}
+ 
+Spack\cite{spack} was used to build new versions of mpi libraries with slurm support. This allows us to automate a large set of parameterized builds and eases the testing. Alongside testing the new installations for srun launcher support, we also tested the relative performance of the ucx transport layer \cite{shamis2015ucx,openucx-website}. Unified Communication X (abbreviated as ucx) is a portable, high performance middleware that sits between programming models (like MPI, PGAS, charm++, etc) and network device drivers. The results of benchmarks with new installations are presented in the figure \ref{fig:currmpi}. 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{new_mpi}
 	\caption{Benchmark of new mpi builds}
 	\Description{Benchmark of new mpi builds}
+	\label{fig:newmpi}
 \end{figure}
 
+As indicated in a recent OpenMPI deployment guide \cite{openmpi_deployment_tuning}, newer versions of the libraries configured with "ucx" transport layer perform better. We have thus  decided to use the "UCX" transport layer for all mpi libraries. In addition to this, we also plan to enable the "PMIx" plugin \cite{slurm_pmix_sc17,slurm_pmix_2019} in slurm to use the PMIx process management standard \cite{pmix,pmix_website} (implemented via the OpenPMIx library \cite{openpmix_website}) which improves the job startup time. We also note that the slurm plugin for PMIx allows it use UCX for communication.
 
-\subsection{Improvements}
- 
-Spack\cite{spack} was used to build new versions of mpi libraries with slurm support. This allows us to automate a large set of parameterized builds and eases the testing. Consistent with the literature we decided to use the "UCX" transport layer for all mpi libraries and to enable the "PMIx" plugin in slurm for better performance.
+\subsection{Deploying UCX and PMIx}
+While UCX was installed on the GPFS filesystem for convinience of testing, we plan to install it on the node-local filesystem (specifically at $/usr/local$) of each compute node since it is a runtime dependency. We already had an older version of UCX, $1.4.0$ available (as part of the mellanox driver installations) and used this alongside an installation of OpenPMIx \cite{openpmix_website}, version $2.2.3$ for testing. Unfortunately due to a bug in the slurm plugin \cite{slurm_ucx_bug}, this configuration led to crash during the job start which reuqires ucx to be installed with rdma-core \cite{rdmacore_repository}(which provide the user space components for the IB drivers) dependency or update the drivers to a newer version.
 
-What is UCX ? How do we want to install it ?
-What is PMIx ? How do we want to install it ?
+Since there are no plans on updating the infibinand dirvers, we first attempted at manually creating binaries (in the $.rpm$ format using $rpm-builder$ tool) for ucx and pmix that overcome the aforementioned bug. We had no success with this approach as we were unable to properly patch the libarires.
+
+Thus, we plan to use spack \cite{spack} to install the libraries to a common prefix (by using a filesystem view in an environment) and create an rpm binary from this for easy deployment on the compute nodes.
 
 \section{Node arch dependent software}
 
-\subsection{benchmarks}
-Table with benchmarks for LAMMPS/GROMACS.
+Given the challenges in maintaing a complex software stack that includes a multitude of combitaions between applications, versions, compilers and dependencies, achieving optimal software performance (as available via generating optimized binaries for each architecture) was 
+not prioritized. While this was not a major concern in the past, in light of the current plans to purchase new "Cascade Lake" processors, such a deployment stragegy severly degrades productivity of the cluster. Thankfully, due to recent developments in the spack package manager, we are able to build multiple versions of each library, each optmized for a differenct architecture for optimal productivity of the cluster. 
+
+\subsection{Benchmarks}
+We benchmarked optimzed builds for two of our most commonly used applications, LAMMPS\cite{lammps} and Gromacs\cite{gromacs_1995,gromacs_2015} against the currently available installations on the oldest processor generation, "Haswell". We chose the Lennard-Jones liquid benchmark for LAMMPS available as part of the official benchmark suite \cite{lammps_bench} and a benchmark from the Unified European Applications Benchmark Suite \cite{ueabs_prace,ueabs_repo} for GROMACS. The results of these tests are presented in the Table \ref{tab:bench_apps} which shows that there are substantial benefits to deploying node architecture specific software even on our oldest nodes.
 
 \begin{table}
 	\caption{Optimized builds on Haswell nodes}
@@ -178,12 +187,11 @@ Table with benchmarks for LAMMPS/GROMACS.
 		\bottomrule
 	\end{tabular}
 \end{table}
- 
-Elaborate on the benchmark probelm, add citation.
 
+\subsection{Deployment Strategy}
+On Quest, users are not reuqired to choose a partition and the jobs are assigned to nodes dynamically based on availability. Thus, we are faced with the following deployment challenge : how do we deploy optimized builds for each processor family but not require our users to choose the exact build of the application for their job ?
 
-\subsection{deployment strategy}
-On Quest, users are not reuqired to choose a partition and the jobs are assigned to nodes dynamically based on availability. We plan to build each software package optimzed for all possible architectures and configure a task prolog script that sets the modulepath based on $SLURM\_NODELIST$ as shown below.
+To answer the above, we have chosen a simple strategy where we confiure a task prolog script for slurm that automatically sets the modulepath based on $SLURM\_NODELIST$. To test this, we provisioned a virtual slurm cluster on a laptop by by four docker containers tied together via docker-compose using an existing repository \cite{slurmdocker_repository} for the same developed by SciDAS (Scientific Data Analysis At Scale).
 
 \begin{verbatim}
 short_list=${SLURM_JOB_NODELIST##worker}
@@ -197,11 +205,9 @@ echo "export MODULEPATH=/home/path2"
 fi
 \end{verbatim}
 
-This was tested on a virtual slurm cluster provisioned by four docker containers tied together via docker-compose. [cite].
-
-
 \section{Conclusion}
-Thus, an important study was conducted.
+
+Thus, we have effectively used benchmarking tests to inform our software upgrade strategy for the NUiT-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software and executing the future node-architecute opmized sotware stragey would enable a  sifnificant enhancement in the productivity of the cluster.
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
@@ -209,7 +215,7 @@ Thus, an important study was conducted.
 %% identification of the section in the article metadata, and the
 %% consistent spelling of the heading.
 \begin{acks}
-To Alex from NUiT for help, to various mailing lists and forums including but not limited to mpich-discuss, slurm-info, spack-users.
+To Alex Mamach from NUiT for significant help with ucx/pmix testing and execution of sysadmin duites for the beta cluster, to various mailing lists, slack channels and forums including but not limited to mpich-discuss, slurm-info, spack-users.
 \end{acks}
 
 %%
