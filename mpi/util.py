@@ -11,7 +11,7 @@ bw_key = [1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0, 128.0, 256.0, 512.0,
           131072.0, 262144.0, 524288.0, 1048576.0, 2097152.0, 4194304.0]
 
 def get_curr_mpi_dict():
-    os.chdir(pwd+'/curr_mpi_bench')
+    os.chdir(pwd+'/current')
     f = open('curr_mpi_list_sorted')
     l = f.readlines()
     f.close()
