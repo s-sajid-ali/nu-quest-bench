@@ -163,7 +163,7 @@ To test these libraries for functionality and performance, we compiled and execu
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{curr_pearc}
+	\includegraphics[width=1.05\linewidth]{curr_pearc}
 	\caption{Band of performance metrics measured for the currently
 			 available MPI builds indiciating a large spread in 
 			 performance. Some builds fail to use the InfiniBand fabric while others were had sub-optimal configurations.}
@@ -179,7 +179,7 @@ Spack\cite{spack} was used to build new versions of MPI libraries with SLURM sup
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{new_pearc}
+	\includegraphics[width=1.05\linewidth]{new_pearc}
 	\caption{Band of performance metrics measured for the new MPI builds
 			with optimal configuration and updated middleware indicating
 			a marked improvement.}
@@ -278,7 +278,7 @@ In addition to our high uptimes, we also have a strategy of never removing modul
 As mentioned in the text, spack\cite{spack} was used to automate the builds and which reduces time spent building and allows us to shift out focus to testing.
 The newly built libraries include:
 \begin{itemize}
-	\item[$-$] openmpi-1.10.5-gcc-6.4.0
+	\item[$-$] openmpi-1.10.5-gcc-6.4.0 \{fabrics=verbs\}
 	\item[$-$] openmpi-4.0.2-gcc-8.3.0 \{fabrics=verbs, fabrics=ucx\}
 	\item[$-$] mpich-3.3.2-gcc-8.3.0 \{device=ch4, netmod=ucx\}
 	\item[$-$] mpich-devl-gcc-8.3.0 \{device=ch4, netmod=ucx\}
