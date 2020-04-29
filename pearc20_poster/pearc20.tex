@@ -220,7 +220,7 @@ We benchmarked optimized builds for two of our most commonly used applications, 
 \subsection{Deployment Strategy}
 On Quest, users are not required to choose a partition and the jobs are assigned to nodes dynamically based on availability. Thus, we are faced with the following deployment challenge : how do we deploy optimized builds for each processor family but not require our users to choose the exact build of the application for their job ?
 
-To answer the above, we have chosen a simple strategy where we configure a task prolog script for SLURM that automatically sets the modulepath based on $SLURM\_NODELIST$. We tested this on a virtual SLURM cluster with two noes on a laptop provisioned by four docker containers tied together via docker-compose using an existing repository \cite{slurmdocker_repository} for the same developed by SciDAS (Scientific Data Analysis At Scale).
+To answer the above, we have chosen a simple strategy where we configure a task prolog script for SLURM that automatically sets the modulepath based on $SLURM\_NODELIST$. We tested this on a virtual SLURM cluster with two nodes on a laptop provisioned by four docker containers tied together via docker-compose using an existing repository \cite{slurmdocker_repository} for the same developed by SciDAS (Scientific Data Analysis At Scale). We present the sample code for the selection algorithm below: 
 
 \begin{verbatim}
 short_list=${SLURM_JOB_NODELIST##worker}
