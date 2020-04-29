@@ -139,11 +139,11 @@
 
 \section{Introduction}
 
-Quest is a heterogeneous HPC cluster\cite{quest} at Northwestern University consisting of Intel Haswell/Broadwell/Skylake/Cascale Lake nodes with varying interconnects which recently transitioned to SLURM\cite{slurm} as the resource manager and the job scheduler. The cluster operates with very high uptimes and generally shuts down for a week once every academic year for maintenance. While this high uptime is great for research throughput, it compresses critical maintenance tasks into that week and makes the operators prioritize in place upgrades over major redesigns. While such an operations scheme works in the short run, managing a large set of software stacks that were installed at various points in time becomes challenging since the software stack was kept stable even through downtime cycles that involved major and minor OS upgrades.
+Quest is a heterogeneous HPC cluster\cite{quest} at Northwestern University consisting of Intel Haswell/Broadwell/Skylake/Cascade Lake nodes with varying interconnects which recently transitioned to SLURM\cite{slurm} as the resource manager and the job scheduler. The cluster operates with very high uptimes and generally shuts down for a week once every academic year for maintenance. While this high uptime is great for research throughput, it compresses critical maintenance tasks into that week and makes the operators prioritize in place upgrades over major redesigns. While such an operations scheme works in the short run, managing a large set of software stacks that were installed at various points in time becomes challenging since the software stack was kept stable even through downtime cycles that involved major and minor OS upgrades.
 
 This has led to a bloated software stack and sometimes inconsistencies in naming schemes for modules and executables. This is challenging to continuously benchmark for functionality and performance. Thus, we are motivated to develop a strategy to maintain our software stacks that will enable us to provide functional and efficient software for our users while reducing the maintenance and support workload for the operators and software specialists. In addition to the above, we also face an immediate need to make MPI launchers compatible with srun as a SLRUM update is on the agenda for next downtime (as part of the MPI upgrade project).
 
-In this article, we present our ongoing project to modernize MPI installations and the results of benchmarking studies that inform our plans for deprecating modules. We also discuss the preliminary tests on our beta cluster for a strategy to deploy optimized builds for each architecture that are dynamically loaded at runtime based upon the nodelist for the job.
+In this article, we present our ongoing project to modernize MPI installations and the results of benchmarking studies that inform our plans for deprecating modules. We also discuss the preliminary tests on our beta cluster for a strategy to deploy optimized builds for each architecture that are dynamically loaded at runtime based upon the node list for the job.
 
 \section{MPI libraries}
 Over the 10-year life of Quest cluster, multiple versions of libraries proving functionality specified by the message passing interface standard \cite{mpi_3_1,mpi_2_2} were installed. Some of these are quite old (before major OS version upgrades) and the naming scheme for the corresponding module files is inconsistent. Thus, we developed the following strategy for an upgrade project
@@ -152,26 +152,29 @@ with the following milestones (in chronological order) :
 	\item[$\blacksquare$] Deployment of a beta cluster with SLURM 19 (later updated to SLURM 20)
 	\item[$\blacksquare$] Benchmark existing MPI libraries on the beta cluster
 	\item[$\blacksquare$] Benchmark new MPI libraries on beta cluster
-	\item[$\boxslash$] Deployment of updated middleware (UCX, PMIx) on the production cluster
-	\item[$\square$] Communicate module deprecation and upgrade strategy to users
-	\item[$\square$] MPI modules transition along with SLURM update on production cluster
+	\item[$\blacksquare$] Deployment of updated middleware (UCX, PMIx) on the production cluster
+	\item[$\blacksquare$] Communicate module deprecation and upgrade strategy to users
+	\item[$\blacksquare$] User tests using recompiled or new MPI applications on beta cluste
+	\item[$\blacksquare$] MPI modules transition along with SLURM update on production cluster
 \end{itemize}
+
+During the submission of this report, we are working on a user communication plan. Consequently we will primarily focus on tasks prior this milestone.
 
 \subsection{Benchmarking}
 
-To test these libraries for functionality and performance, we compiled and executed two point-to-point benchmarks, bandwidth and latency from the OSU micro-benchmarks suite \cite{osu_bench_website}. None of MPI modules were installed with SLURM support necessiating the use of bash scripts to execute the tests. The results are presented in the figure \ref{fig:currmpi}.
+To test these libraries for functionality and performance, we compiled and executed two point-to-point benchmarks, bandwidth and latency from the OSU micro-benchmarks suite \cite{osu_bench_website}. None of MPI modules were installed with SLURM support necessitating the use of bash scripts to execute the tests. The results are presented in the figure \ref{fig:currmpi}.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.05\linewidth]{curr_pearc}
 	\caption{Band of performance metrics measured for the currently
-			 available MPI builds indiciating a large spread in 
+			 available MPI builds indicating a large spread in 
 			 performance. Some builds fail to use the InfiniBand fabric while others had sub-optimal configurations.}
 	\Description{Benchmark of currently available MPI builds}
 	\label{fig:currmpi}
 \end{figure}
 
-In total, $42\%$ of the available MPI libraries were faulty with $28\%$ being nonfunctional (failure to compile or run) and $14\%$ being nonperformant.
+In total, $42\%$ of the available MPI libraries were faulty with $28\%$ being nonfunctional (failure to compile or run) and $14\%$ being non-performant.
 
 \subsection{Improvements}
  
@@ -187,21 +190,19 @@ Spack\cite{spack} was used to build new versions of MPI libraries with SLURM sup
 	\label{fig:newmpi}
 \end{figure}
 
-As indicated in a recent OpenMPI deployment guide \cite{openmpi_deployment_tuning}, newer versions of the libraries configured with UCX transport layer perform better. We have thus  decided to use the UCX transport layer for all MPI libraries. In addition to this, we also plan to enable the PMIx plugin \cite{slurm_pmix_sc17,slurm_pmix_2019} in slurm to use the PMIx process management standard \cite{pmix,pmix_website} (implemented via the OpenPMIx library \cite{openpmix_website}) which improves the job startup time. We also note that the slurm plugin for PMIx allows it optionally use UCX for communication via a slurm plugin for UCX.
+As indicated in a recent OpenMPI deployment guide \cite{openmpi_deployment_tuning}, newer versions of the libraries configured with UCX transport layer perform better. We have thus decided to use the UCX transport layer for all MPI libraries. In addition to this, we also plan to enable the PMIx plugin \cite{slurm_pmix_sc17,slurm_pmix_2019} in SLURM to use the PMIx process management standard \cite{pmix,pmix_website} (implemented via the OpenPMIx library \cite{openpmix_website}) which improves the job startup time. We also note that the SLURM plugin for PMIx allows it optionally use UCX for communication via a SLURM plugin for UCX.
 
 \subsection{Deploying UCX and PMIx}
-While UCX was installed on the GPFS filesystem for convenience of testing, we plan to install it on the node-local filesystem (specifically at $/usr/local$) of each compute node given it's nature as a widely used runtime dependency for MPI libraries. We already had an older version of UCX, $1.4.0$ available (as part of the Mellanox driver installations) and used this alongside an installation of OpenPMIx \cite{openpmix_website}, version $2.2.3$ for testing. Unfortunately, due to a bug in the slurm plugin \cite{slurm_ucx_bug}, this configuration led to the job start phase crashing. The bugifx involves either installing UCX with the rdma-core \cite{rdmacore_repository}(which provide the user space components for the IB drivers) dependency or update the drivers to a newer version.
+While UCX was installed on the GPFS filesystem for convenience of testing, we plan to install it on the node-local filesystem (specifically at $/usr/local$) of each compute node given it's nature as a widely used runtime dependency for MPI libraries. We already had an older version of UCX, $1.4.0$ available (as part of the Mellanox driver installations) and used this alongside an installation of OpenPMIx \cite{openpmix_website}, version $2.2.3$ for testing. Unfortunately, due to a bug in the SLURM plugin \cite{slurm_ucx_bug}, this configuration led to the job start phase crashing. The bug fix involves either installing UCX with the rdma-core \cite{rdmacore_repository}(which provide the user space components for the IB drivers) dependency or update the drivers to a newer version.
 
-Since there are no plans on updating the infibinand dirvers, we first attempted at manually creating binaries (in the $.rpm$ format using $rpm-builder$ tool) for UCX and PMIx that overcome the aforementioned bug. We had no success with this approach as we were unable to properly patch the libraries.
-
-Thus, we plan to use spack \cite{spack} to install the libraries to a common prefix (by using a filesystem view in an environment) and create an rpm binary from this for easy deployment on the compute nodes.
+Since there are no plans on updating the InfiniBand drivers, we first attempted at manually creating binaries (in the $.rpm$ format using $rpm-builder$ tool) for UCX and PMIx that overcome the aforementioned bug. We had no success with this approach as we were unable to properly patch the libraries. Thus, we used Spack \cite{spack} to install the libraries to a common prefix (by using a filesystem view in an environment) and create an rpm binary from this for easy deployment on the compute nodes.
 
 \section{Node arch dependent software}
 
-Given the challenges in maintaining a complex software stack that includes a multitude of combinations between applications, versions, compilers and dependencies, achieving optimal software performance (as available via generating optimized binaries for each architecture) was not prioritized. While this was not a major concern in the past, the increase in the CPU-architecture heterogeneity in the recent years, such a deployment strategy severely degrades productivity of the cluster. Thankfully, due to recent developments in the spack package manager, we are able to build multiple versions of each library, each optimized for a different architecture for optimal productivity of the cluster. 
+Given the challenges in maintaining a complex software stack that includes a multitude of combinations between applications, versions, compilers and dependencies, achieving optimal software performance (as available via generating optimized binaries for each architecture) was not prioritized. While this was not a major concern in the past, increase in the CPU-architecture heterogeneity of the cluster in the recent years, such a deployment strategy severely degrades productivity. Thankfully, due to recent developments in the Spack package manager, we are able to build multiple versions of each library, each optimized for a different architecture for optimal productivity of the cluster. 
 
 \subsection{Benchmarks}
-We benchmarked optimzed builds for two of our most commonly used applications, LAMMPS\cite{lammps} and GROMACS \cite{gromacs_1995,gromacs_2015} against the currently available installations on the oldest processor generation, "Haswell". We chose the Lennard-Jones liquid benchmark for LAMMPS available as part of the official benchmark suite \cite{lammps_bench} and a benchmark from the Unified European Applications Benchmark Suite \cite{ueabs_prace,ueabs_repo} for GROMACS. The results of these tests are presented in the Table \ref{tab:bench_apps} which shows that there are substantial benefits to deploying node architecture specific software even on our oldest nodes.
+We benchmarked optimized builds for two of our most commonly used applications, LAMMPS\cite{lammps} and GROMACS \cite{gromacs_1995,gromacs_2015} against the currently available installations on the oldest processor generation, "Haswell". We chose the Lennard-Jones liquid benchmark for LAMMPS available as part of the official benchmark suite \cite{lammps_bench} and a benchmark from the Unified European Applications Benchmark Suite \cite{ueabs_prace,ueabs_repo} for GROMACS. The results of these tests are presented in the Table \ref{tab:bench_apps} which shows that there are substantial benefits to deploying node architecture specific software even on our oldest nodes.
 
 \begin{table}
 	\caption{Optimized builds on Haswell nodes}
@@ -235,7 +236,7 @@ fi
 
 \section{Conclusion}
 
-Thus, we have effectively used benchmarking tests that gives us valuable insight regarding the health of the software on the Northwestern-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software. Moreover, executing the node-optimized software strategy in the future would enable a significant enhancement in the productivity of the cluster.
+We have effectively used benchmarking tests that gives us valuable insight regarding the health of the software on the Northwestern-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software. Moreover, executing the node-optimized software strategy in the future would enable a significant enhancement in the productivity of the cluster.
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
@@ -272,7 +273,7 @@ for final installation at destination directory followed by modulefile creation.
 	\item[$-$]openmpi-\{2.0.2-gcc-6.4.0-compute, 2.1.1-gcc-5.1.0, 2.1.2-intel2016.0\}
 	\item[$-$]openmpi-\{3.0.0-intel2016.0, 3.1.3-gcc-6.4.0\}
 \end{itemize} 
-In addition to our high uptimes, we also have a strategy of never removing modules out of concerns over disruption to research. Following this strategy while upgrading the OS to a new major versions is the most common cause of non functional modules. These were compiled with older versions of system libraries but don't link with newer ones. The major cause of non performant builds, on the other hand is errors is configuration coupled with lack of regression testing.
+In addition to our high uptimes, we rarely remove modules out of concerns over disruption to research. Following this strategy while upgrading the OS to a new major versions is the most common cause of non functional modules. These were compiled with older versions of system libraries but don't link with newer ones. The major cause of non performant builds, on the other hand, is errors in configuration coupled with lack of regression testing.
 
 \subsection{New MPI libraries}
 As mentioned in the text, spack\cite{spack} was used to automate the builds and which reduces time spent building and allows us to shift out focus to testing.
