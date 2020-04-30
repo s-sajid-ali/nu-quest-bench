@@ -45,6 +45,9 @@ Warning--to sort, need author or key in ueabs_repo
 Warning--no key, author in slurmdocker_repository
 Warning--no author, editor, organization, or key in slurmdocker_repository
 Warning--to sort, need author or key in slurmdocker_repository
+Warning--no key, author in slurm_taskprolog
+Warning--no author, editor, organization, or key in slurm_taskprolog
+Warning--to sort, need author or key in slurm_taskprolog
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -68,6 +71,7 @@ Warning--no key, author in rdmacore_repository
 Warning--no key, author in slurm_ucx_bug
 Warning--no key, author in slurm_ucx_bug
 Warning--no key, author in slurmdocker_repository
+Warning--no key, author in slurm_taskprolog
 Warning--no key, author in ueabs_prace
 Warning--no key, author in ueabs_prace
 Warning--no key, author in ueabs_repo
@@ -111,6 +115,10 @@ Warning--no key, author in slurmdocker_repository
 Warning--no author, editor, organization, or key in slurmdocker_repository
 Warning--empty organization in slurmdocker_repository
 Warning--empty organization in slurmdocker_repository
+Warning--no key, author in slurm_taskprolog
+Warning--no author, editor, organization, or key in slurm_taskprolog
+Warning--empty organization in slurm_taskprolog
+Warning--empty organization in slurm_taskprolog
 Warning--no key, author in openucx-website
 Warning--no author, editor, organization, or key in openucx-website
 Warning--empty author in openucx-website
@@ -132,45 +140,45 @@ Warning--no number and no volume in openmpi_deployment_tuning
 Warning--page numbers missing in both pages and numpages fields in openmpi_deployment_tuning
 Warning--empty publisher in shamis2015ucx
 Warning--empty address in shamis2015ucx
-You've used 23 entries,
+You've used 24 entries,
             5727 wiz_defined-function locations,
-            1417 strings with 18301 characters,
-and the built_in function-call counts, 21529 in all, are:
-= -- 2276
+            1421 strings with 18393 characters,
+and the built_in function-call counts, 22164 in all, are:
+= -- 2331
 > -- 534
 < -- 0
-+ -- 195
++ -- 197
 - -- 205
-* -- 1638
-:= -- 1849
-add.period$ -- 94
-call.type$ -- 23
-change.case$ -- 131
+* -- 1687
+:= -- 1885
+add.period$ -- 97
+call.type$ -- 24
+change.case$ -- 135
 chr.to.int$ -- 20
-cite$ -- 194
-duplicate$ -- 2130
-empty$ -- 1536
+cite$ -- 206
+duplicate$ -- 2207
+empty$ -- 1593
 format.name$ -- 203
-if$ -- 5067
-int.to.chr$ -- 5
+if$ -- 5217
+int.to.chr$ -- 6
 int.to.str$ -- 1
 missing$ -- 47
-newline$ -- 287
+newline$ -- 298
 num.names$ -- 82
-pop$ -- 982
+pop$ -- 1024
 preamble$ -- 1
-purify$ -- 326
+purify$ -- 337
 quote$ -- 0
-skip$ -- 714
+skip$ -- 740
 stack$ -- 0
-substring$ -- 1517
-swap$ -- 197
+substring$ -- 1559
+swap$ -- 204
 text.length$ -- 57
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 558
-warning$ -- 122
+type$ -- 582
+warning$ -- 130
 while$ -- 71
 width$ -- 0
-write$ -- 467
-(There were 122 warnings)
+write$ -- 484
+(There were 130 warnings)

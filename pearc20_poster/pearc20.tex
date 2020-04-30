@@ -169,7 +169,7 @@ To test these libraries for functionality and performance, we compiled and execu
 	\includegraphics[width=1.05\linewidth]{curr_pearc}
 	\caption{Band of performance metrics measured for the currently
 			 available MPI builds indicating a large spread in 
-			 performance. Some builds fail to use the InfiniBand fabric while others had sub-optimal configurations.}
+			 performance. Some builds fail to use the InfiniBand fabric while others had sub-optimal configurations. The list of libraries tested is listed in the appendix.}
 	\Description{Benchmark of currently available MPI builds}
 	\label{fig:currmpi}
 \end{figure}
@@ -178,14 +178,14 @@ In total, $42\%$ of the available MPI libraries were faulty with $28\%$ being no
 
 \subsection{Improvements}
  
-Spack\cite{spack} was used to build new versions of MPI libraries with SLURM support. This allows us to automate a large set of parameterized builds and eases the testing. Alongside testing the new installations for srun launcher support, we also tested the relative performance of the UCX transport layer \cite{shamis2015ucx,openucx-website}. Unified Communication X (abbreviated as UCX) is a portable, high performance middleware that sits between programming models (like MPI, PGAS, charm++, etc) and network device drivers. The results of benchmarks with new installations are presented in the figure \ref{fig:currmpi}. 
+Spack\cite{spack} was used to build new versions of MPI libraries with SLURM support. This allows us to automate a large set of parameterized builds and eases the testing. Alongside testing the new installations for srun launcher support, we also tested the relative performance of the UCX transport layer \cite{shamis2015ucx,openucx-website}. Unified Communication X (abbreviated as UCX) is a portable, high performance middleware that sits between programming models (like MPI, PGAS, charm++, etc) and network device drivers. The results of benchmarks with new installations are presented in the figure \ref{fig:newmpi}. 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.05\linewidth]{new_pearc}
-	\caption{Band of performance metrics measured for the new MPI builds
-			with optimal configuration and updated middleware indicating
-			a marked improvement.}
+	\caption{Band of performance metrics measured for the new MPI
+		builds with optimal configuration and updated middleware
+		indicating a reduced spread in performance with newer middleware providing some gains. The list of libraries tested is listed in the appendix.}
 	\Description{Benchmark of new MPI builds}
 	\label{fig:newmpi}
 \end{figure}
@@ -205,7 +205,7 @@ Given the challenges in maintaining a complex software stack that includes a mul
 We benchmarked optimized builds for two of our most commonly used applications, LAMMPS\cite{lammps} and GROMACS \cite{gromacs_1995,gromacs_2015} against the currently available installations on the oldest processor generation, "Haswell". We chose the Lennard-Jones liquid benchmark for LAMMPS available as part of the official benchmark suite \cite{lammps_bench} and a benchmark from the Unified European Applications Benchmark Suite \cite{ueabs_prace,ueabs_repo} for GROMACS. The results of these tests are presented in the Table \ref{tab:bench_apps} which shows that there are substantial benefits to deploying node architecture specific software even on our oldest nodes.
 
 \begin{table}
-	\caption{Optimized builds on Haswell nodes}
+	\caption{Comparision of performance of currently available and architecture optimized builds of commonly used applications on Haswell nodes}
 	\label{tab:bench_apps}
 	\begin{tabular}{ccl}
 		\toprule
@@ -220,7 +220,7 @@ We benchmarked optimized builds for two of our most commonly used applications, 
 \subsection{Deployment Strategy}
 On Quest, users are not required to choose a partition and the jobs are assigned to nodes dynamically based on availability. Thus, we are faced with the following deployment challenge : how do we deploy optimized builds for each processor family but not require our users to choose the exact build of the application for their job ?
 
-To answer the above, we have chosen a simple strategy where we configure a task prolog script for SLURM that automatically sets the modulepath based on $SLURM\_NODELIST$. We tested this on a virtual SLURM cluster with two nodes on a laptop provisioned by four docker containers tied together via docker-compose using an existing repository \cite{slurmdocker_repository} for the same developed by SciDAS (Scientific Data Analysis At Scale). We present the sample code for the selection algorithm below: 
+To answer the above, we have chosen a simple strategy where we configure a task prolog script for SLURM that automatically sets the modulepath based on $SLURM\_NODELIST$. We tested this on a virtual SLURM cluster with two nodes on a laptop provisioned by four docker containers tied together via docker-compose using an existing repository \cite{slurmdocker_repository} for the same developed by SciDAS (Scientific Data Analysis At Scale). This slurm cluster has two compute nodes named $worker01$ and $worker02$. We present the sample task prolog script below \footnote{The TaskProlog script is executed before the job starts and has the ability to set environment variables for a job.\cite{slurm_taskprolog}} : 
 
 \begin{verbatim}
 short_list=${SLURM_JOB_NODELIST##worker}
@@ -233,6 +233,7 @@ then
 echo "export MODULEPATH=/home/path2"
 fi
 \end{verbatim}
+
 
 \section{Conclusion}
 
@@ -257,7 +258,7 @@ To various mailing lists, slack channels and forums including but not limited to
 %% If your work has an appendix, this is the place to put it.
 \appendix
 \section{Build details}
-\subsection{Currently MPI libraries}
+\subsection{Currently installed MPI libraries}
 All the libraries available to the users were built first at a staging directory
 for final installation at destination directory followed by modulefile creation. These include :
 \begin{itemize}
@@ -273,11 +274,10 @@ for final installation at destination directory followed by modulefile creation.
 	\item[$-$]openmpi-\{2.0.2-gcc-6.4.0-compute, 2.1.1-gcc-5.1.0, 2.1.2-intel2016.0\}
 	\item[$-$]openmpi-\{3.0.0-intel2016.0, 3.1.3-gcc-6.4.0\}
 \end{itemize} 
-In addition to our high uptimes, we rarely remove modules out of concerns over disruption to research. Following this strategy while upgrading the OS to a new major versions is the most common cause of non functional modules. These were compiled with older versions of system libraries but don't link with newer ones. The major cause of non performant builds, on the other hand, is errors in configuration coupled with lack of regression testing.
+The general naming scheme is  $mpi-library-name/version/compiler-version/extra-flags$. In addition to our high uptimes, we rarely remove modules out of concerns over disruption to research. Following this strategy while upgrading the OS to a new major versions is the most common cause of non functional modules. These were compiled with older versions of system libraries but don't link with newer ones. The major cause of non performant builds, on the other hand, is errors in configuration coupled with lack of regression testing.
 
-\subsection{New MPI libraries}
-As mentioned in the text, spack\cite{spack} was used to automate the builds and which reduces time spent building and allows us to shift out focus to testing.
-The newly built libraries include:
+\subsection{New builds of MPI libraries}
+As mentioned in the text, spack\cite{spack} was used to automate the builds and which reduces time spent building and allows us to shift out focus to testing. The newly built libraries include:
 \begin{itemize}
 	\item[$-$] openmpi-1.10.5-gcc-6.4.0 \{fabrics=verbs\}
 	\item[$-$] openmpi-4.0.2-gcc-8.3.0 \{fabrics=verbs, fabrics=ucx\}
@@ -285,6 +285,7 @@ The newly built libraries include:
 	\item[$-$] mpich-devl-gcc-8.3.0 \{device=ch4, netmod=ucx\}
 	\item[$-$] mvapich-2.3.2-gcc-8.3.0 \{fabrics=mrail\}
 \end{itemize} 
+The newer library versions built with ucx in general perform better. The configurations are listed as per package conventions as represented by the corresponding variants in the spack package recipes.
 
 \end{document}
 \endinput

@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -153,6 +153,17 @@ Retrieved April 19, 2020 from \tempurl}
 \url{https://github.com/SciDAS/slurm-in-docker}
 \showURL{%
 Retrieved April 19, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{slu}{2020c}]%
+        {slurm_taskprolog}
+ \bibinfo{year}{2020}\natexlab{c}.
+\newblock \bibinfo{booktitle}{\emph{Slurm TaskProlog}}.
+\newblock
+\urldef\tempurl%
+\url{https://slurm.schedmd.com/faq.html#task_prolog}
+\showURL{%
+Retrieved April 29, 2020 from \tempurl}
 
 
 \bibitem[\protect\citeauthoryear{??}{ope}{2020b}]%
