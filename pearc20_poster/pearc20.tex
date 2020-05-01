@@ -162,7 +162,7 @@ During the submission of this report, we are working on a user communication pla
 
 \subsection{Benchmarking}
 
-To test these libraries for functionality and performance, we compiled and executed two point-to-point benchmarks, bandwidth and latency from the OSU micro-benchmarks suite \cite{osu_bench_website}. The MPI libraries were installed without SLURM support and had incostintent naming schemes necessitating the use of bash scripts to execute the tests. The results are presented in the figure \ref{fig:currmpi}.
+To test these libraries for functionality and performance, we compiled and executed two point-to-point benchmarks, bandwidth and latency from the OSU micro-benchmarks suite \cite{osu_bench_website}. Bash scripts were used to loop over available libraries (with some requiring environment variables to be set to prevent errors) due to the fact that these MPI libraries were installed without SLURM support and had incostintent naming schemes. The results are presented in the figure \ref{fig:currmpi}.
 
 \begin{figure}[h]
 	\centering
@@ -190,7 +190,9 @@ Spack\cite{spack} was used to build new versions of MPI libraries with SLURM sup
 	\label{fig:newmpi}
 \end{figure}
 
-As indicated in a recent OpenMPI deployment guide \cite{openmpi_deployment_tuning}, newer versions of the libraries configured with UCX transport layer perform better. We have thus decided to use the UCX transport layer for all MPI libraries. In addition to this, we also plan to enable the PMIx plugin \cite{slurm_pmix_sc17,slurm_pmix_2019} in SLURM to use the PMIx process management standard \cite{pmix,pmix_website} (implemented via the OpenPMIx library \cite{openpmix_website}) which improves the job startup time. We also note that the SLURM plugin for PMIx allows it optionally use UCX for communication via a SLURM plugin for UCX.
+As indicated in a recent OpenMPI deployment guide \cite{openmpi_deployment_tuning}, newer versions of the libraries  configured with UCX transport layer perform better. We have thus decided to use the UCX transport layer for all MPI libraries. The newer versions of OpenMPI had $63\%$ lower latencies on average (more pronounced at smaller message sizes) and $66\%$ better bandwidth on avearge (more pronounced at intermediate message sizes). Configuring the newer versions of OpenMPI with UCX resulted in latency being reduced by $5\%$(more pronounced at larger message sizes) on avearge and increased bandwidth by $67\%$ on average (more pronounced at intermediate message sizes).
+
+In addition to this, we also plan to enable the PMIx plugin \cite{slurm_pmix_sc17,slurm_pmix_2019} in SLURM to use the PMIx process management standard \cite{pmix,pmix_website} (implemented via the OpenPMIx library \cite{openpmix_website}) which improves the job startup time. We also note that the SLURM plugin for PMIx allows it optionally use UCX for communication via a SLURM plugin for UCX.
 
 \subsection{Deploying UCX and PMIx}
 While UCX was installed on the GPFS filesystem for convenience of testing, we plan to install it on the node-local filesystem (specifically at $/usr/local$) of each compute node given its nature as a widely used runtime dependency for MPI libraries. We already had an older version of UCX, $1.4.0$ available (as part of the Mellanox driver installations) and used this alongside an installation of OpenPMIx \cite{openpmix_website}, version $2.2.3$ for testing. Unfortunately, due to a bug in the SLURM plugin \cite{slurm_ucx_bug}, this configuration led to the job start phase crashing. The bug fix involves either installing UCX with the rdma-core \cite{rdmacore_repository}(which provide the user space components for the IB drivers) dependency or update the drivers to a newer version.
@@ -274,7 +276,7 @@ for final installation at destination directory followed by modulefile creation.
 	\item[$-$]openmpi-\{2.0.2-gcc-6.4.0-compute, 2.1.1-gcc-5.1.0, 2.1.2-intel2016.0\}
 	\item[$-$]openmpi-\{3.0.0-intel2016.0, 3.1.3-gcc-6.4.0\}
 \end{itemize} 
-The general naming scheme is  $mpi-library-name/version/compiler-version/extra-flags$. In addition to our high uptimes, we rarely remove modules out of concerns over disruption to research. Following this strategy while upgrading the OS to a new major versions is the most common cause of non functional modules. These were compiled with older versions of system libraries but don't link with newer ones. The major cause of non performant builds, on the other hand, is errors in compile configuration coupled with lack of benchmarking.
+The general naming scheme is  $mpi-library-name/version/compiler-version/extra-flags$. In addition to our high uptimes, we rarely remove modules out of concerns over disruption to research. Following this strategy while upgrading the OS to a new major versions is the most common cause of non functional modules. These were compiled with older versions of system libraries but don't link with newer ones. The major cause of non performant builds, on the other hand, is errors in configuration of transport middleware and lack of benchmarking.
 
 \subsection{New builds of MPI libraries}
 As mentioned in the text, spack\cite{spack} was used to automate the builds and which reduces time spent building and allows us to shift out focus to testing. The newly built libraries include:
