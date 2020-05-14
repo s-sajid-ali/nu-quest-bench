@@ -1,10 +1,35 @@
-\documentclass[sigconf,authordraft]{acmart}
+% !TeX spellcheck = en_GB
+%%
+%% This is file `sample-manuscript.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `manuscript')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-manuscript.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[manuscript,screen]{acmart}
 
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
-  \providecommand\BibTeX{{%
-    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+	\providecommand\BibTeX{{%
+			\normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
 
 %% Rights management information.  This information is sent to you
 %% when you complete the rights form.  These commands have SAMPLE
@@ -14,14 +39,15 @@
 \setcopyright{acmcopyright}
 \copyrightyear{2020}
 \acmYear{2020}
-%\acmDOI{10.1145/1122445.1122456}
+\acmDOI{10.1145/1122445.1122456}
 
 %% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[PEARC '20]{PEARC '20}{July 26-30, 2020}{Portland, OR }
-%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-%  June 03--05, 2018, Woodstock, NY}
-%\acmPrice{15.00}
-%\acmISBN{978-1-4503-XXXX-X/18/06}
+\acmConference[PEARC '20]{Woodstock '18: ACM Symposium on Neural
+	Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
+\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+	June 03--05, 2018, Woodstock, NY}
+\acmPrice{15.00}
+\acmISBN{978-1-4503-XXXX-X/18/06}
 
 
 %%
@@ -139,11 +165,11 @@
 
 \section{Introduction}
 
-Quest is a heterogeneous HPC cluster\cite{quest} at Northwestern University consisting of Intel Haswell/Broadwell/Skylake/Cascade Lake nodes with varying interconnects which recently transitioned to SLURM\cite{slurm} as the resource manager and the job scheduler. The cluster operates with very high uptimes and generally shuts down for a week once every academic year for maintenance. While this high uptime is great for research throughput, it compresses critical maintenance tasks into that week and makes the operators prioritize in place upgrades over major redesigns. While such an operations scheme works in the short run, managing a large set of software stacks that were installed at various points in time becomes challenging since the software stack was kept stable even through downtime cycles that involved major and minor OS upgrades.
+Quest is a heterogeneous HPC cluster\cite{quest} at Northwestern University consisting of Intel Haswell/Broadwell/Skylake/Cascade Lake nodes with varying interconnects which recently deployed SLURM\cite{slurm} as the resource manager and the job scheduler. The cluster operates with very high uptimes and generally shuts down for a week once every academic year for maintenance. While this high uptime is great for research throughput, it compresses critical maintenance tasks into that week and makes the operators prioritize in place upgrades over major redesigns. While such an operations scheme works in the short run, managing a large set of software stacks that were installed at various points in time becomes challenging since the software stack was kept stable even through downtimes that involved major and minor OS upgrades.
 
-This has led to a bloated software stack and sometimes inconsistencies in naming schemes for modules and executables. This is challenging to continuously benchmark for functionality and performance. Thus, we are motivated to develop a strategy to maintain our software stacks that will enable us to provide functional and efficient software for our users while reducing the maintenance and support workload for the operators and software specialists. In addition to the above, we also face an immediate need to make MPI launchers compatible with srun as a SLRUM update is on the agenda for next downtime (as part of the MPI upgrade project).
+This has led to a bloated software stack and inconsistent naming schemes for modules and executables. This is challenging to continuously benchmark for functionality and performance. Thus, we are motivated to develop a strategy to maintain our software stacks that will enable us to provide functional and efficient software for our users while reducing the maintenance and support workload for the operators and software specialists. In addition to the above, we also face an immediate need to make MPI launchers compatible with srun as a SLRUM update is on the agenda for next downtime (as part of the MPI upgrade project).
 
-In this article, we present our ongoing project to modernize MPI installations and the results of benchmarking studies that inform our plans for deprecating modules. We also discuss the preliminary tests on our beta cluster for a strategy to deploy optimized builds for each architecture that are dynamically loaded at runtime based upon the node list for the job.
+In this article, we present our ongoing project to modernize MPI installations and the results of benchmarking studies that inform our plans for deprecating old modules. We also discuss the preliminary tests on our beta cluster for a strategy to deploy optimized builds for each architecture that are dynamically loaded at runtime based upon the node list for the job.
 
 \section{MPI libraries}
 Over the 10-year life of Quest cluster, multiple versions of libraries proving functionality specified by the message passing interface standard \cite{mpi_3_1,mpi_2_2} were installed. Some of these are quite old (before major OS version upgrades) and the naming scheme for the corresponding module files is inconsistent. Thus, we developed the following strategy for an upgrade project
@@ -154,7 +180,7 @@ with the following milestones (in chronological order) :
 	\item[$\blacksquare$] Benchmark new MPI libraries on beta cluster
 	\item[$\blacksquare$] Deployment of updated middleware (UCX, PMIx) on the production cluster
 	\item[$\blacksquare$] Communicate module deprecation and upgrade strategy to users
-	\item[$\blacksquare$] User tests using recompiled or new MPI applications on beta cluste
+	\item[$\blacksquare$] User tests using recompiled or new MPI applications on beta cluster
 	\item[$\blacksquare$] MPI modules transition along with SLURM update on production cluster
 \end{itemize}
 
@@ -178,7 +204,7 @@ In total, $42\%$ of the available MPI libraries were faulty with $28\%$ being no
 
 \subsection{Improvements}
  
-Spack\cite{spack} was used to build new versions of MPI libraries with SLURM support. This allows us to automate a large set of parameterized builds and eases the testing. Alongside testing the new installations for srun launcher support, we also tested the relative performance of the UCX transport layer \cite{shamis2015ucx,openucx-website}. Unified Communication X (abbreviated as UCX) is a portable, high performance middleware that sits between programming models (like MPI, PGAS, charm++, etc) and network device drivers. The results of benchmarks with new installations are presented in the figure \ref{fig:newmpi}. 
+Spack\cite{spack},a package manager that automates building complex software stacks was used to build new versions of MPI libraries with SLURM support. Spack allows us to automate a large set of parameterized builds and eases the testing. Alongside testing the new installations for srun launcher support, we also tested the relative performance of the UCX transport layer \cite{shamis2015ucx,openucx-website}. Unified Communication X (abbreviated as UCX) is a portable, high performance middleware that sits between programming models (like MPI, PGAS, charm++, etc) and network device drivers. The results of benchmarks with new installations are presented in the figure \ref{fig:newmpi}. 
 
 \begin{figure}[h]
 	\centering
@@ -195,7 +221,7 @@ As indicated in a recent OpenMPI deployment guide \cite{openmpi_deployment_tunin
 In addition to this, we also plan to enable the PMIx plugin \cite{slurm_pmix_sc17,slurm_pmix_2019} in SLURM to use the PMIx process management standard \cite{pmix,pmix_website} (implemented via the OpenPMIx library \cite{openpmix_website}) which improves the job startup time. We also note that the SLURM plugin for PMIx allows it optionally use UCX for communication via a SLURM plugin for UCX.
 
 \subsection{Deploying UCX and PMIx}
-While UCX was installed on the GPFS filesystem for convenience of testing, we plan to install it on the node-local filesystem (specifically at $/usr/local$) of each compute node given its nature as a widely used runtime dependency for MPI libraries. We already had an older version of UCX, $1.4.0$ available (as part of the Mellanox driver installations) and used this alongside an installation of OpenPMIx \cite{openpmix_website}, version $2.2.3$ for testing. Unfortunately, due to a bug in the SLURM plugin \cite{slurm_ucx_bug}, this configuration led to the job start phase crashing. The bug fix involves either installing UCX with the rdma-core \cite{rdmacore_repository}(which provide the user space components for the IB drivers) dependency or update the drivers to a newer version.
+While UCX was installed on the GPFS filesystem for convenience during testing, we plan to install it on the node-local filesystem (specifically at $/usr/local$) of each compute node given its nature as a widely used runtime dependency for MPI libraries. We already had an older version of UCX, $1.4.0$ available (as part of the Mellanox driver installations) and used this alongside an installation of OpenPMIx \cite{openpmix_website}, version $2.2.3$ for testing. Unfortunately, due to a bug in the SLURM plugin \cite{slurm_ucx_bug}, this configuration led to the job start phase crashing. The bug fix involves either installing UCX with the rdma-core \cite{rdmacore_repository}(which provide the user space components for the IB drivers) dependency or update the drivers to a newer version.
 
 Since there are no plans on updating the InfiniBand drivers, we first attempted at manually creating binaries (in the $.rpm$ format using $rpm-builder$ tool) for UCX and PMIx that overcome the aforementioned bug. We had no success with this approach as we were unable to properly patch the libraries. Thus, we used Spack \cite{spack} to install the libraries to a common prefix (by using a filesystem view in an environment) and create an rpm binary from this for easy deployment on the compute nodes.
 
@@ -204,7 +230,7 @@ Since there are no plans on updating the InfiniBand drivers, we first attempted 
 Given the challenges in maintaining a complex software stack that includes a multitude of combinations between applications, versions, compilers and dependencies, achieving optimal software performance (as available via generating optimized binaries for each architecture) was not prioritized. While this was not a major concern in the past, increase in the CPU-architecture heterogeneity of the cluster in the recent years, such a deployment strategy severely degrades productivity. Thankfully, due to recent developments in the Spack package manager, we are able to build multiple versions of each library, each optimized for a different architecture for optimal productivity of the cluster. 
 
 \subsection{Benchmarks}
-We benchmarked optimized builds for two of our most commonly used applications, LAMMPS\cite{lammps} and GROMACS \cite{gromacs_1995,gromacs_2015} against the currently available installations on the oldest processor generation, "Haswell". We chose the Lennard-Jones liquid benchmark for LAMMPS available as part of the official benchmark suite \cite{lammps_bench} and a benchmark from the Unified European Applications Benchmark Suite \cite{ueabs_prace,ueabs_repo} for GROMACS. The results of these tests are presented in the Table \ref{tab:bench_apps} which shows that there are substantial benefits to deploying node architecture specific software even on our oldest nodes, with speedups of $32.3\%$ $12.4\%$ observed for LAMMPS and GROMACS applications.
+We benchmarked optimized builds for two of our most commonly used applications, LAMMPS\cite{lammps} and GROMACS \cite{gromacs_1995,gromacs_2015} against the currently available installations on the oldest processor generation, "Haswell". We chose the Lennard-Jones liquid benchmark for LAMMPS available as part of the official benchmark suite \cite{lammps_bench} and a benchmark from the Unified European Applications Benchmark Suite \cite{ueabs_prace,ueabs_repo} for GROMACS. The results of these tests are presented in the Table \ref{tab:bench_apps} which shows that there are substantial benefits to deploying node architecture specific software even on our oldest nodes, with speedups of $32.3\%$ and $12.4\%$ observed for LAMMPS and GROMACS benchmark applications respectively.
 
 \begin{table}
 	\caption{Comparision of performance between currently available and architecture optimized builds of commonly used applications on Haswell nodes}
@@ -239,7 +265,7 @@ fi
 
 \section{Conclusion}
 
-We have effectively used benchmarking tests that gives us valuable insight regarding the health of the software on the Northwestern-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software. Moreover, executing the node-optimized software strategy will significantly improve the productivity of the cluster.
+We have effectively performed benchmarking tests that give us valuable insight regarding the health of software stack on the Northwestern-Quest high performance compute cluster. This work will inform our plans to deprecate and eventually remove non-functional and non-performant software. Moreover, executing the node-optimized software strategy will significantly improve the productivity of the cluster.
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
@@ -279,12 +305,12 @@ for final installation at destination directory followed by modulefile creation.
 The general naming scheme is  $mpi-library-name/version/compiler-version/extra-flags$. In addition to our high uptimes, we rarely remove modules out of concerns over disruption to research. Following this strategy while upgrading the OS to a new major versions is the most common cause of non functional modules. These were compiled with older versions of system libraries but don't link with newer ones. The major cause of non performant builds, on the other hand, is errors in configuration of transport middleware and lack of benchmarking.
 
 \subsection{New builds of MPI libraries}
-As mentioned in the text, spack\cite{spack} was used to automate the builds and which reduces time spent building and allows us to shift out focus to testing. The newly built libraries include:
+As mentioned in the text, spack\cite{spack} was used to automate the builds which reduces time spent in building and allows us to shift our focus to testing. The newly built libraries include:
 \begin{itemize}
 	\item[$-$] openmpi-1.10.5-gcc-6.4.0 \{fabrics=verbs\}
 	\item[$-$] openmpi-4.0.2-gcc-8.3.0 \{fabrics=verbs, fabrics=ucx\}
 	\item[$-$] mpich-3.3.2-gcc-8.3.0 \{device=ch4, netmod=ucx\}
-	\item[$-$] mpich-devl-gcc-8.3.0 \{device=ch4, netmod=ucx\}
+	\item[$-$] mpich-devl-gcc-8.3.0 \{device=ch4, netmod=ucx, pmi=pmix\}
 	\item[$-$] mvapich-2.3.2-gcc-8.3.0 \{fabrics=mrail\}
 \end{itemize} 
 The newer library versions built with ucx in general perform better. The configurations are listed as per package conventions as represented by the corresponding variants in the spack package recipes.
