@@ -37,18 +37,14 @@
 %% the commands and values with those provided to you when you
 %% complete the rights form.
 \setcopyright{acmcopyright}
+
 \copyrightyear{2020}
 \acmYear{2020}
-\acmDOI{10.1145/1122445.1122456}
-
-%% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[PEARC '20]{Woodstock '18: ACM Symposium on Neural
-	Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
-\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-	June 03--05, 2018, Woodstock, NY}
+\setcopyright{acmcopyright}\acmConference[PEARC '20]{Practice and Experience in Advanced Research Computing}{July 26--30, 2020}{Portland, OR, USA}
+\acmBooktitle{Practice and Experience in Advanced Research Computing (PEARC '20), July 26--30, 2020, Portland, OR, USA}
 \acmPrice{15.00}
-\acmISBN{978-1-4503-XXXX-X/18/06}
-
+\acmDOI{10.1145/3311790.3399615}
+\acmISBN{978-1-4503-6689-2/20/07}
 
 %%
 %% Submission ID.
@@ -190,9 +186,8 @@ During the submission of this report, we are working on a user communication pla
 
 To test these libraries for functionality and performance, we compiled and executed two point-to-point benchmarks, bandwidth and latency from the OSU micro-benchmarks suite \cite{osu_bench_website}. Bash scripts were used to loop over available libraries (with some requiring environment variables to be set to prevent errors) due to the fact that these MPI libraries were installed without SLURM support and had incostintent naming schemes. The results are presented in the figure \ref{fig:currmpi}.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1.05\linewidth]{curr_pearc}
+\begin{figure}
+	\hspace*{-1.5cm}\includegraphics[scale=0.6]{curr_pearc}
 	\caption{Band of performance metrics measured for the currently
 			 available MPI builds indicating a large spread in 
 			 performance. Some builds fail to use the InfiniBand fabric while others had sub-optimal configurations. The list of libraries tested is listed in section A.1}
@@ -206,9 +201,8 @@ In total, $42\%$ of the available MPI libraries were faulty with $28\%$ being no
  
 Spack\cite{spack},a package manager that automates building complex software stacks was used to build new versions of MPI libraries with SLURM support. Spack allows us to automate a large set of parameterized builds and eases the testing. Alongside testing the new installations for srun launcher support, we also tested the relative performance of the UCX transport layer \cite{shamis2015ucx,openucx-website}. Unified Communication X (abbreviated as UCX) is a portable, high performance middleware that sits between programming models (like MPI, PGAS, charm++, etc) and network device drivers. The results of benchmarks with new installations are presented in the figure \ref{fig:newmpi}. 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1.05\linewidth]{new_pearc}
+\begin{figure}
+	\hspace*{-1.5cm}\includegraphics[scale=0.6]{new_pearc}
 	\caption{Band of performance metrics measured for the new MPI
 		builds with optimal configuration and updated middleware
 		indicating a reduced spread in performance with newer middleware providing some gains. The list of libraries tested is listed in section A.2}

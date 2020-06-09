@@ -1,0 +1,41 @@
+----------------------------------------
+srun job start: Tue Jun  9 15:10:22 CDT 2020
+Job ID: 688
+Username: sas4990
+Queue: short
+Account: p30157
+----------------------------------------
+The following variables are not
+guaranteed to be the same in
+prologue and the job run script
+----------------------------------------
+PATH (in prologue) : /home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-m2lvcpogmjam5ztwvqvhy24icvf6hhmi/libexec/osu-micro-benchmarks/mpi/collective:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-m2lvcpogmjam5ztwvqvhy24icvf6hhmi/libexec/osu-micro-benchmarks/mpi/one-sided:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-m2lvcpogmjam5ztwvqvhy24icvf6hhmi/libexec/osu-micro-benchmarks/mpi/pt2pt:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/osu-micro-benchmarks-5.6.1-m2lvcpogmjam5ztwvqvhy24icvf6hhmi/libexec/osu-micro-benchmarks/mpi/startup:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/mpich-develop-l3yn6dai3lsvwewmuw4ybhentwxrn7xm/bin:/usr/local/ucx-1.7.0/bin:/usr/local/pmix-3.1.3/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libxml2-2.9.10-nyl33wliz7jv2zjfqx2zflukh4puam6a/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/xz-5.2.5-ki5mmfdoj67ynlzlwfeu3sdh7vefir3w/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-8.3.0/libiconv-1.16-46i2h6v5lzez5ss3575p7orcgv7mkajt/bin:/home/sas4990/packages/spack/opt/spack/linux-rhel7-ivybridge/gcc-9.3.0/strace-5.2-4e6h53m5seqvfdiwdeowzmpbcopwahe2/bin:/home/sas4990/miniconda3/envs/ipy3/bin:/home/sas4990/miniconda3/condabin:/home/sas4990/packages/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/home/sas4990/.local/bin:/home/sas4990/bin
+WORKDIR is: /home/sas4990
+----------------------------------------
+# OSU MPI_Get latency Test v5.6.1
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Size          Latency (us)
+1                       2.10
+2                       2.07
+4                       1.98
+8                       1.95
+16                      1.93
+32                      1.94
+64                      1.99
+128                     2.02
+256                     2.12
+512                     2.27
+1024                    2.53
+2048                    3.06
+4096                    3.51
+8192                    4.38
+16384                   5.42
+32768                   8.05
+65536                  13.11
+131072                 23.41
+262144                 43.98
+524288                 85.00
+1048576               167.28
+2097152               331.40
+4194304               660.00
